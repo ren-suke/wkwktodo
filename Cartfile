@@ -1,0 +1,13 @@
+# Rx
+github "ReactiveX/RxSwift" 
+github "RxSwiftCommunity/RxRealm"
+
+# LocalData
+github "realm/realm-cocoa"
+
+# UI
+github "sgr-ksmt/Alertift" 
+github "pkluz/PKHUD" 
+
+# Resouce
+github "mac-cain13/R.swift.Library"
