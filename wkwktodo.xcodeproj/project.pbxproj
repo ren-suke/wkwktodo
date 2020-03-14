@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C134F070241D124A00511B2A /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F06F241D124A00511B2A /* Material.swift */; };
+		C134F072241D137B00511B2A /* Terms.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F071241D137B00511B2A /* Terms.swift */; };
+		C134F074241D15D700511B2A /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F073241D15D700511B2A /* List.swift */; };
+		C134F075241D161200511B2A /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F06F241D124A00511B2A /* Material.swift */; };
+		C134F076241D161200511B2A /* Terms.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F071241D137B00511B2A /* Terms.swift */; };
+		C134F077241D161200511B2A /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F073241D15D700511B2A /* List.swift */; };
+		C134F079241D172600511B2A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F078241D172600511B2A /* Task.swift */; };
+		C134F07A241D17EF00511B2A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F078241D172600511B2A /* Task.swift */; };
+		C134F07C241D19EB00511B2A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F07B241D19EB00511B2A /* User.swift */; };
 		C13DD54E241B32E700248D29 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C13DD54D241B32E700248D29 /* Settings.bundle */; };
 		C13DD554241CAF9900248D29 /* WKWKCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD553241CAF9900248D29 /* WKWKCollection.storyboard */; };
 		C13DD556241CAFAB00248D29 /* TaskList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD555241CAFAB00248D29 /* TaskList.storyboard */; };
@@ -119,6 +128,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C134F06F241D124A00511B2A /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		C134F071241D137B00511B2A /* Terms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terms.swift; sourceTree = "<group>"; };
+		C134F073241D15D700511B2A /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		C134F078241D172600511B2A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		C134F07B241D19EB00511B2A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C13DD54D241B32E700248D29 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		C13DD553241CAF9900248D29 /* WKWKCollection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WKWKCollection.storyboard; sourceTree = "<group>"; };
 		C13DD555241CAFAB00248D29 /* TaskList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskList.storyboard; sourceTree = "<group>"; };
@@ -318,6 +332,11 @@
 		C1D531CE241A01D500641D97 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				C134F07B241D19EB00511B2A /* User.swift */,
+				C134F078241D172600511B2A /* Task.swift */,
+				C134F073241D15D700511B2A /* List.swift */,
+				C134F06F241D124A00511B2A /* Material.swift */,
+				C134F071241D137B00511B2A /* Terms.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -587,10 +606,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C134F07C241D19EB00511B2A /* User.swift in Sources */,
 				C1D531BC2419FFEE00641D97 /* HomeViewController.swift in Sources */,
+				C134F070241D124A00511B2A /* Material.swift in Sources */,
 				C13DD564241CB95000248D29 /* R.generated.swift in Sources */,
 				C13DD56F241CC59E00248D29 /* UIView+Gradient.swift in Sources */,
+				C134F079241D172600511B2A /* Task.swift in Sources */,
 				C1D531B82419FFEE00641D97 /* AppDelegate.swift in Sources */,
+				C134F072241D137B00511B2A /* Terms.swift in Sources */,
+				C134F074241D15D700511B2A /* List.swift in Sources */,
 				C13DD55A241CAFD200248D29 /* WKWKCollectionViewController.swift in Sources */,
 				C1D531BA2419FFEE00641D97 /* SceneDelegate.swift in Sources */,
 				C13DD55D241CB09A00248D29 /* WalkThroughViewController.swift in Sources */,
@@ -602,6 +626,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C134F07A241D17EF00511B2A /* Task.swift in Sources */,
+				C134F075241D161200511B2A /* Material.swift in Sources */,
+				C134F076241D161200511B2A /* Terms.swift in Sources */,
+				C134F077241D161200511B2A /* List.swift in Sources */,
 				C13DD570241CC6AE00248D29 /* UIView+Gradient.swift in Sources */,
 				C13DD566241CBB2B00248D29 /* WalkThroughViewController.swift in Sources */,
 				C13DD567241CBB2B00248D29 /* WKWKCollectionViewController.swift in Sources */,
