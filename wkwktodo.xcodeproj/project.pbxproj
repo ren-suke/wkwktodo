@@ -7,8 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C13DD54A241A4C3F00248D29 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1584C18241A48C50038EA38 /* R.generated.swift */; };
 		C13DD54E241B32E700248D29 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C13DD54D241B32E700248D29 /* Settings.bundle */; };
+		C13DD554241CAF9900248D29 /* WKWKCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD553241CAF9900248D29 /* WKWKCollection.storyboard */; };
+		C13DD556241CAFAB00248D29 /* TaskList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD555241CAFAB00248D29 /* TaskList.storyboard */; };
+		C13DD558241CAFC400248D29 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD557241CAFC400248D29 /* TaskListViewController.swift */; };
+		C13DD55A241CAFD200248D29 /* WKWKCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD559241CAFD200248D29 /* WKWKCollectionViewController.swift */; };
+		C13DD55D241CB09A00248D29 /* WalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD55C241CB09A00248D29 /* WalkThroughViewController.swift */; };
+		C13DD55F241CB0A100248D29 /* WalkThrough.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD55E241CB0A100248D29 /* WalkThrough.storyboard */; };
+		C13DD562241CB72800248D29 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13DD561241CB72800248D29 /* Color.xcassets */; };
+		C13DD564241CB95000248D29 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD563241CB95000248D29 /* R.generated.swift */; };
+		C13DD565241CBAD800248D29 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13DD561241CB72800248D29 /* Color.xcassets */; };
+		C13DD566241CBB2B00248D29 /* WalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD55C241CB09A00248D29 /* WalkThroughViewController.swift */; };
+		C13DD567241CBB2B00248D29 /* WKWKCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD559241CAFD200248D29 /* WKWKCollectionViewController.swift */; };
+		C13DD568241CBB2B00248D29 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD557241CAFC400248D29 /* TaskListViewController.swift */; };
+		C13DD569241CBB2B00248D29 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD563241CB95000248D29 /* R.generated.swift */; };
+		C13DD56A241CC00800248D29 /* WalkThrough.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD55E241CB0A100248D29 /* WalkThrough.storyboard */; };
+		C13DD56B241CC00800248D29 /* WKWKCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD553241CAF9900248D29 /* WKWKCollection.storyboard */; };
+		C13DD56C241CC00800248D29 /* TaskList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD555241CAFAB00248D29 /* TaskList.storyboard */; };
+		C13DD56D241CC01100248D29 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C13DD54D241B32E700248D29 /* Settings.bundle */; };
+		C13DD56F241CC59E00248D29 /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD56E241CC59E00248D29 /* UIView+Gradient.swift */; };
+		C13DD570241CC6AE00248D29 /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD56E241CC59E00248D29 /* UIView+Gradient.swift */; };
 		C1584BE8241A3C1B0038EA38 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1584BDF241A3C1B0038EA38 /* RxRelay.framework */; };
 		C1584BE9241A3C1B0038EA38 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1584BDF241A3C1B0038EA38 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1584BEA241A3C1B0038EA38 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1584BE0241A3C1B0038EA38 /* Realm.framework */; };
@@ -45,20 +63,18 @@
 		C1584C0B241A41C70038EA38 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1584BDF241A3C1B0038EA38 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1584C0C241A41C70038EA38 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1584BE1241A3C1B0038EA38 /* RxSwift.framework */; };
 		C1584C0D241A41C70038EA38 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1584BE1241A3C1B0038EA38 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C1584C19241A48C50038EA38 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1584C18241A48C50038EA38 /* R.generated.swift */; };
-		C1584C1B241A492C0038EA38 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1584C1A241A492C0038EA38 /* List.storyboard */; };
 		C1D531B82419FFEE00641D97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D531B72419FFEE00641D97 /* AppDelegate.swift */; };
 		C1D531BA2419FFEE00641D97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D531B92419FFEE00641D97 /* SceneDelegate.swift */; };
-		C1D531BC2419FFEE00641D97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D531BB2419FFEE00641D97 /* ViewController.swift */; };
-		C1D531BF2419FFEE00641D97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D531BD2419FFEE00641D97 /* Main.storyboard */; };
+		C1D531BC2419FFEE00641D97 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D531BB2419FFEE00641D97 /* HomeViewController.swift */; };
+		C1D531BF2419FFEE00641D97 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D531BD2419FFEE00641D97 /* Home.storyboard */; };
 		C1D531C12419FFEF00641D97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D531C02419FFEF00641D97 /* Assets.xcassets */; };
 		C1D531C42419FFEF00641D97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D531C22419FFEF00641D97 /* LaunchScreen.storyboard */; };
-		C1D531D3241A0D1F00641D97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D531BB2419FFEE00641D97 /* ViewController.swift */; };
+		C1D531D3241A0D1F00641D97 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D531BB2419FFEE00641D97 /* HomeViewController.swift */; };
 		C1D531D4241A0D1F00641D97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D531B72419FFEE00641D97 /* AppDelegate.swift */; };
 		C1D531D5241A0D1F00641D97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D531B92419FFEE00641D97 /* SceneDelegate.swift */; };
 		C1D531D8241A0D1F00641D97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D531C22419FFEF00641D97 /* LaunchScreen.storyboard */; };
 		C1D531D9241A0D1F00641D97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D531C02419FFEF00641D97 /* Assets.xcassets */; };
-		C1D531DA241A0D1F00641D97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D531BD2419FFEE00641D97 /* Main.storyboard */; };
+		C1D531DA241A0D1F00641D97 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D531BD2419FFEE00641D97 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -104,6 +120,15 @@
 
 /* Begin PBXFileReference section */
 		C13DD54D241B32E700248D29 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		C13DD553241CAF9900248D29 /* WKWKCollection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WKWKCollection.storyboard; sourceTree = "<group>"; };
+		C13DD555241CAFAB00248D29 /* TaskList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskList.storyboard; sourceTree = "<group>"; };
+		C13DD557241CAFC400248D29 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		C13DD559241CAFD200248D29 /* WKWKCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWKCollectionViewController.swift; sourceTree = "<group>"; };
+		C13DD55C241CB09A00248D29 /* WalkThroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughViewController.swift; sourceTree = "<group>"; };
+		C13DD55E241CB0A100248D29 /* WalkThrough.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalkThrough.storyboard; sourceTree = "<group>"; };
+		C13DD561241CB72800248D29 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		C13DD563241CB95000248D29 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		C13DD56E241CC59E00248D29 /* UIView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
 		C1584BDF241A3C1B0038EA38 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		C1584BE0241A3C1B0038EA38 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		C1584BE1241A3C1B0038EA38 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
@@ -115,13 +140,11 @@
 		C1584BE7241A3C1B0038EA38 /* PKHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PKHUD.framework; path = Carthage/Build/iOS/PKHUD.framework; sourceTree = "<group>"; };
 		C1584C0F241A41C70038EA38 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		C1584C10241A41C70038EA38 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
-		C1584C18241A48C50038EA38 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
-		C1584C1A241A492C0038EA38 /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		C1D531B42419FFEE00641D97 /* wkwktodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wkwktodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D531B72419FFEE00641D97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1D531B92419FFEE00641D97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C1D531BB2419FFEE00641D97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C1D531BE2419FFEE00641D97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1D531BB2419FFEE00641D97 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C1D531BE2419FFEE00641D97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		C1D531C02419FFEF00641D97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1D531C32419FFEF00641D97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1D531C52419FFEF00641D97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -165,6 +188,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C13DD550241CAF6100248D29 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C1D531BD2419FFEE00641D97 /* Home.storyboard */,
+				C1D531BB2419FFEE00641D97 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C13DD551241CAF6700248D29 /* TaskList */ = {
+			isa = PBXGroup;
+			children = (
+				C13DD555241CAFAB00248D29 /* TaskList.storyboard */,
+				C13DD557241CAFC400248D29 /* TaskListViewController.swift */,
+			);
+			path = TaskList;
+			sourceTree = "<group>";
+		};
+		C13DD552241CAF6D00248D29 /* WKWKCollection */ = {
+			isa = PBXGroup;
+			children = (
+				C13DD553241CAF9900248D29 /* WKWKCollection.storyboard */,
+				C13DD559241CAFD200248D29 /* WKWKCollectionViewController.swift */,
+			);
+			path = WKWKCollection;
+			sourceTree = "<group>";
+		};
+		C13DD55B241CB08000248D29 /* WalkThrough */ = {
+			isa = PBXGroup;
+			children = (
+				C13DD55E241CB0A100248D29 /* WalkThrough.storyboard */,
+				C13DD55C241CB09A00248D29 /* WalkThroughViewController.swift */,
+			);
+			path = WalkThrough;
+			sourceTree = "<group>";
+		};
+		C13DD560241CB0AE00248D29 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		C1584BDE241A3C1B0038EA38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,8 +292,9 @@
 		C1D531CC241A010200641D97 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C13DD563241CB95000248D29 /* R.generated.swift */,
 				C13DD54D241B32E700248D29 /* Settings.bundle */,
-				C1584C18241A48C50038EA38 /* R.generated.swift */,
+				C13DD561241CB72800248D29 /* Color.xcassets */,
 				C1D531C02419FFEF00641D97 /* Assets.xcassets */,
 				C1D531C22419FFEF00641D97 /* LaunchScreen.storyboard */,
 				C1D531C52419FFEF00641D97 /* Info.plist */,
@@ -239,9 +306,11 @@
 		C1D531CD241A01CF00641D97 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C1D531BB2419FFEE00641D97 /* ViewController.swift */,
-				C1D531BD2419FFEE00641D97 /* Main.storyboard */,
-				C1584C1A241A492C0038EA38 /* List.storyboard */,
+				C13DD55B241CB08000248D29 /* WalkThrough */,
+				C13DD552241CAF6D00248D29 /* WKWKCollection */,
+				C13DD551241CAF6700248D29 /* TaskList */,
+				C13DD550241CAF6100248D29 /* Home */,
+				C13DD560241CB0AE00248D29 /* Components */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,6 +332,7 @@
 		C1D531D0241A0B4400641D97 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C13DD56E241CC59E00248D29 /* UIView+Gradient.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -351,11 +421,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13DD556241CAFAB00248D29 /* TaskList.storyboard in Resources */,
+				C13DD562241CB72800248D29 /* Color.xcassets in Resources */,
 				C1D531C42419FFEF00641D97 /* LaunchScreen.storyboard in Resources */,
+				C13DD55F241CB0A100248D29 /* WalkThrough.storyboard in Resources */,
 				C1D531C12419FFEF00641D97 /* Assets.xcassets in Resources */,
+				C13DD554241CAF9900248D29 /* WKWKCollection.storyboard in Resources */,
 				C13DD54E241B32E700248D29 /* Settings.bundle in Resources */,
-				C1584C1B241A492C0038EA38 /* List.storyboard in Resources */,
-				C1D531BF2419FFEE00641D97 /* Main.storyboard in Resources */,
+				C1D531BF2419FFEE00641D97 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,9 +436,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13DD56D241CC01100248D29 /* Settings.bundle in Resources */,
+				C13DD56A241CC00800248D29 /* WalkThrough.storyboard in Resources */,
+				C13DD56B241CC00800248D29 /* WKWKCollection.storyboard in Resources */,
+				C13DD56C241CC00800248D29 /* TaskList.storyboard in Resources */,
+				C13DD565241CBAD800248D29 /* Color.xcassets in Resources */,
 				C1D531D8241A0D1F00641D97 /* LaunchScreen.storyboard in Resources */,
 				C1D531D9241A0D1F00641D97 /* Assets.xcassets in Resources */,
-				C1D531DA241A0D1F00641D97 /* Main.storyboard in Resources */,
+				C1D531DA241A0D1F00641D97 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,10 +587,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1D531BC2419FFEE00641D97 /* ViewController.swift in Sources */,
+				C1D531BC2419FFEE00641D97 /* HomeViewController.swift in Sources */,
+				C13DD564241CB95000248D29 /* R.generated.swift in Sources */,
+				C13DD56F241CC59E00248D29 /* UIView+Gradient.swift in Sources */,
 				C1D531B82419FFEE00641D97 /* AppDelegate.swift in Sources */,
+				C13DD55A241CAFD200248D29 /* WKWKCollectionViewController.swift in Sources */,
 				C1D531BA2419FFEE00641D97 /* SceneDelegate.swift in Sources */,
-				C1584C19241A48C50038EA38 /* R.generated.swift in Sources */,
+				C13DD55D241CB09A00248D29 /* WalkThroughViewController.swift in Sources */,
+				C13DD558241CAFC400248D29 /* TaskListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,8 +602,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C13DD54A241A4C3F00248D29 /* R.generated.swift in Sources */,
-				C1D531D3241A0D1F00641D97 /* ViewController.swift in Sources */,
+				C13DD570241CC6AE00248D29 /* UIView+Gradient.swift in Sources */,
+				C13DD566241CBB2B00248D29 /* WalkThroughViewController.swift in Sources */,
+				C13DD567241CBB2B00248D29 /* WKWKCollectionViewController.swift in Sources */,
+				C13DD568241CBB2B00248D29 /* TaskListViewController.swift in Sources */,
+				C13DD569241CBB2B00248D29 /* R.generated.swift in Sources */,
+				C1D531D3241A0D1F00641D97 /* HomeViewController.swift in Sources */,
 				C1D531D4241A0D1F00641D97 /* AppDelegate.swift in Sources */,
 				C1D531D5241A0D1F00641D97 /* SceneDelegate.swift in Sources */,
 			);
@@ -530,12 +616,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C1D531BD2419FFEE00641D97 /* Main.storyboard */ = {
+		C1D531BD2419FFEE00641D97 /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C1D531BE2419FFEE00641D97 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 		C1D531C22419FFEF00641D97 /* LaunchScreen.storyboard */ = {
@@ -719,7 +805,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "wkwktodo/Resources/dev-Info.plist";
+				INFOPLIST_FILE = wkwktodo/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -742,7 +828,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "wkwktodo/Resources/dev-Info.plist";
+				INFOPLIST_FILE = wkwktodo/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
