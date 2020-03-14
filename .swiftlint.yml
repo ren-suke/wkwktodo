@@ -3,6 +3,8 @@ included:
 excluded:
   - wkwktodo/App/AppDelegate.swift
   - wkwktodo/App/SceneDelegate.swift
+disabled_rules:
+  - trailing_whitespace
 analyzer_rules:
   - unused_declaration
   - unused_import
@@ -48,19 +50,15 @@ opt_in_rules:
   - pattern_matching_keywords
   - private_action
   - private_outlet
-  - prohibited_interface_builder
   - prohibited_super_call
   - quick_discouraged_call
   - quick_discouraged_focused_test
   - quick_discouraged_pending_test
   - reduce_into
   - redundant_nil_coalescing
-  - redundant_type_annotation
   - single_test_class
   - sorted_first_last
-  - sorted_imports
   - static_operator
-  - strong_iboutlet
   - toggle_bool
   - unavailable_function
   - unneeded_parentheses_in_closure_argument
@@ -68,6 +66,5 @@ opt_in_rules:
   - untyped_error_in_catch
   - vertical_parameter_alignment_on_call
   - vertical_whitespace_closing_braces
-  - vertical_whitespace_opening_braces
   - xct_specific_matcher
   - yoda_condition
