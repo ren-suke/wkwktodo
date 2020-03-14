@@ -22,7 +22,7 @@ brew install swiftlint
 ```
 *LicensePlist*
 ```
-brew install license-plist
+brew install mono0926/license-plist/license-plist
 ```
 
 ## Setup
