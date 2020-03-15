@@ -84,6 +84,27 @@
 		C1D531D8241A0D1F00641D97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D531C22419FFEF00641D97 /* LaunchScreen.storyboard */; };
 		C1D531D9241A0D1F00641D97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D531C02419FFEF00641D97 /* Assets.xcassets */; };
 		C1D531DA241A0D1F00641D97 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D531BD2419FFEE00641D97 /* Home.storyboard */; };
+		C1DDA56A241E5D5700F07171 /* TotalWPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDA569241E5D5700F07171 /* TotalWPView.swift */; };
+		C1DDA56C241E5D6800F07171 /* TotalWPView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1DDA56B241E5D6800F07171 /* TotalWPView.xib */; };
+		C1DDA56E241E5DF800F07171 /* GeneralListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1DDA56D241E5DF800F07171 /* GeneralListView.xib */; };
+		C1DDA570241E5E1600F07171 /* GeneralListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDA56F241E5E1600F07171 /* GeneralListView.swift */; };
+		C1DDA574241E5F7F00F07171 /* Titillium_Web in Resources */ = {isa = PBXBuildFile; fileRef = C1DDA573241E5F7F00F07171 /* Titillium_Web */; };
+		C1DDA575241E5FF600F07171 /* TotalWPView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1DDA56B241E5D6800F07171 /* TotalWPView.xib */; };
+		C1DDA576241E5FF600F07171 /* GeneralListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1DDA56D241E5DF800F07171 /* GeneralListView.xib */; };
+		C1DDA577241E5FF600F07171 /* Titillium_Web in Resources */ = {isa = PBXBuildFile; fileRef = C1DDA573241E5F7F00F07171 /* Titillium_Web */; };
+		C1DDA579241E647100F07171 /* PrimaryColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDA578241E647100F07171 /* PrimaryColorView.swift */; };
+		C1DDA57A241E64FF00F07171 /* TotalWPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDA569241E5D5700F07171 /* TotalWPView.swift */; };
+		C1DDA57B241E64FF00F07171 /* GeneralListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDA56F241E5E1600F07171 /* GeneralListView.swift */; };
+		C1DDA57C241E64FF00F07171 /* PrimaryColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDA578241E647100F07171 /* PrimaryColorView.swift */; };
+		C1DDA57D241E64FF00F07171 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F07B241D19EB00511B2A /* User.swift */; };
+		C1DDA581241E66DD00F07171 /* UIViewController+LargeTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDA580241E66DD00F07171 /* UIViewController+LargeTitle.swift */; };
+		C1DDA582241E672400F07171 /* UIViewController+LargeTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDA580241E66DD00F07171 /* UIViewController+LargeTitle.swift */; };
+		C1DDA585241E6A2500F07171 /* TableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1DDA584241E6A2500F07171 /* TableHeaderView.xib */; };
+		C1DDA588241E6BBF00F07171 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDA586241E6BBF00F07171 /* ListTableViewCell.swift */; };
+		C1DDA589241E6BBF00F07171 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1DDA587241E6BBF00F07171 /* ListTableViewCell.xib */; };
+		C1DDA58A241E6BC800F07171 /* TableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1DDA584241E6A2500F07171 /* TableHeaderView.xib */; };
+		C1DDA58B241E6BC800F07171 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1DDA587241E6BBF00F07171 /* ListTableViewCell.xib */; };
+		C1DDA58C241E6BCE00F07171 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDA586241E6BBF00F07171 /* ListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -164,6 +185,16 @@
 		C1D531C52419FFEF00641D97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1D531DE241A0D1F00641D97 /* wkwktodo_dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wkwktodo_dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D531DF241A0D1F00641D97 /* dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "dev-Info.plist"; path = "/Users/ren_matsushita/Documents/Swift/wkwktodo/dev-Info.plist"; sourceTree = "<absolute>"; };
+		C1DDA569241E5D5700F07171 /* TotalWPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalWPView.swift; sourceTree = "<group>"; };
+		C1DDA56B241E5D6800F07171 /* TotalWPView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalWPView.xib; sourceTree = "<group>"; };
+		C1DDA56D241E5DF800F07171 /* GeneralListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralListView.xib; sourceTree = "<group>"; };
+		C1DDA56F241E5E1600F07171 /* GeneralListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralListView.swift; sourceTree = "<group>"; };
+		C1DDA573241E5F7F00F07171 /* Titillium_Web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Titillium_Web; sourceTree = "<group>"; };
+		C1DDA578241E647100F07171 /* PrimaryColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryColorView.swift; sourceTree = "<group>"; };
+		C1DDA580241E66DD00F07171 /* UIViewController+LargeTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+LargeTitle.swift"; sourceTree = "<group>"; };
+		C1DDA584241E6A2500F07171 /* TableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderView.xib; sourceTree = "<group>"; };
+		C1DDA586241E6BBF00F07171 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		C1DDA587241E6BBF00F07171 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,8 +236,15 @@
 		C13DD550241CAF6100248D29 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				C1D531BD2419FFEE00641D97 /* Home.storyboard */,
 				C1D531BB2419FFEE00641D97 /* HomeViewController.swift */,
+				C1DDA569241E5D5700F07171 /* TotalWPView.swift */,
+				C1DDA56F241E5E1600F07171 /* GeneralListView.swift */,
+				C1D531BD2419FFEE00641D97 /* Home.storyboard */,
+				C1DDA56B241E5D6800F07171 /* TotalWPView.xib */,
+				C1DDA56D241E5DF800F07171 /* GeneralListView.xib */,
+				C1DDA584241E6A2500F07171 /* TableHeaderView.xib */,
+				C1DDA586241E6BBF00F07171 /* ListTableViewCell.swift */,
+				C1DDA587241E6BBF00F07171 /* ListTableViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -241,6 +279,7 @@
 		C13DD560241CB0AE00248D29 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C1DDA578241E647100F07171 /* PrimaryColorView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -308,6 +347,7 @@
 			children = (
 				C13DD563241CB95000248D29 /* R.generated.swift */,
 				C13DD54D241B32E700248D29 /* Settings.bundle */,
+				C1DDA573241E5F7F00F07171 /* Titillium_Web */,
 				C13DD561241CB72800248D29 /* Color.xcassets */,
 				C1D531C02419FFEF00641D97 /* Assets.xcassets */,
 				C1D531C22419FFEF00641D97 /* LaunchScreen.storyboard */,
@@ -352,6 +392,7 @@
 			isa = PBXGroup;
 			children = (
 				C13DD56E241CC59E00248D29 /* UIView+Gradient.swift */,
+				C1DDA580241E66DD00F07171 /* UIViewController+LargeTitle.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -443,9 +484,14 @@
 				C13DD556241CAFAB00248D29 /* TaskList.storyboard in Resources */,
 				C13DD562241CB72800248D29 /* Color.xcassets in Resources */,
 				C1D531C42419FFEF00641D97 /* LaunchScreen.storyboard in Resources */,
+				C1DDA56C241E5D6800F07171 /* TotalWPView.xib in Resources */,
+				C1DDA585241E6A2500F07171 /* TableHeaderView.xib in Resources */,
 				C13DD55F241CB0A100248D29 /* WalkThrough.storyboard in Resources */,
+				C1DDA56E241E5DF800F07171 /* GeneralListView.xib in Resources */,
 				C1D531C12419FFEF00641D97 /* Assets.xcassets in Resources */,
 				C13DD554241CAF9900248D29 /* WKWKCollection.storyboard in Resources */,
+				C1DDA574241E5F7F00F07171 /* Titillium_Web in Resources */,
+				C1DDA589241E6BBF00F07171 /* ListTableViewCell.xib in Resources */,
 				C13DD54E241B32E700248D29 /* Settings.bundle in Resources */,
 				C1D531BF2419FFEE00641D97 /* Home.storyboard in Resources */,
 			);
@@ -455,6 +501,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1DDA58A241E6BC800F07171 /* TableHeaderView.xib in Resources */,
+				C1DDA58B241E6BC800F07171 /* ListTableViewCell.xib in Resources */,
+				C1DDA575241E5FF600F07171 /* TotalWPView.xib in Resources */,
+				C1DDA576241E5FF600F07171 /* GeneralListView.xib in Resources */,
+				C1DDA577241E5FF600F07171 /* Titillium_Web in Resources */,
 				C13DD56D241CC01100248D29 /* Settings.bundle in Resources */,
 				C13DD56A241CC00800248D29 /* WalkThrough.storyboard in Resources */,
 				C13DD56B241CC00800248D29 /* WKWKCollection.storyboard in Resources */,
@@ -606,19 +657,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1DDA56A241E5D5700F07171 /* TotalWPView.swift in Sources */,
 				C134F07C241D19EB00511B2A /* User.swift in Sources */,
 				C1D531BC2419FFEE00641D97 /* HomeViewController.swift in Sources */,
 				C134F070241D124A00511B2A /* Material.swift in Sources */,
 				C13DD564241CB95000248D29 /* R.generated.swift in Sources */,
 				C13DD56F241CC59E00248D29 /* UIView+Gradient.swift in Sources */,
+				C1DDA581241E66DD00F07171 /* UIViewController+LargeTitle.swift in Sources */,
+				C1DDA570241E5E1600F07171 /* GeneralListView.swift in Sources */,
 				C134F079241D172600511B2A /* Task.swift in Sources */,
 				C1D531B82419FFEE00641D97 /* AppDelegate.swift in Sources */,
+				C1DDA588241E6BBF00F07171 /* ListTableViewCell.swift in Sources */,
 				C134F072241D137B00511B2A /* Terms.swift in Sources */,
 				C134F074241D15D700511B2A /* List.swift in Sources */,
 				C13DD55A241CAFD200248D29 /* WKWKCollectionViewController.swift in Sources */,
 				C1D531BA2419FFEE00641D97 /* SceneDelegate.swift in Sources */,
 				C13DD55D241CB09A00248D29 /* WalkThroughViewController.swift in Sources */,
 				C13DD558241CAFC400248D29 /* TaskListViewController.swift in Sources */,
+				C1DDA579241E647100F07171 /* PrimaryColorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +682,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1DDA58C241E6BCE00F07171 /* ListTableViewCell.swift in Sources */,
+				C1DDA582241E672400F07171 /* UIViewController+LargeTitle.swift in Sources */,
+				C1DDA57A241E64FF00F07171 /* TotalWPView.swift in Sources */,
+				C1DDA57B241E64FF00F07171 /* GeneralListView.swift in Sources */,
+				C1DDA57C241E64FF00F07171 /* PrimaryColorView.swift in Sources */,
+				C1DDA57D241E64FF00F07171 /* User.swift in Sources */,
 				C134F07A241D17EF00511B2A /* Task.swift in Sources */,
 				C134F075241D161200511B2A /* Material.swift in Sources */,
 				C134F076241D161200511B2A /* Terms.swift in Sources */,

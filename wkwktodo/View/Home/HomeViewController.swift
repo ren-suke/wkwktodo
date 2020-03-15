@@ -22,7 +22,7 @@ class HomeViewController: UIViewController {
         target: self,
         action: nil
     )
-    @IBOutlet private weak var collectionView: UICollectionView!
+    @IBOutlet private weak var tableView: UITableView!
     
     private let disposeBag: DisposeBag = DisposeBag()
 
@@ -34,11 +34,7 @@ class HomeViewController: UIViewController {
     
     private func configure() {
         navigationItem.title = "Home"
-        navigationItem.largeTitleDisplayMode = .always
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.largeTitleTextAttributes = [
-            .font: UIFont.boldSystemFont(ofSize: 32)
-        ]
+        largeTitle()
         navigationItem.leftBarButtonItem = collectionBarButtonItem
         navigationItem.rightBarButtonItem = editBarButtonItem
         view.makeGradation()
