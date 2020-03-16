@@ -1,29 +1,30 @@
 //
-//  PrimaryColorView.swift
+//  CardView.swift
 //  wkwktodo
 //
-//  Created by Ren Matsushita on 2020/03/15.
+//  Created by Ren Matsushita on 2020/03/16.
 //  Copyright © 2020 Ren Matsushita. All rights reserved.
 //
 
 import UIKit
 
 @IBDesignable
-class PrimaryColorView: UIView {
+class CardView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        print("asoinfao")
         configure()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         
+        print("initialize")
         configure()
     }
     
     private func configure() {
-        layer.cornerRadius = frame.height / 2
+        layer.cornerRadius = 12
         clipsToBounds = true
     }
 }

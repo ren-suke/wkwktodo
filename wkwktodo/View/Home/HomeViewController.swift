@@ -12,11 +12,7 @@ import RxCocoa
 import PKHUD
 
 class HomeViewController: UIViewController {
-    private var collectionBarButtonItem: UIBarButtonItem = UIBarButtonItem(
-        barButtonSystemItem: .search,
-        target: self,
-        action: nil
-    )
+    private var collectionBarButtonItem: UIBarButtonItem = UIBarButtonItem()
     private var editBarButtonItem: UIBarButtonItem = UIBarButtonItem(
         barButtonSystemItem: .edit,
         target: self,
@@ -32,11 +28,55 @@ class HomeViewController: UIViewController {
         configure()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        configureTableView()
+    }
+    
     private func configure() {
         navigationItem.title = "Home"
         largeTitle()
+        collectionBarButtonItem.tintColor = R.color.dark()
+        collectionBarButtonItem.setBackgroundImage(R.image.menu(), for: .normal, barMetrics: .default)
+        collectionBarButtonItem.imageInsets = UIEdgeInsets(top: 15, left: 5, bottom: 0, right: 0)
         navigationItem.leftBarButtonItem = collectionBarButtonItem
+        editBarButtonItem.tintColor = R.color.dark()
         navigationItem.rightBarButtonItem = editBarButtonItem
         view.makeGradation()
+    }
+    
+    private func configureTableView() {
+        let tableHeaderView = R.nib.tableHeaderView(owner: tableView)!
+        var frame = tableHeaderView.frame
+        frame.size.height = frame.height
+        tableHeaderView.frame = frame
+        tableView.tableHeaderView = tableHeaderView
+        tableView.tableHeaderView = tableHeaderView
+        tableView.tableFooterView = UIView(frame: .zero)
+        tableView.dataSource = self
+        tableView.rowHeight = 60
+    }
+}
+
+extension HomeViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = R.nib.listTableViewCell(owner: tableView)!
+        var cellType: CellType = .body
+        switch indexPath.row {
+        case 0:
+            cellType = .first
+        case 9:
+            cellType = .last
+        default:
+            cellType = .body
+        }
+        
+        cell.configure(cellType, primaryColor: .red, listTitle: "AAA \(indexPath.row)", listProgress: "111/222")
+        return cell
     }
 }

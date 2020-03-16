@@ -14,6 +14,6 @@ extension UIView {
         gradientLayer.frame = self.frame
         let colors: [CGColor] = [R.color.gradationTop()!.cgColor, R.color.gradationBottom()!.cgColor]
         gradientLayer.colors = colors
-        self.layer.addSublayer(gradientLayer)
+        self.layer.insertSublayer(gradientLayer, at: 0)
     }
 }

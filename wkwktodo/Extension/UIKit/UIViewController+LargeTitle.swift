@@ -13,7 +13,7 @@ extension UIViewController {
         navigationItem.largeTitleDisplayMode = .always
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.largeTitleTextAttributes = [
-            .font: UIFont.boldSystemFont(ofSize: 32)
+            .font: UIFont.boldSystemFont(ofSize: 40)
         ]
     }
 }
