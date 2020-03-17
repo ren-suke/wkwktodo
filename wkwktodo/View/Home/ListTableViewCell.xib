@@ -22,48 +22,59 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTableViewCell" rowHeight="60" id="KGk-i7-Jjw" customClass="ListTableViewCell" customModule="wkwktodo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="326" height="60"/>
             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="ListTableViewCell" customModule="wkwktodo" customModuleProvider="target">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="326" height="60"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nMS-Ff-Dg5">
-                        <rect key="frame" x="20" y="15" width="286" height="30"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pZ0-3f-zUj">
+                        <rect key="frame" x="15" y="0.0" width="296" height="60"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLq-Pd-a8G" customClass="PrimaryColorView" customModule="wkwktodo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                                <color key="backgroundColor" name="Rose"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="R3f-pl-bBC"/>
-                                    <constraint firstAttribute="width" secondItem="hLq-Pd-a8G" secondAttribute="height" multiplier="1:1" id="vEL-2i-SvJ"/>
-                                </constraints>
-                            </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="B0t-wU-7Le">
-                                <rect key="frame" x="38" y="0.0" width="248" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JFK-1w-nuJ">
+                                <rect key="frame" x="15" y="15" width="266" height="30"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="AAAAAAAAAA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqe-DR-opY">
-                                        <rect key="frame" x="0.0" y="0.0" width="198.5" height="30"/>
-                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSs-jB-Nms">
-                                        <rect key="frame" x="198.5" y="0.0" width="49.5" height="30"/>
-                                        <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="16"/>
-                                        <color key="textColor" name="Gray"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLq-Pd-a8G" customClass="PrimaryColorView" customModule="wkwktodo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" name="Rose"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="R3f-pl-bBC"/>
+                                            <constraint firstAttribute="width" secondItem="hLq-Pd-a8G" secondAttribute="height" multiplier="1:1" id="vEL-2i-SvJ"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="B0t-wU-7Le">
+                                        <rect key="frame" x="40" y="0.0" width="226" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="AAAAAAAAAA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqe-DR-opY">
+                                                <rect key="frame" x="0.0" y="0.0" width="181" height="30"/>
+                                                <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSs-jB-Nms">
+                                                <rect key="frame" x="181" y="0.0" width="45" height="30"/>
+                                                <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="16"/>
+                                                <color key="textColor" name="Gray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </stackView>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JFK-1w-nuJ" secondAttribute="trailing" constant="15" id="Aoj-Qy-p4e"/>
+                            <constraint firstItem="JFK-1w-nuJ" firstAttribute="top" secondItem="pZ0-3f-zUj" secondAttribute="top" constant="15" id="EQn-QH-6N9"/>
+                            <constraint firstAttribute="bottom" secondItem="JFK-1w-nuJ" secondAttribute="bottom" constant="15" id="aUG-LS-YEA"/>
+                            <constraint firstItem="JFK-1w-nuJ" firstAttribute="leading" secondItem="pZ0-3f-zUj" secondAttribute="leading" constant="15" id="kah-30-4g0"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="nMS-Ff-Dg5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="DMf-37-LOv"/>
-                    <constraint firstAttribute="trailing" secondItem="nMS-Ff-Dg5" secondAttribute="trailing" constant="20" id="ade-LC-Vff"/>
-                    <constraint firstAttribute="bottom" secondItem="nMS-Ff-Dg5" secondAttribute="bottom" constant="15" id="rOv-a4-lV1"/>
-                    <constraint firstItem="nMS-Ff-Dg5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="uw5-2p-4cK"/>
+                    <constraint firstAttribute="trailing" secondItem="pZ0-3f-zUj" secondAttribute="trailing" constant="15" id="4M2-Xv-L1n"/>
+                    <constraint firstAttribute="bottom" secondItem="pZ0-3f-zUj" secondAttribute="bottom" id="MM9-pQ-Dfs"/>
+                    <constraint firstItem="pZ0-3f-zUj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="k6T-bn-8F3"/>
+                    <constraint firstItem="pZ0-3f-zUj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="sSc-iX-4Fq"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -72,7 +83,7 @@
             <connections>
                 <outlet property="listProgressLabel" destination="KSs-jB-Nms" id="JvG-Hh-7sN"/>
                 <outlet property="listTitleLabel" destination="kqe-DR-opY" id="avo-aJ-uvR"/>
-                <outlet property="paddingView" destination="nMS-Ff-Dg5" id="O2S-Px-U5H"/>
+                <outlet property="paddingView" destination="pZ0-3f-zUj" id="mqq-Ud-5oo"/>
                 <outlet property="primaryColorView" destination="hLq-Pd-a8G" id="HNN-8d-Whi"/>
             </connections>
             <point key="canvasLocation" x="-2772.4637681159425" y="-156.02678571428569"/>

@@ -15,7 +15,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         UINavigationBar.appearance().tintColor = R.color.dark()
+        if #available(iOS 13, *) {
+        } else {
+            let window = UIWindow(frame: UIScreen.main.bounds)
+            self.window = window
+            window.makeKeyAndVisible()
+            window.rootViewController = selectRootViewController()
+        }
         return true
+        return true
+    }
+    
+    private func selectRootViewController() -> UIViewController {
+        return R.storyboard.home.home()!.make()
     }
 
     // MARK: UISceneSession Lifecycle

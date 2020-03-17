@@ -9,7 +9,7 @@
 import UIKit
 
 class ListTableViewCell: UITableViewCell {
-    @IBOutlet private weak var paddingView: UIStackView!
+    @IBOutlet private weak var paddingView: UIView!
     @IBOutlet private weak var primaryColorView: PrimaryColorView!
     @IBOutlet private weak var listTitleLabel: UILabel!
     @IBOutlet private weak var listProgressLabel: UILabel!
@@ -17,7 +17,7 @@ class ListTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        layoutIfNeeded()
+        paddingView.clipsToBounds = true
     }
 
     func configure(_ cellType: CellType, primaryColor: UIColor, listTitle: String, listProgress: String) {

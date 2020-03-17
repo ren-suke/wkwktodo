@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C12A72932420D89500762C35 /* WallpaperMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12A72922420D89500762C35 /* WallpaperMaterialViewController.swift */; };
+		C12A72952420D8A500762C35 /* VoiceMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12A72942420D8A500762C35 /* VoiceMaterialViewController.swift */; };
+		C12A72972420D8B300762C35 /* MovieMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12A72962420D8B300762C35 /* MovieMaterialViewController.swift */; };
+		C12A72992420DA0800762C35 /* UIViewController+Make.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12A72982420DA0800762C35 /* UIViewController+Make.swift */; };
+		C12A729A2420DA9200762C35 /* WallpaperMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12A72922420D89500762C35 /* WallpaperMaterialViewController.swift */; };
+		C12A729B2420DA9200762C35 /* VoiceMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12A72942420D8A500762C35 /* VoiceMaterialViewController.swift */; };
+		C12A729C2420DA9200762C35 /* MovieMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12A72962420D8B300762C35 /* MovieMaterialViewController.swift */; };
+		C12A729D2420DA9200762C35 /* UIViewController+Make.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12A72982420DA0800762C35 /* UIViewController+Make.swift */; };
+		C12A72A22420FD0F00762C35 /* MaterialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12A72A02420FD0F00762C35 /* MaterialCollectionViewCell.swift */; };
+		C12A72A32420FD0F00762C35 /* MaterialCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C12A72A12420FD0F00762C35 /* MaterialCollectionViewCell.xib */; };
+		C12A72A72420FF3B00762C35 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12A72A62420FF3B00762C35 /* Image.xcassets */; };
+		C12A72A82421008200762C35 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12A72A62420FF3B00762C35 /* Image.xcassets */; };
 		C12E0B1D241F7FD70099B081 /* HomeTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E0B1C241F7FD70099B081 /* HomeTableHeaderView.swift */; };
 		C12E0B1E241F7FDF0099B081 /* HomeTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E0B1C241F7FD70099B081 /* HomeTableHeaderView.swift */; };
 		C134F070241D124A00511B2A /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F06F241D124A00511B2A /* Material.swift */; };
@@ -19,21 +31,21 @@
 		C134F07A241D17EF00511B2A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F078241D172600511B2A /* Task.swift */; };
 		C134F07C241D19EB00511B2A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F07B241D19EB00511B2A /* User.swift */; };
 		C13DD54E241B32E700248D29 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C13DD54D241B32E700248D29 /* Settings.bundle */; };
-		C13DD554241CAF9900248D29 /* WKWKCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD553241CAF9900248D29 /* WKWKCollection.storyboard */; };
+		C13DD554241CAF9900248D29 /* Materials.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD553241CAF9900248D29 /* Materials.storyboard */; };
 		C13DD556241CAFAB00248D29 /* TaskList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD555241CAFAB00248D29 /* TaskList.storyboard */; };
 		C13DD558241CAFC400248D29 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD557241CAFC400248D29 /* TaskListViewController.swift */; };
-		C13DD55A241CAFD200248D29 /* WKWKCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD559241CAFD200248D29 /* WKWKCollectionViewController.swift */; };
+		C13DD55A241CAFD200248D29 /* MaterialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD559241CAFD200248D29 /* MaterialsViewController.swift */; };
 		C13DD55D241CB09A00248D29 /* WalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD55C241CB09A00248D29 /* WalkThroughViewController.swift */; };
 		C13DD55F241CB0A100248D29 /* WalkThrough.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD55E241CB0A100248D29 /* WalkThrough.storyboard */; };
 		C13DD562241CB72800248D29 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13DD561241CB72800248D29 /* Color.xcassets */; };
 		C13DD564241CB95000248D29 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD563241CB95000248D29 /* R.generated.swift */; };
 		C13DD565241CBAD800248D29 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13DD561241CB72800248D29 /* Color.xcassets */; };
 		C13DD566241CBB2B00248D29 /* WalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD55C241CB09A00248D29 /* WalkThroughViewController.swift */; };
-		C13DD567241CBB2B00248D29 /* WKWKCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD559241CAFD200248D29 /* WKWKCollectionViewController.swift */; };
+		C13DD567241CBB2B00248D29 /* MaterialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD559241CAFD200248D29 /* MaterialsViewController.swift */; };
 		C13DD568241CBB2B00248D29 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD557241CAFC400248D29 /* TaskListViewController.swift */; };
 		C13DD569241CBB2B00248D29 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD563241CB95000248D29 /* R.generated.swift */; };
 		C13DD56A241CC00800248D29 /* WalkThrough.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD55E241CB0A100248D29 /* WalkThrough.storyboard */; };
-		C13DD56B241CC00800248D29 /* WKWKCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD553241CAF9900248D29 /* WKWKCollection.storyboard */; };
+		C13DD56B241CC00800248D29 /* Materials.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD553241CAF9900248D29 /* Materials.storyboard */; };
 		C13DD56C241CC00800248D29 /* TaskList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD555241CAFAB00248D29 /* TaskList.storyboard */; };
 		C13DD56D241CC01100248D29 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C13DD54D241B32E700248D29 /* Settings.bundle */; };
 		C13DD56F241CC59E00248D29 /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13DD56E241CC59E00248D29 /* UIView+Gradient.swift */; };
@@ -145,6 +157,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C12A72922420D89500762C35 /* WallpaperMaterialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperMaterialViewController.swift; sourceTree = "<group>"; };
+		C12A72942420D8A500762C35 /* VoiceMaterialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMaterialViewController.swift; sourceTree = "<group>"; };
+		C12A72962420D8B300762C35 /* MovieMaterialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMaterialViewController.swift; sourceTree = "<group>"; };
+		C12A72982420DA0800762C35 /* UIViewController+Make.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Make.swift"; sourceTree = "<group>"; };
+		C12A72A02420FD0F00762C35 /* MaterialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCollectionViewCell.swift; sourceTree = "<group>"; };
+		C12A72A12420FD0F00762C35 /* MaterialCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaterialCollectionViewCell.xib; sourceTree = "<group>"; };
+		C12A72A62420FF3B00762C35 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		C12E0B1C241F7FD70099B081 /* HomeTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableHeaderView.swift; sourceTree = "<group>"; };
 		C134F06F241D124A00511B2A /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
 		C134F071241D137B00511B2A /* Terms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terms.swift; sourceTree = "<group>"; };
@@ -152,10 +171,10 @@
 		C134F078241D172600511B2A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		C134F07B241D19EB00511B2A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C13DD54D241B32E700248D29 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		C13DD553241CAF9900248D29 /* WKWKCollection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WKWKCollection.storyboard; sourceTree = "<group>"; };
+		C13DD553241CAF9900248D29 /* Materials.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Materials.storyboard; sourceTree = "<group>"; };
 		C13DD555241CAFAB00248D29 /* TaskList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskList.storyboard; sourceTree = "<group>"; };
 		C13DD557241CAFC400248D29 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
-		C13DD559241CAFD200248D29 /* WKWKCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWKCollectionViewController.swift; sourceTree = "<group>"; };
+		C13DD559241CAFD200248D29 /* MaterialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsViewController.swift; sourceTree = "<group>"; };
 		C13DD55C241CB09A00248D29 /* WalkThroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughViewController.swift; sourceTree = "<group>"; };
 		C13DD55E241CB0A100248D29 /* WalkThrough.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalkThrough.storyboard; sourceTree = "<group>"; };
 		C13DD561241CB72800248D29 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
@@ -227,11 +246,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C12A728E2420D7A500762C35 /* ShowMaterial */ = {
+			isa = PBXGroup;
+			children = (
+				C12A72912420D7CF00762C35 /* WallpaperMaterial */,
+				C12A72902420D7C600762C35 /* VoiceMaterial */,
+				C12A728F2420D7B200762C35 /* MovieMaterial */,
+			);
+			path = ShowMaterial;
+			sourceTree = "<group>";
+		};
+		C12A728F2420D7B200762C35 /* MovieMaterial */ = {
+			isa = PBXGroup;
+			children = (
+				C12A72962420D8B300762C35 /* MovieMaterialViewController.swift */,
+			);
+			path = MovieMaterial;
+			sourceTree = "<group>";
+		};
+		C12A72902420D7C600762C35 /* VoiceMaterial */ = {
+			isa = PBXGroup;
+			children = (
+				C12A72942420D8A500762C35 /* VoiceMaterialViewController.swift */,
+			);
+			path = VoiceMaterial;
+			sourceTree = "<group>";
+		};
+		C12A72912420D7CF00762C35 /* WallpaperMaterial */ = {
+			isa = PBXGroup;
+			children = (
+				C12A72922420D89500762C35 /* WallpaperMaterialViewController.swift */,
+			);
+			path = WallpaperMaterial;
+			sourceTree = "<group>";
+		};
 		C12E0B1B241F7FA70099B081 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
 				C1DDA580241E66DD00F07171 /* UIViewController+LargeTitle.swift */,
 				C13DD56E241CC59E00248D29 /* UIView+Gradient.swift */,
+				C12A72982420DA0800762C35 /* UIViewController+Make.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -258,13 +312,16 @@
 			path = TaskList;
 			sourceTree = "<group>";
 		};
-		C13DD552241CAF6D00248D29 /* WKWKCollection */ = {
+		C13DD552241CAF6D00248D29 /* Materials */ = {
 			isa = PBXGroup;
 			children = (
-				C13DD553241CAF9900248D29 /* WKWKCollection.storyboard */,
-				C13DD559241CAFD200248D29 /* WKWKCollectionViewController.swift */,
+				C12A728E2420D7A500762C35 /* ShowMaterial */,
+				C13DD553241CAF9900248D29 /* Materials.storyboard */,
+				C13DD559241CAFD200248D29 /* MaterialsViewController.swift */,
+				C12A72A12420FD0F00762C35 /* MaterialCollectionViewCell.xib */,
+				C12A72A02420FD0F00762C35 /* MaterialCollectionViewCell.swift */,
 			);
-			path = WKWKCollection;
+			path = Materials;
 			sourceTree = "<group>";
 		};
 		C13DD55B241CB08000248D29 /* WalkThrough */ = {
@@ -350,6 +407,7 @@
 				C13DD54D241B32E700248D29 /* Settings.bundle */,
 				C1DDA573241E5F7F00F07171 /* Titillium_Web */,
 				C13DD561241CB72800248D29 /* Color.xcassets */,
+				C12A72A62420FF3B00762C35 /* Image.xcassets */,
 				C1D531C02419FFEF00641D97 /* Assets.xcassets */,
 				C1D531C22419FFEF00641D97 /* LaunchScreen.storyboard */,
 				C1D531C52419FFEF00641D97 /* Info.plist */,
@@ -362,7 +420,7 @@
 			isa = PBXGroup;
 			children = (
 				C13DD55B241CB08000248D29 /* WalkThrough */,
-				C13DD552241CAF6D00248D29 /* WKWKCollection */,
+				C13DD552241CAF6D00248D29 /* Materials */,
 				C13DD551241CAF6700248D29 /* TaskList */,
 				C13DD550241CAF6100248D29 /* Home */,
 				C13DD560241CB0AE00248D29 /* Components */,
@@ -487,9 +545,11 @@
 				C1DDA585241E6A2500F07171 /* TableHeaderView.xib in Resources */,
 				C13DD55F241CB0A100248D29 /* WalkThrough.storyboard in Resources */,
 				C1D531C12419FFEF00641D97 /* Assets.xcassets in Resources */,
-				C13DD554241CAF9900248D29 /* WKWKCollection.storyboard in Resources */,
+				C12A72A72420FF3B00762C35 /* Image.xcassets in Resources */,
+				C13DD554241CAF9900248D29 /* Materials.storyboard in Resources */,
 				C1DDA574241E5F7F00F07171 /* Titillium_Web in Resources */,
 				C1DDA589241E6BBF00F07171 /* ListTableViewCell.xib in Resources */,
+				C12A72A32420FD0F00762C35 /* MaterialCollectionViewCell.xib in Resources */,
 				C13DD54E241B32E700248D29 /* Settings.bundle in Resources */,
 				C1D531BF2419FFEE00641D97 /* Home.storyboard in Resources */,
 			);
@@ -499,12 +559,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C12A72A82421008200762C35 /* Image.xcassets in Resources */,
 				C1DDA58A241E6BC800F07171 /* TableHeaderView.xib in Resources */,
 				C1DDA58B241E6BC800F07171 /* ListTableViewCell.xib in Resources */,
 				C1DDA577241E5FF600F07171 /* Titillium_Web in Resources */,
 				C13DD56D241CC01100248D29 /* Settings.bundle in Resources */,
 				C13DD56A241CC00800248D29 /* WalkThrough.storyboard in Resources */,
-				C13DD56B241CC00800248D29 /* WKWKCollection.storyboard in Resources */,
+				C13DD56B241CC00800248D29 /* Materials.storyboard in Resources */,
 				C13DD56C241CC00800248D29 /* TaskList.storyboard in Resources */,
 				C13DD565241CBAD800248D29 /* Color.xcassets in Resources */,
 				C1D531D8241A0D1F00641D97 /* LaunchScreen.storyboard in Resources */,
@@ -653,6 +714,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C12A72A22420FD0F00762C35 /* MaterialCollectionViewCell.swift in Sources */,
 				C134F07C241D19EB00511B2A /* User.swift in Sources */,
 				C1D531BC2419FFEE00641D97 /* HomeViewController.swift in Sources */,
 				C134F070241D124A00511B2A /* Material.swift in Sources */,
@@ -661,12 +723,16 @@
 				C1DDA581241E66DD00F07171 /* UIViewController+LargeTitle.swift in Sources */,
 				C134F079241D172600511B2A /* Task.swift in Sources */,
 				C1D531B82419FFEE00641D97 /* AppDelegate.swift in Sources */,
+				C12A72992420DA0800762C35 /* UIViewController+Make.swift in Sources */,
+				C12A72932420D89500762C35 /* WallpaperMaterialViewController.swift in Sources */,
+				C12A72972420D8B300762C35 /* MovieMaterialViewController.swift in Sources */,
 				C1DDA588241E6BBF00F07171 /* ListTableViewCell.swift in Sources */,
 				C134F072241D137B00511B2A /* Terms.swift in Sources */,
 				C1E4E288241F8DDA008CB87C /* CardView.swift in Sources */,
+				C12A72952420D8A500762C35 /* VoiceMaterialViewController.swift in Sources */,
 				C134F074241D15D700511B2A /* List.swift in Sources */,
 				C12E0B1D241F7FD70099B081 /* HomeTableHeaderView.swift in Sources */,
-				C13DD55A241CAFD200248D29 /* WKWKCollectionViewController.swift in Sources */,
+				C13DD55A241CAFD200248D29 /* MaterialsViewController.swift in Sources */,
 				C1D531BA2419FFEE00641D97 /* SceneDelegate.swift in Sources */,
 				C13DD55D241CB09A00248D29 /* WalkThroughViewController.swift in Sources */,
 				C13DD558241CAFC400248D29 /* TaskListViewController.swift in Sources */,
@@ -678,6 +744,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C12A729A2420DA9200762C35 /* WallpaperMaterialViewController.swift in Sources */,
+				C12A729B2420DA9200762C35 /* VoiceMaterialViewController.swift in Sources */,
+				C12A729C2420DA9200762C35 /* MovieMaterialViewController.swift in Sources */,
+				C12A729D2420DA9200762C35 /* UIViewController+Make.swift in Sources */,
 				C1E4E289241F8F43008CB87C /* CardView.swift in Sources */,
 				C12E0B1E241F7FDF0099B081 /* HomeTableHeaderView.swift in Sources */,
 				C1DDA58C241E6BCE00F07171 /* ListTableViewCell.swift in Sources */,
@@ -690,7 +760,7 @@
 				C134F077241D161200511B2A /* List.swift in Sources */,
 				C13DD570241CC6AE00248D29 /* UIView+Gradient.swift in Sources */,
 				C13DD566241CBB2B00248D29 /* WalkThroughViewController.swift in Sources */,
-				C13DD567241CBB2B00248D29 /* WKWKCollectionViewController.swift in Sources */,
+				C13DD567241CBB2B00248D29 /* MaterialsViewController.swift in Sources */,
 				C13DD568241CBB2B00248D29 /* TaskListViewController.swift in Sources */,
 				C13DD569241CBB2B00248D29 /* R.generated.swift in Sources */,
 				C1D531D3241A0D1F00641D97 /* HomeViewController.swift in Sources */,

@@ -22,24 +22,4 @@ class HomeTableHeaderView: UIView {
         todaysTasksCountLabel.text = String(todaysTasksCount)
         completedTasksCountLabel.text = String(completedTasksCount)
     }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        
-//        let thisView = R.nib.tableHeaderView(owner: self)
-//        thisView!.frame = bounds
-//        addSubview(thisView!)
-    }
-    
-    override func prepareForInterfaceBuilder() {
-        super.prepareForInterfaceBuilder()
-        
-        let thisView = R.nib.tableHeaderView(owner: self)
-        thisView!.frame = bounds
-        addSubview(thisView!)
-    }
 }
