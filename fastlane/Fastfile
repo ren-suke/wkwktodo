@@ -18,13 +18,37 @@ default_platform(:ios)
 platform :ios do
   desc "Push a new release build to the App Store"
   lane :release do
-    build_app(scheme: "wkwktodo")
+    increment_build_number
+    gym(
+      scheme: "Release"
+    )
     upload_to_app_store
-  end
 
-  lane :push_to_slack do
-    slack(
-      message: "App successfully released!"
+    version = get_version_number(
+      xcodeproj: "wkwktodo.xcodeproj",
+      target: "wkwktodo"
+    )
+    message = "Release wkwktodo #{version}"
+    push_to_slack(message: message)
+    git_commit(path: ".", message: message)
+    push_to_git_remote(
+      remote: "origin",
+      local_branch: "develop",
+      remote_branch: "develop"
     )
   end
+
+  private lane :push_to_slack do |options|
+    slack(
+      message: options[:message]
+    )
+  end
+end
+
+error do |lane, exception|
+  slack(
+    message: exception.to_s,
+    success: false,
+    payload: { "Output" => exception.error_info.to_s }
+  )
 end
