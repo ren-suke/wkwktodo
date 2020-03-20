@@ -12,7 +12,12 @@ import RxCocoa
 import PKHUD
 
 class HomeViewController: UIViewController {
-    private var collectionBarButtonItem: UIBarButtonItem = UIBarButtonItem()
+    private var collectionBarButtonItem: UIBarButtonItem = UIBarButtonItem(
+        image: R.image.menu(),
+        style: .plain,
+        target: self,
+        action: nil
+    )
     private var editBarButtonItem: UIBarButtonItem = UIBarButtonItem(
         barButtonSystemItem: .edit,
         target: self,
@@ -38,8 +43,12 @@ class HomeViewController: UIViewController {
         navigationItem.title = "Home"
         largeTitle()
         collectionBarButtonItem.tintColor = R.color.dark()
-        collectionBarButtonItem.setBackgroundImage(R.image.menu(), for: .normal, barMetrics: .default)
         collectionBarButtonItem.imageInsets = UIEdgeInsets(top: 15, left: 5, bottom: 0, right: 0)
+        collectionBarButtonItem.rx.tap
+            .subscribe { _ in
+                self.present(R.storyboard.materials.materials()!.make(), animated: true, completion: nil)
+            }
+            .disposed(by: disposeBag)
         navigationItem.leftBarButtonItem = collectionBarButtonItem
         editBarButtonItem.tintColor = R.color.dark()
         navigationItem.rightBarButtonItem = editBarButtonItem

@@ -20,8 +20,24 @@ class MaterialCollectionViewCell: UICollectionViewCell {
         layer.cornerRadius = 12
     }
     
+    override func select(_ sender: Any?) {
+        super.select(sender)
+        print("select material collection view cell")
+    }
+    
     func configure(preview: UIImage, materialType: MaterialType) {
         previewImageView.image = preview
-    
+        switch materialType {
+        case .wallpaper:
+            materialTypeImageView.image = R.image.wallpaper()
+        case .liveWallpaper:
+            materialTypeImageView.image = R.image.liveWallpaper()
+        case .voice:
+            materialTypeImageView.image = R.image.voice()
+        case .movie:
+            materialTypeImageView.image = R.image.movie()
+        case .undefined:
+            break
+        }
     }
 }

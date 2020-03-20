@@ -23,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window.rootViewController = selectRootViewController()
         }
         return true
-        return true
     }
     
     private func selectRootViewController() -> UIViewController {

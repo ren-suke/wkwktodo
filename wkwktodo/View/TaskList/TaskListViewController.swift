@@ -9,11 +9,29 @@
 import UIKit
 
 class TaskListViewController: UIViewController {
+    
+    @IBOutlet private weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.dataSource = self
+        tableView.rowHeight = UITableView.automaticDimension
     }
     
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
+    static func make() -> UINavigationController {
+        return UINavigationController(rootViewController: R.storyboard.materials.materials()!)
+    }
+}
+
+extension TaskListViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 50
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = R.nib.taskTableViewCell(owner: tableView)!
+        cell.configure(task: Task(id: indexPath.row, title: "AAA\(indexPath.row)", deadline: Date(), isCompleted: false, completedDate: nil, wp: 0))
+        return cell
     }
 }

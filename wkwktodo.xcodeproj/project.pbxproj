@@ -86,6 +86,12 @@
 		C1584C0B241A41C70038EA38 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1584BDF241A3C1B0038EA38 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1584C0C241A41C70038EA38 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1584BE1241A3C1B0038EA38 /* RxSwift.framework */; };
 		C1584C0D241A41C70038EA38 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1584BE1241A3C1B0038EA38 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1A0EB5B2424605A0099F0E7 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A0EB592424605A0099F0E7 /* TaskTableViewCell.swift */; };
+		C1A0EB5C2424605A0099F0E7 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1A0EB5A2424605A0099F0E7 /* TaskTableViewCell.xib */; };
+		C1A0EB5D2424697D0099F0E7 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1A0EB5A2424605A0099F0E7 /* TaskTableViewCell.xib */; };
+		C1A0EB5E242469810099F0E7 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A0EB592424605A0099F0E7 /* TaskTableViewCell.swift */; };
+		C1B9770824210AB600CDAC22 /* MaterialCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C12A72A12420FD0F00762C35 /* MaterialCollectionViewCell.xib */; };
+		C1B9770924210ABB00CDAC22 /* MaterialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12A72A02420FD0F00762C35 /* MaterialCollectionViewCell.swift */; };
 		C1D531B82419FFEE00641D97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D531B72419FFEE00641D97 /* AppDelegate.swift */; };
 		C1D531BA2419FFEE00641D97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D531B92419FFEE00641D97 /* SceneDelegate.swift */; };
 		C1D531BC2419FFEE00641D97 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D531BB2419FFEE00641D97 /* HomeViewController.swift */; };
@@ -191,6 +197,8 @@
 		C1584BE7241A3C1B0038EA38 /* PKHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PKHUD.framework; path = Carthage/Build/iOS/PKHUD.framework; sourceTree = "<group>"; };
 		C1584C0F241A41C70038EA38 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		C1584C10241A41C70038EA38 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		C1A0EB592424605A0099F0E7 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		C1A0EB5A2424605A0099F0E7 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		C1D531B42419FFEE00641D97 /* wkwktodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wkwktodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D531B72419FFEE00641D97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1D531B92419FFEE00641D97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -308,6 +316,8 @@
 			children = (
 				C13DD555241CAFAB00248D29 /* TaskList.storyboard */,
 				C13DD557241CAFC400248D29 /* TaskListViewController.swift */,
+				C1A0EB5A2424605A0099F0E7 /* TaskTableViewCell.xib */,
+				C1A0EB592424605A0099F0E7 /* TaskTableViewCell.swift */,
 			);
 			path = TaskList;
 			sourceTree = "<group>";
@@ -545,6 +555,7 @@
 				C1DDA585241E6A2500F07171 /* TableHeaderView.xib in Resources */,
 				C13DD55F241CB0A100248D29 /* WalkThrough.storyboard in Resources */,
 				C1D531C12419FFEF00641D97 /* Assets.xcassets in Resources */,
+				C1A0EB5C2424605A0099F0E7 /* TaskTableViewCell.xib in Resources */,
 				C12A72A72420FF3B00762C35 /* Image.xcassets in Resources */,
 				C13DD554241CAF9900248D29 /* Materials.storyboard in Resources */,
 				C1DDA574241E5F7F00F07171 /* Titillium_Web in Resources */,
@@ -559,6 +570,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A0EB5D2424697D0099F0E7 /* TaskTableViewCell.xib in Resources */,
+				C1B9770824210AB600CDAC22 /* MaterialCollectionViewCell.xib in Resources */,
 				C12A72A82421008200762C35 /* Image.xcassets in Resources */,
 				C1DDA58A241E6BC800F07171 /* TableHeaderView.xib in Resources */,
 				C1DDA58B241E6BC800F07171 /* ListTableViewCell.xib in Resources */,
@@ -722,6 +735,7 @@
 				C13DD56F241CC59E00248D29 /* UIView+Gradient.swift in Sources */,
 				C1DDA581241E66DD00F07171 /* UIViewController+LargeTitle.swift in Sources */,
 				C134F079241D172600511B2A /* Task.swift in Sources */,
+				C1A0EB5B2424605A0099F0E7 /* TaskTableViewCell.swift in Sources */,
 				C1D531B82419FFEE00641D97 /* AppDelegate.swift in Sources */,
 				C12A72992420DA0800762C35 /* UIViewController+Make.swift in Sources */,
 				C12A72932420D89500762C35 /* WallpaperMaterialViewController.swift in Sources */,
@@ -744,6 +758,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A0EB5E242469810099F0E7 /* TaskTableViewCell.swift in Sources */,
+				C1B9770924210ABB00CDAC22 /* MaterialCollectionViewCell.swift in Sources */,
 				C12A729A2420DA9200762C35 /* WallpaperMaterialViewController.swift in Sources */,
 				C12A729B2420DA9200762C35 /* VoiceMaterialViewController.swift in Sources */,
 				C12A729C2420DA9200762C35 /* MovieMaterialViewController.swift in Sources */,
@@ -795,6 +811,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -855,6 +872,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -921,7 +939,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ren.wkwktodo;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ren-matsushita.wkwktodo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -944,7 +963,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ren.wkwktodo;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ren-matsushita.wkwktodo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
