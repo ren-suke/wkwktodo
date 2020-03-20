@@ -3,17 +3,26 @@ wkwktodoはわくわくする日常を目指す人のためのタスク管理ア
 
 ## env
 下記、既にinstall済みの場合は飛ばして大丈夫です。
+
+*Homebrew*
 ```
-homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-carthage
+```
+*Carthage*
+```
 brew install carthage
-Rswift
+```
+*R.swift*
+```
 brew install rswift
-SwiftLint
+```
+*SwiftLint*
+```
 brew install swiftlint
-LicensePlist
-brew install license-plist
+```
+*LicensePlist*
+```
+brew install mono0926/license-plist/license-plist
 ```
 
 ## Setup
