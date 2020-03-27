@@ -9,5 +9,5 @@ github "realm/realm-cocoa"
 github "sgr-ksmt/Alertift" 
 github "pkluz/PKHUD" 
 
-# Resouce
+# Resource
 github "mac-cain13/R.swift.Library"

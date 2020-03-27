@@ -28,7 +28,7 @@
                                 </constraints>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="E2R-7m-Ixp"/>
-                                    <barButtonItem title="タスクを追加" id="Hta-KQ-LyQ"/>
+                                    <barButtonItem title="フォルダを追加" id="Hta-KQ-LyQ"/>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -48,6 +48,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" id="ozA-Ab-34h"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="addFolderButton" destination="Hta-KQ-LyQ" id="GYQ-Ch-AyG"/>
                         <outlet property="tableView" destination="b85-BN-bNN" id="RSb-gk-tp6"/>
                     </connections>
                 </viewController>

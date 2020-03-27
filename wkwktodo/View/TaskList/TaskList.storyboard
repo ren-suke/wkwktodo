@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,19 +19,29 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WQd-0G-vgk">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BW8-qk-Xgp">
+                                <rect key="frame" x="15" y="821" width="123" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="タスクを追加">
+                                    <color key="titleColor" name="Dark"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="BW8-qk-Xgp" firstAttribute="leading" secondItem="7Ts-cr-2nl" secondAttribute="leading" constant="15" id="Aak-jT-S1Q"/>
                             <constraint firstItem="7Ts-cr-2nl" firstAttribute="trailing" secondItem="WQd-0G-vgk" secondAttribute="trailing" id="Fo0-jv-vck"/>
                             <constraint firstItem="7Ts-cr-2nl" firstAttribute="bottom" secondItem="WQd-0G-vgk" secondAttribute="bottom" id="Gh7-z2-GIb"/>
                             <constraint firstItem="WQd-0G-vgk" firstAttribute="leading" secondItem="7Ts-cr-2nl" secondAttribute="leading" id="Nas-Ll-q0c"/>
+                            <constraint firstItem="7Ts-cr-2nl" firstAttribute="bottom" secondItem="BW8-qk-Xgp" secondAttribute="bottom" constant="5" id="hxS-EZ-puj"/>
                             <constraint firstItem="WQd-0G-vgk" firstAttribute="top" secondItem="7Ts-cr-2nl" secondAttribute="top" id="zbr-sp-HPi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Ts-cr-2nl"/>
                     </view>
                     <connections>
+                        <outlet property="addTaskButton" destination="BW8-qk-Xgp" id="NaQ-mH-gLt"/>
                         <outlet property="tableView" destination="WQd-0G-vgk" id="b89-DP-rae"/>
                     </connections>
                 </viewController>
@@ -39,4 +50,9 @@
             <point key="canvasLocation" x="406" y="-220"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Dark">
+            <color red="0.13300000131130219" green="0.13300000131130219" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

@@ -31,7 +31,10 @@ class MaterialsViewController: UIViewController {
 //        collectionView.collection.
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.register(UINib(nibName: "MaterialCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: R.reuseIdentifier.materialsCollectionViewCell.identifier)
+        collectionView.register(
+            UINib(nibName: "MaterialCollectionViewCell", bundle: nil),
+            forCellWithReuseIdentifier: R.reuseIdentifier.materialsCollectionViewCell.identifier
+        )
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
         layout.itemSize = CGSize(width: view.bounds.width * 0.3, height: view.bounds.width * 0.3)

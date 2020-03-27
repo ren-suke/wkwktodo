@@ -7,31 +7,76 @@
 //
 
 import UIKit
+import Alertift
+import RxSwift
+import RxCocoa
 
 class TaskListViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
+    private let dataSource: TaskTableViewDataSource = .init()
+    var taskRealmQueryType: TaskRealmQueryType?
+    var folderId: Int?
+    
+    @IBOutlet private weak var addTaskButton: UIButton!
+    private var viewModel: TaskListViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.dataSource = self
-        tableView.rowHeight = UITableView.automaticDimension
+        configure()
+        
+        
     }
     
     static func make() -> UINavigationController {
         return UINavigationController(rootViewController: R.storyboard.materials.materials()!)
     }
-}
-
-extension TaskListViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+    
+    private func configure() {
+        largeTitle()
+        view.makeGradation()
+        configureTableView()
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = R.nib.taskTableViewCell(owner: tableView)!
-        cell.configure(task: Task(id: indexPath.row, title: "AAA\(indexPath.row)", deadline: Date(), isCompleted: false, completedDate: nil, wp: 0))
-        return cell
+    private func configureTableView() {
+        tableView.tableFooterView = UIView(frame: .zero)
+        tableView.dataSource = dataSource
+        tableView.register(UINib(nibName: "TaskTableViewCell", bundle: nil),
+                           forCellReuseIdentifier: R.reuseIdentifier.taskTableViewCell.identifier)
+        tableView.rowHeight = 50
+        
+        viewModel = .init(input: TaskListViewModelInput(
+            addTaskButtonTapped: addTaskButton.rx.tap.asObservable(),
+            taskCellCheckBoxClicked: dataSource.checkBoxTapped.asObservable(),
+            taskRealmQueryType: self.taskRealmQueryType,
+            folderId: self.folderId
+        ))
+    }
+}
+
+extension TaskListViewController {
+    private var showResultAlert: Binder<String> {
+        return Binder<String>(self) { me, str in
+            Alertift
+                .alert(title: "結果", message: "このタスクのわくわく度は... \n \(str)でした！！")
+                .action(.default("OK"))
+                .show(on: me, completion: nil)
+        }
+    }
+    
+    private var showKeyboard: Binder<Void> {
+        return Binder(self) { me, _ in
+            Alertift
+                .alert(title: "タスクを追加", message: nil)
+                .textField(configurationHandler: { textField in
+                    textField.placeholder = "YOUR TASK"
+                })
+                .action(.default("OK")) { _, _, textFields in
+                    let title = textFields!.first!.text!
+                    self.viewModel?.addTaskSubject.onNext(title)
+                }
+                .show(on: me, completion: nil)
+        }
     }
 }

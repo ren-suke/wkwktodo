@@ -7,19 +7,31 @@
 //
 
 import UIKit
+import RxSwift
 
-@IBDesignable
-class HomeTableHeaderView: UIView {
+final class HomeTableHeaderView: UIView {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet private weak var totalWPLabel: UILabel!
-    @IBOutlet private weak var todaysTaskButton: UIButton!
-    @IBOutlet private weak var completedTaskButton: UIButton!
+    @IBOutlet fileprivate weak var todaysTaskButton: UIButton!
+    @IBOutlet fileprivate weak var completedTaskButton: UIButton!
     @IBOutlet private weak var todaysTasksCountLabel: UILabel!
     @IBOutlet private weak var completedTasksCountLabel: UILabel!
+    
+    let disposeBag = DisposeBag()
     
     func configure(totalWP: Int, todaysTasksCount: Int, completedTasksCount: Int) {
         totalWPLabel.text = String(totalWP)
         todaysTasksCountLabel.text = String(todaysTasksCount)
         completedTasksCountLabel.text = String(completedTasksCount)
+    }
+}
+
+extension Reactive where Base: HomeTableHeaderView {
+    var todayTaskButtonTap: Observable<Void> {
+        return base.todaysTaskButton.rx.tap.asObservable()
+    }
+    
+    var completedTaskButtonTap: Observable<Void> {
+        return base.completedTaskButton.rx.tap.asObservable()
     }
 }

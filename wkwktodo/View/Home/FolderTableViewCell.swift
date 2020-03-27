@@ -7,20 +7,32 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-class ListTableViewCell: UITableViewCell {
+class FolderTableViewCell: UITableViewCell {
+    @IBOutlet weak var button: UIButton!
     @IBOutlet private weak var paddingView: UIView!
     @IBOutlet private weak var primaryColorView: PrimaryColorView!
-    @IBOutlet private weak var listTitleLabel: UILabel!
-    @IBOutlet private weak var listProgressLabel: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var progressLabel: UILabel!
+    
+    var disposeBag: DisposeBag = .init()
 
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        selectionStyle = .none
         paddingView.clipsToBounds = true
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        disposeBag = .init()
+    }
 
-    func configure(_ cellType: CellType, primaryColor: UIColor, listTitle: String, listProgress: String) {
+    func configure(_ cellType: CellType, folderCellType: FolderCellType) {
         switch cellType {
         case .first:
             paddingView.layer.cornerRadius = 12
@@ -32,9 +44,9 @@ class ListTableViewCell: UITableViewCell {
             paddingView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         }
         
-        primaryColorView.backgroundColor = primaryColor
-        listTitleLabel.text = listTitle
-        listProgressLabel.text = listProgress
+        primaryColorView.backgroundColor = folderCellType.primaryColor.color
+        titleLabel.text = folderCellType.title
+        progressLabel.text = folderCellType.progress
     }
 }
 

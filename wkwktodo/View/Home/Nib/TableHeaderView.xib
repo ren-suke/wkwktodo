@@ -24,16 +24,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5OW-ll-sYr">
-                    <rect key="frame" x="0.0" y="0.0" width="420" height="216"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="213.33333333333334"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1bP-e8-J9I">
-                            <rect key="frame" x="15" y="12" width="390" height="192"/>
+                            <rect key="frame" x="15" y="12" width="384" height="189.33333333333334"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhZ-IU-mdu" customClass="CardView" customModule="wkwktodo" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="88"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="384" height="86.666666666666671"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yx2-BR-1VO">
-                                            <rect key="frame" x="106.66666666666667" y="13.666666666666671" width="176.66666666666663" height="61"/>
+                                            <rect key="frame" x="103.66666666666667" y="12.666666666666671" width="176.66666666666663" height="61"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累計わくわくポイント" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UfS-cv-h3E">
                                                     <rect key="frame" x="26.999999999999979" y="0.0" width="122.66666666666669" height="14.333333333333334"/>
@@ -58,16 +58,16 @@
                                     </constraints>
                                 </view>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EjM-w4-at2">
-                                    <rect key="frame" x="0.0" y="104" width="390" height="88"/>
+                                    <rect key="frame" x="0.0" y="102.66666666666666" width="384" height="86.666666666666657"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="im4-mi-fjX" customClass="CardView" customModule="wkwktodo" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="190" height="88"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="187" height="86.666666666666671"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iif-Qc-qvG">
-                                                    <rect key="frame" x="12" y="12" width="166" height="60"/>
+                                                    <rect key="frame" x="12" y="12" width="163" height="60"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="76" translatesAutoresizingMaskIntoConstraints="NO" id="U3D-Iv-EOI">
-                                                            <rect key="frame" x="0.0" y="0.0" width="166" height="26"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="163" height="26"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rj8-2N-Vbu" customClass="PrimaryColorView" customModule="wkwktodo" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
@@ -78,7 +78,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpq-bs-cLl">
-                                                                    <rect key="frame" x="102" y="0.0" width="64" height="26"/>
+                                                                    <rect key="frame" x="102" y="0.0" width="61" height="26"/>
                                                                     <fontDescription key="fontDescription" name="TitilliumWeb-Bold" family="Titillium Web" pointSize="20"/>
                                                                     <color key="textColor" name="Dark"/>
                                                                     <nil key="highlightedColor"/>
@@ -86,7 +86,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日やること" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfW-WE-adh">
-                                                            <rect key="frame" x="0.0" y="34" width="166" height="26"/>
+                                                            <rect key="frame" x="0.0" y="33.999999999999986" width="163" height="26"/>
                                                             <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="18"/>
                                                             <color key="textColor" name="Gray"/>
                                                             <nil key="highlightedColor"/>
@@ -94,7 +94,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIs-24-5Wh">
-                                                    <rect key="frame" x="0.0" y="0.0" width="190" height="88"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="86.666666666666671"/>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -110,13 +110,13 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IDQ-oe-Dke" customClass="CardView" customModule="wkwktodo" customModuleProvider="target">
-                                            <rect key="frame" x="200" y="0.0" width="190" height="88"/>
+                                            <rect key="frame" x="197" y="0.0" width="187" height="86.666666666666671"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5VW-Rw-5yp">
-                                                    <rect key="frame" x="12" y="12" width="166" height="60"/>
+                                                    <rect key="frame" x="12" y="12" width="163" height="60"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="76" translatesAutoresizingMaskIntoConstraints="NO" id="h46-3N-chD">
-                                                            <rect key="frame" x="0.0" y="0.0" width="166" height="26"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="163" height="26"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sPl-Ha-bZ4" customClass="PrimaryColorView" customModule="wkwktodo" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
@@ -127,7 +127,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDx-To-9Ab">
-                                                                    <rect key="frame" x="102" y="0.0" width="64" height="26"/>
+                                                                    <rect key="frame" x="102" y="0.0" width="61" height="26"/>
                                                                     <fontDescription key="fontDescription" name="TitilliumWeb-Bold" family="Titillium Web" pointSize="20"/>
                                                                     <color key="textColor" name="Dark"/>
                                                                     <nil key="highlightedColor"/>
@@ -135,7 +135,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完了済みタスク" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ih-Yv-Nog">
-                                                            <rect key="frame" x="0.0" y="34" width="166" height="26"/>
+                                                            <rect key="frame" x="0.0" y="33.999999999999986" width="163" height="26"/>
                                                             <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="18"/>
                                                             <color key="textColor" name="Gray"/>
                                                             <nil key="highlightedColor"/>
@@ -143,7 +143,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYZ-4Z-tv8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="190" height="88"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="86.666666666666671"/>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

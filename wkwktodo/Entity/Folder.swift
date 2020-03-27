@@ -9,32 +9,17 @@
 import Foundation
 import RealmSwift
 
-class List: Object {
+class Folder: Object {
     @objc dynamic var id: Int = 0
     @objc dynamic var title: String = ""
     @objc private dynamic var primaryColorRawValue: String = ""
-    var primaryColor: ListPrimaryColors {
-        get { return ListPrimaryColors(rawValue: primaryColorRawValue) ?? .red }
+    var primaryColor: FolderPrimaryColorType {
+        get { return FolderPrimaryColorType(rawValue: primaryColorRawValue) ?? .red }
         set { primaryColorRawValue = newValue.rawValue }
     }
-    @objc dynamic var tasks: [Task] = []
+    let tasks = List<Task>()
     
     override static func primaryKey() -> String? {
         return "id"
     }
-}
-
-enum ListPrimaryColors: String {
-    case red
-    case orange
-    case yellow
-    case green
-    case lightBlue
-    case blue
-    case bluePurple
-    case rose
-    case purple
-    case gold
-    case silver
-    case pink
 }

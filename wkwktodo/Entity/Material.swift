@@ -20,7 +20,7 @@ class Material: Object {
     }
     @objc dynamic var previewImageData: Data = Data()
     @objc dynamic var data: Data = Data()
-    @objc dynamic var terms: Terms = Terms()
+    @objc dynamic var terms: Terms? = Terms()
     @objc dynamic var isValid: Bool = true
     
     override static func primaryKey() -> String? {

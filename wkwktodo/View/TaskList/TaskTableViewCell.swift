@@ -7,25 +7,30 @@
 //
 
 import UIKit
+import RxSwift
 
 class TaskTableViewCell: UITableViewCell {
     
-    @IBOutlet private weak var checkBox: UIButton!
+    @IBOutlet weak var checkBox: CheckBox!
     @IBOutlet private weak var titleLabel: UILabel!
-    @IBOutlet private weak var deadlineLabel: UILabel!
+    
+    var disposeBag: DisposeBag = .init()
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        
+        checkBox.borderStyle = .roundedSquare(radius: 3)
+        checkBox.style = .tick
     }
     
-    func configure(task: Task) {
+    override func prepareForReuse() {
+        super.prepareForReuse()
         
+        disposeBag = .init()
+    }
+    
+    func configure(with task: Task) {
+        titleLabel.text = task.title
+        checkBox.isChecked = task.isCompleted
     }
 }
