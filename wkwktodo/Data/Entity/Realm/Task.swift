@@ -17,7 +17,6 @@ class Task: Object {
     @objc dynamic var completedDate: Date?
     @objc dynamic var wp: Int = 0
     @objc dynamic var folder: Folder?
-    let folders = LinkingObjects(fromType: Folder.self, property: "tasks")
 
     override static func primaryKey() -> String? {
         return "id"

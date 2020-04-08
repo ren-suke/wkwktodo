@@ -48,7 +48,6 @@ class MaterialsViewController: UIViewController {
 
 extension MaterialsViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("----")
         return 30
     }
     
@@ -65,7 +64,6 @@ extension MaterialsViewController: UICollectionViewDataSource, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        print("----")
         let horizontalSpace: CGFloat = 20
         let cellSize: CGFloat = self.view.bounds.width / 3 - horizontalSpace
         return CGSize(width: cellSize, height: cellSize)

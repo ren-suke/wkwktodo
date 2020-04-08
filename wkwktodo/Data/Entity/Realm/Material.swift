@@ -19,7 +19,7 @@ class Material: Object {
         set { typeRawValue = newValue.rawValue }
     }
     @objc dynamic var previewImageData: Data = Data()
-    @objc dynamic var data: Data = Data()
+    @objc dynamic var data: Data?
     @objc dynamic var terms: Terms? = Terms()
     @objc dynamic var isValid: Bool = true
     

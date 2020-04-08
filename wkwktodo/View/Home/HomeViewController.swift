@@ -38,7 +38,8 @@ class HomeViewController: UIViewController {
             completedTaskButtonTapped: self.tableHeaderView!.rx.completedTaskButtonTap,
             listTableViewCellTapped: self.dataSource.buttonTapped.asObservable(),
             addFolderButtonTapped: self.addFolderButton.rx.tap.impactOccurred(.light).asObservable(),
-            tableHeaderViewDisposeBag: self.tableHeaderView!.disposeBag)
+            tableHeaderViewDisposeBag: self.tableHeaderView!.disposeBag
+        )
     )
     private let disposeBag: DisposeBag = DisposeBag()
     
@@ -46,21 +47,23 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         configure()
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
         configureTableView()
-        
+        print("space")
+        print(tableHeaderView!.rx.todayTaskButtonTap)
         viewModel.folders
-        .drive(tableView.rx.items(dataSource: dataSource))
-        .disposed(by: disposeBag)
+            .drive(tableView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
         
         viewModel.showTaskList
+            .debug()
             .bind(to: showTaskList)
             .disposed(by: disposeBag)
-//        viewModel.
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        print("view did disappear")
     }
     
     private func configure() {
@@ -85,6 +88,7 @@ class HomeViewController: UIViewController {
             frame.size.height = frame.height
             tableHeaderView!.frame = frame
             tableView.tableHeaderView = tableHeaderView
+            print("if let _tableHeaderView")
         }
         
         tableView.tableFooterView = UIView(frame: .zero)
@@ -92,13 +96,14 @@ class HomeViewController: UIViewController {
                            forCellReuseIdentifier: R.reuseIdentifier.folderTableViewCell.identifier)
         tableView.dataSource = dataSource as UITableViewDataSource
         tableView.rowHeight = 60
+        print("configureTableView")
     }
 }
 
 extension HomeViewController {
     private var showTaskList: Binder<(TaskRealmQueryType?, Int?)> {
         return Binder<(TaskRealmQueryType?, Int?)>(self) { (me, value) in
-            print("----------------------")
+            print("-------------- show task list")
             let taskListViewController = R.storyboard.taskList.taskList()!
             taskListViewController.taskRealmQueryType = value.0
             taskListViewController.folderId = value.1

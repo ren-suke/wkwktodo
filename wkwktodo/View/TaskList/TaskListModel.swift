@@ -9,7 +9,6 @@
 import Foundation
 import RxSwift
 
-
 class TaskListModel {
     func addTask(title: String) -> Observable<Void> {
         return TaskDataStore.addTask(title: title)
@@ -29,8 +28,4 @@ class TaskListModel {
     func getzEmotgionValue(text: String) -> Observable<Float> {
         NatureAPIClient.getEmotgionValue(with: text)
     }
-
-//    func changeTaskCompleted(newValue: Bool) -> Observable<Void> {
-//        <#code#>
-//    }
 }

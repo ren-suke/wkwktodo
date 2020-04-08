@@ -22,7 +22,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func selectRootViewController() -> UIViewController {
-        print(R.storyboard.home.home()!.make())
         return R.storyboard.home.home()!.make()
     }
 

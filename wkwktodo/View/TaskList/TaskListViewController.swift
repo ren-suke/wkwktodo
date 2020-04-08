@@ -25,12 +25,6 @@ class TaskListViewController: UIViewController {
         super.viewDidLoad()
         
         configure()
-        
-        
-    }
-    
-    static func make() -> UINavigationController {
-        return UINavigationController(rootViewController: R.storyboard.materials.materials()!)
     }
     
     private func configure() {

@@ -17,7 +17,13 @@ final class HomeTableHeaderView: UIView {
     @IBOutlet private weak var todaysTasksCountLabel: UILabel!
     @IBOutlet private weak var completedTasksCountLabel: UILabel!
     
-    let disposeBag = DisposeBag()
+    var disposeBag: DisposeBag = .init()
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        disposeBag = .init()
+    }
     
     func configure(totalWP: Int, todaysTasksCount: Int, completedTasksCount: Int) {
         totalWPLabel.text = String(totalWP)
@@ -28,6 +34,7 @@ final class HomeTableHeaderView: UIView {
 
 extension Reactive where Base: HomeTableHeaderView {
     var todayTaskButtonTap: Observable<Void> {
+        print("todayButtonTap")
         return base.todaysTaskButton.rx.tap.asObservable()
     }
     

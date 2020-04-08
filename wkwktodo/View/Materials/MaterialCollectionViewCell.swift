@@ -22,7 +22,6 @@ class MaterialCollectionViewCell: UICollectionViewCell {
     
     override func select(_ sender: Any?) {
         super.select(sender)
-        print("select material collection view cell")
     }
     
     func configure(preview: UIImage, materialType: MaterialType) {

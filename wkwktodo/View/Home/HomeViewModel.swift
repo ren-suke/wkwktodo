@@ -56,7 +56,8 @@ final class HomeViewModel {
     
     let showTaskList: PublishSubject<(TaskRealmQueryType?, Int?)> = .init()
     
-    init(input: HomeViewModelInput, model: HomeModelProtocol = HomeModel()) {
+    init(input: HomeViewModelInput,
+         model: HomeModelProtocol = HomeModel()) {
         let foldersEvent = model.getFolders()
         todaysTaskList = foldersEvent
             .flatMap { folders -> Observable<[Task]> in
@@ -109,6 +110,7 @@ final class HomeViewModel {
         
         input.todaysTaskButtonTapped
             .subscribe(onNext: { [weak self] _ in
+                print("--------- view model todaysTaskButtonTapped ")
                 self?.showTaskList.onNext((.today, nil))
             })
             .disposed(by: input.tableHeaderViewDisposeBag)

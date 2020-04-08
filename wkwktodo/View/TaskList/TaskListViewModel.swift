@@ -62,4 +62,4 @@ class TaskListViewModel {
             .disposed(by: disposeBag)
     }
 }
-class ErrorClass: Error{}
+class ErrorClass: Error {}
