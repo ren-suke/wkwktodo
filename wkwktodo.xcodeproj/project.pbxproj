@@ -497,7 +497,6 @@
 				C1DDA587241E6BBF00F07171 /* FolderTableViewCell.xib */,
 				C12E0B1C241F7FD70099B081 /* HomeTableHeaderView.swift */,
 				C1DDA586241E6BBF00F07171 /* FolderTableViewCell.swift */,
-				C1FACBCE242AF55000349609 /* FolderCellType.swift */,
 				C1FACBC7242AE22100349609 /* HomeTableViewDataSource.swift */,
 			);
 			path = Olds;
@@ -576,6 +575,7 @@
 				C13DD551241CAF6700248D29 /* TaskList */,
 				C1D73FA92425DEB5003075E9 /* NewFolder */,
 				C13DD550241CAF6100248D29 /* Home */,
+				C1FACBCE242AF55000349609 /* FolderCellType.swift */,
 				C13DD560241CB0AE00248D29 /* Components */,
 			);
 			path = View;

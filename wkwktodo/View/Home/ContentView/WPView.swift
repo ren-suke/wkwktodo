@@ -12,16 +12,21 @@ class WPView: UIView, ReusableViewType, BackingViewMaker {
     typealias View = WPView
     @IBOutlet private weak var wpLabel: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        clipsToBounds = true
+        layer.cornerRadius = 12
+    }
     func prepareForReuse() {
         print("prepareForReuse")
     }
     
     func configure(wp: Int) {
-        wpLabel.text = String(wp)
+        wpLabel.text = String(wp) + " wp"
     }
     
     static func makeBackedView() -> WPView {
-        guard let wpView = R.nib.wpView(owner: self) as? WPView else { return WPView() }
+        guard let wpView = R.nib.wpView(owner: self) else { return WPView() }
         return wpView
     }
 }

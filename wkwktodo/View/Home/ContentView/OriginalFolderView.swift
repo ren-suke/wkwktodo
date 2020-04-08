@@ -7,20 +7,22 @@
 //
 
 import UIKit
-import RxSwift
 
 class OriginalFolderView: UIView, ReusableViewType, BackingViewMaker {
     typealias View = OriginalFolderView
-    @IBOutlet private weak var paddingView: UIView!
-    @IBOutlet private weak var primaryColorView: PrimaryColorView!
+    @IBOutlet private weak var logoView: UIView!
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var progressLabel: UILabel!
     
-    var disposeBag: DisposeBag = .init()
-
     override func awakeFromNib() {
         super.awakeFromNib()
-        paddingView.clipsToBounds = true
+        clipsToBounds = true
+        logoView.clipsToBounds = true
+    }
+    
+    override func layoutIfNeeded() {
+        super.layoutIfNeeded()
+        logoView.layer.cornerRadius = logoView.bounds.height * 2
     }
     
     func prepareForReuse() {
@@ -30,22 +32,22 @@ class OriginalFolderView: UIView, ReusableViewType, BackingViewMaker {
     func configure(_ cellType: CellType, folderCellType: FolderCellType) {
         switch cellType {
         case .first:
-            paddingView.layer.cornerRadius = 12
-            paddingView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+            layer.cornerRadius = 12
+            layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         case .body:
-            paddingView.layer.cornerRadius = 0
+            layer.cornerRadius = 0
         case .last:
-            paddingView.layer.cornerRadius = 12
-            paddingView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+            layer.cornerRadius = 12
+            layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         }
         
-        primaryColorView.backgroundColor = folderCellType.primaryColor.color
+        logoView.backgroundColor = folderCellType.primaryColor.color
         titleLabel.text = folderCellType.title
         progressLabel.text = folderCellType.progress
     }
     
     static func makeBackedView() -> OriginalFolderView {
-        guard let originalFolderView = R.nib.originalFolderView(owner: self) as? OriginalFolderView else { return OriginalFolderView() }
+        guard let originalFolderView = R.nib.originalFolderView(owner: self) else { return OriginalFolderView() }
         return originalFolderView
     }
 }

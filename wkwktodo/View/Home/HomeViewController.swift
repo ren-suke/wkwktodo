@@ -26,6 +26,7 @@ class HomeViewController: UIViewController {
     )
     
     @IBOutlet private weak var collectionView: UICollectionView!
+    private let dataSource: HomeCollectionViewDataSource = .init()
     @IBOutlet private weak var addFolderButton: UIBarButtonItem!
     
     let disposeBag: DisposeBag = DisposeBag()
@@ -53,7 +54,11 @@ class HomeViewController: UIViewController {
     }
     
     private func configureCollectionView() {
+        collectionView.dataSource = dataSource
         collectionView.collectionViewLayout = HomeCollectionViewLayout.create()
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
+        collectionView.register(WrapperCell<WPView>.self, forCellWithReuseIdentifier: "WPViewCell")
+        collectionView.register(WrapperCell<StandardFolderView>.self, forCellWithReuseIdentifier: "StandardFolderViewCell")
+        collectionView.register(WrapperCell<OriginalFolderView>.self, forCellWithReuseIdentifier: "OriginalFolderViewCell")
     }
 }
-

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StandardFolderView: UIView {
+class StandardFolderView: UIView, ReusableViewType, BackingViewMaker {
     typealias View = StandardFolderView
     @IBOutlet private weak var logoView: UIView!
     @IBOutlet private weak var taskCountLabel: UILabel!
@@ -35,12 +35,8 @@ class StandardFolderView: UIView {
         print("prepareForReuse")
     }
     
-    func configure() {
-        
-    }
-    
     static func makeBackedView() -> StandardFolderView {
-        guard let standardFolderView = R.nib.standardFolderView(owner: self) as? StandardFolderView else { return StandardFolderView() }
+        guard let standardFolderView = R.nib.standardFolderView(owner: self) else { return StandardFolderView() }
         return standardFolderView
     }
 }
