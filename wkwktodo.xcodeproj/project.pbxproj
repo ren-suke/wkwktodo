@@ -120,6 +120,24 @@
 		C1CEFDC7243DD753007CE3C6 /* OriginalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDC6243DD753007CE3C6 /* OriginalListView.swift */; };
 		C1CEFDC9243DD760007CE3C6 /* StandardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDC8243DD760007CE3C6 /* StandardListView.swift */; };
 		C1CEFDCB243DD76C007CE3C6 /* WPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDCA243DD76C007CE3C6 /* WPView.swift */; };
+		C1CEFDCE243DD8B5007CE3C6 /* HomeCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDCD243DD8B5007CE3C6 /* HomeCollectionViewLayout.swift */; };
+		C1CEFDD0243DD902007CE3C6 /* IBPCollectionViewCompositionalLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CEFDCF243DD902007CE3C6 /* IBPCollectionViewCompositionalLayout.framework */; };
+		C1CEFDD1243DD902007CE3C6 /* IBPCollectionViewCompositionalLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1CEFDCF243DD902007CE3C6 /* IBPCollectionViewCompositionalLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1CEFDD2243DD917007CE3C6 /* IBPCollectionViewCompositionalLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CEFDCF243DD902007CE3C6 /* IBPCollectionViewCompositionalLayout.framework */; };
+		C1CEFDD3243DD917007CE3C6 /* IBPCollectionViewCompositionalLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1CEFDCF243DD902007CE3C6 /* IBPCollectionViewCompositionalLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1CEFDD4243DD94F007CE3C6 /* StandardListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDB8243DD64A007CE3C6 /* StandardListView.xib */; };
+		C1CEFDD5243DD94F007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDBF243DD6C3007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.xib */; };
+		C1CEFDD6243DD94F007CE3C6 /* OriginalListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDBA243DD656007CE3C6 /* OriginalListView.xib */; };
+		C1CEFDD7243DD94F007CE3C6 /* WPView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDC2243DD6E1007CE3C6 /* WPView.xib */; };
+		C1CEFDD8243DD964007CE3C6 /* OriginalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDC6243DD753007CE3C6 /* OriginalListView.swift */; };
+		C1CEFDD9243DD964007CE3C6 /* StandardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDC8243DD760007CE3C6 /* StandardListView.swift */; };
+		C1CEFDDA243DD964007CE3C6 /* WPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDCA243DD76C007CE3C6 /* WPView.swift */; };
+		C1CEFDDB243DD964007CE3C6 /* HomeCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDCD243DD8B5007CE3C6 /* HomeCollectionViewLayout.swift */; };
+		C1CEFDDC243DD964007CE3C6 /* WrapperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDB6243DD5E8007CE3C6 /* WrapperCell.swift */; };
+		C1CEFDDE243DD981007CE3C6 /* IBPCollectionViewCompositionalLayoutInteroperability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDDD243DD981007CE3C6 /* IBPCollectionViewCompositionalLayoutInteroperability.swift */; };
+		C1CEFDDF243DD98D007CE3C6 /* IBPCollectionViewCompositionalLayoutInteroperability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDDD243DD981007CE3C6 /* IBPCollectionViewCompositionalLayoutInteroperability.swift */; };
+		C1CEFDE1243DD9C4007CE3C6 /* HomeCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDE0243DD9C4007CE3C6 /* HomeCollectionViewDataSource.swift */; };
+		C1CEFDE2243DDAB9007CE3C6 /* HomeCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDE0243DD9C4007CE3C6 /* HomeCollectionViewDataSource.swift */; };
 		C1D531B82419FFEE00641D97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D531B72419FFEE00641D97 /* AppDelegate.swift */; };
 		C1D531BA2419FFEE00641D97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D531B92419FFEE00641D97 /* SceneDelegate.swift */; };
 		C1D531BC2419FFEE00641D97 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D531BB2419FFEE00641D97 /* HomeViewController.swift */; };
@@ -183,6 +201,7 @@
 				C1584BF5241A3C1B0038EA38 /* RealmSwift.framework in Embed Frameworks */,
 				C1584BEB241A3C1B0038EA38 /* Realm.framework in Embed Frameworks */,
 				C1584BE9241A3C1B0038EA38 /* RxRelay.framework in Embed Frameworks */,
+				C1CEFDD3243DD917007CE3C6 /* IBPCollectionViewCompositionalLayout.framework in Embed Frameworks */,
 				C1584BF1241A3C1B0038EA38 /* Rswift.framework in Embed Frameworks */,
 				C1584BED241A3C1B0038EA38 /* RxSwift.framework in Embed Frameworks */,
 			);
@@ -202,6 +221,7 @@
 				C1584C03241A41C70038EA38 /* RealmSwift.framework in Embed Frameworks */,
 				C1584C0B241A41C70038EA38 /* RxRelay.framework in Embed Frameworks */,
 				C1584C05241A41C70038EA38 /* Rswift.framework in Embed Frameworks */,
+				C1CEFDD1243DD902007CE3C6 /* IBPCollectionViewCompositionalLayout.framework in Embed Frameworks */,
 				C1584C09241A41C70038EA38 /* RxRealm.framework in Embed Frameworks */,
 				C1584BFF241A41C70038EA38 /* PKHUD.framework in Embed Frameworks */,
 			);
@@ -267,6 +287,10 @@
 		C1CEFDC6243DD753007CE3C6 /* OriginalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalListView.swift; sourceTree = "<group>"; };
 		C1CEFDC8243DD760007CE3C6 /* StandardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardListView.swift; sourceTree = "<group>"; };
 		C1CEFDCA243DD76C007CE3C6 /* WPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPView.swift; sourceTree = "<group>"; };
+		C1CEFDCD243DD8B5007CE3C6 /* HomeCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewLayout.swift; sourceTree = "<group>"; };
+		C1CEFDCF243DD902007CE3C6 /* IBPCollectionViewCompositionalLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBPCollectionViewCompositionalLayout.framework; path = Carthage/Build/iOS/IBPCollectionViewCompositionalLayout.framework; sourceTree = "<group>"; };
+		C1CEFDDD243DD981007CE3C6 /* IBPCollectionViewCompositionalLayoutInteroperability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBPCollectionViewCompositionalLayoutInteroperability.swift; sourceTree = "<group>"; };
+		C1CEFDE0243DD9C4007CE3C6 /* HomeCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		C1D531B42419FFEE00641D97 /* wkwktodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wkwktodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D531B72419FFEE00641D97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1D531B92419FFEE00641D97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -307,6 +331,7 @@
 				C1584BF4241A3C1B0038EA38 /* RealmSwift.framework in Frameworks */,
 				C1584BEA241A3C1B0038EA38 /* Realm.framework in Frameworks */,
 				C1584BE8241A3C1B0038EA38 /* RxRelay.framework in Frameworks */,
+				C1CEFDD2243DD917007CE3C6 /* IBPCollectionViewCompositionalLayout.framework in Frameworks */,
 				C1584BF0241A3C1B0038EA38 /* Rswift.framework in Frameworks */,
 				C1584BEC241A3C1B0038EA38 /* RxSwift.framework in Frameworks */,
 			);
@@ -323,6 +348,7 @@
 				C1584C02241A41C70038EA38 /* RealmSwift.framework in Frameworks */,
 				C1584C0A241A41C70038EA38 /* RxRelay.framework in Frameworks */,
 				C1584C04241A41C70038EA38 /* Rswift.framework in Frameworks */,
+				C1CEFDD0243DD902007CE3C6 /* IBPCollectionViewCompositionalLayout.framework in Frameworks */,
 				C1584C08241A41C70038EA38 /* RxRealm.framework in Frameworks */,
 				C1584BFE241A41C70038EA38 /* PKHUD.framework in Frameworks */,
 			);
@@ -382,6 +408,8 @@
 				C1D73FA22425AC1C003075E9 /* Nib */,
 				C1CEFDCC243DD77E007CE3C6 /* ContentView */,
 				C1D531BB2419FFEE00641D97 /* HomeViewController.swift */,
+				C1CEFDCD243DD8B5007CE3C6 /* HomeCollectionViewLayout.swift */,
+				C1CEFDE0243DD9C4007CE3C6 /* HomeCollectionViewDataSource.swift */,
 				C1D73FA32425AC3D003075E9 /* HomeViewModel.swift */,
 				C1D73FA62425AC47003075E9 /* HomeModel.swift */,
 				C1CEFDBE243DD6C3007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.swift */,
@@ -446,6 +474,7 @@
 		C1584BDE241A3C1B0038EA38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1CEFDCF243DD902007CE3C6 /* IBPCollectionViewCompositionalLayout.framework */,
 				C1584C0F241A41C70038EA38 /* RxBlocking.framework */,
 				C1584C10241A41C70038EA38 /* RxTest.framework */,
 				C1584BE6241A3C1B0038EA38 /* Alertift.framework */,
@@ -572,6 +601,7 @@
 		C1D531D0241A0B4400641D97 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C1CEFDDD243DD981007CE3C6 /* IBPCollectionViewCompositionalLayoutInteroperability.swift */,
 				C1FACBD1242B3A8A00349609 /* Rx */,
 				C12E0B1B241F7FA70099B081 /* UIKit */,
 				C1FACBDA242B598B00349609 /* Date+isToday.swift */,
@@ -754,6 +784,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1CEFDD4243DD94F007CE3C6 /* StandardListView.xib in Resources */,
+				C1CEFDD5243DD94F007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.xib in Resources */,
+				C1CEFDD6243DD94F007CE3C6 /* OriginalListView.xib in Resources */,
+				C1CEFDD7243DD94F007CE3C6 /* WPView.xib in Resources */,
 				C1A0EB5D2424697D0099F0E7 /* TaskTableViewCell.xib in Resources */,
 				C1B9770824210AB600CDAC22 /* MaterialCollectionViewCell.xib in Resources */,
 				C12A72A82421008200762C35 /* Image.xcassets in Resources */,
@@ -809,6 +843,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/PKHUD.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alertift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Rswift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/IBPCollectionViewCompositionalLayout.framework",
 			);
 			name = "Run Script - Carthage";
 			outputFileListPaths = (
@@ -836,6 +871,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/PKHUD.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alertift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Rswift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/IBPCollectionViewCompositionalLayout.framework",
 			);
 			name = "Run Script - Carthage";
 			outputFileListPaths = (
@@ -931,6 +967,7 @@
 				C12A72992420DA0800762C35 /* UIViewController+Make.swift in Sources */,
 				C12A72932420D89500762C35 /* WallpaperMaterialViewController.swift in Sources */,
 				C1FACBD7242B497300349609 /* FolderDataStore.swift in Sources */,
+				C1CEFDE1243DD9C4007CE3C6 /* HomeCollectionViewDataSource.swift in Sources */,
 				C12A72972420D8B300762C35 /* MovieMaterialViewController.swift in Sources */,
 				C1CEFDCB243DD76C007CE3C6 /* WPView.swift in Sources */,
 				C1272324242C57F00052A967 /* TaskTableViewDataSource.swift in Sources */,
@@ -950,6 +987,8 @@
 				C147205C2429BF84003DEEA1 /* FolderPrimaryColorType.swift in Sources */,
 				C1D531BA2419FFEE00641D97 /* SceneDelegate.swift in Sources */,
 				C1272327242C5C450052A967 /* TaskListViewModel.swift in Sources */,
+				C1CEFDCE243DD8B5007CE3C6 /* HomeCollectionViewLayout.swift in Sources */,
+				C1CEFDDE243DD981007CE3C6 /* IBPCollectionViewCompositionalLayoutInteroperability.swift in Sources */,
 				C1D73FA72425AC47003075E9 /* HomeModel.swift in Sources */,
 				C14720552429BA61003DEEA1 /* PrimaryColorCollectionView.swift in Sources */,
 				C1FACBC8242AE22100349609 /* HomeTableViewDataSource.swift in Sources */,
@@ -965,6 +1004,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1CEFDE2243DDAB9007CE3C6 /* HomeCollectionViewDataSource.swift in Sources */,
+				C1CEFDD8243DD964007CE3C6 /* OriginalListView.swift in Sources */,
+				C1CEFDD9243DD964007CE3C6 /* StandardListView.swift in Sources */,
+				C1CEFDDA243DD964007CE3C6 /* WPView.swift in Sources */,
+				C1CEFDDB243DD964007CE3C6 /* HomeCollectionViewLayout.swift in Sources */,
+				C1CEFDDC243DD964007CE3C6 /* WrapperCell.swift in Sources */,
 				C1059409242CC91B0019538E /* NatureAPIClient.swift in Sources */,
 				C17BE993242C8D5100DA4474 /* TaskDataStore.swift in Sources */,
 				C127232B242C5D320052A967 /* TaskListModel.swift in Sources */,
@@ -1000,6 +1045,7 @@
 				C134F075241D161200511B2A /* Material.swift in Sources */,
 				C134F076241D161200511B2A /* Terms.swift in Sources */,
 				C134F077241D161200511B2A /* Folder.swift in Sources */,
+				C1CEFDDF243DD98D007CE3C6 /* IBPCollectionViewCompositionalLayoutInteroperability.swift in Sources */,
 				C13DD570241CC6AE00248D29 /* UIView+Gradient.swift in Sources */,
 				C13DD566241CBB2B00248D29 /* WalkThroughViewController.swift in Sources */,
 				C13DD567241CBB2B00248D29 /* MaterialsViewController.swift in Sources */,

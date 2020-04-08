@@ -28,6 +28,8 @@ class HomeViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
     private let dataSource: HomeTableViewDataSource = .init()
     
+    @IBOutlet private weak collectionView: UICollectionView!
+    
     @IBOutlet private weak var addFolderButton: UIBarButtonItem!
     
     private lazy var viewModel: HomeViewModel = .init(
@@ -81,6 +83,10 @@ class HomeViewController: UIViewController {
         view.makeGradation()
     }
     
+    private func configureCollectionView() {
+        
+    }
+    
     private func configureTableView() {
         if let _tableHeaderView = R.nib.tableHeaderView(owner: tableView) {
             tableHeaderView = _tableHeaderView
@@ -111,3 +117,4 @@ extension HomeViewController {
         }
     }
 }
+
