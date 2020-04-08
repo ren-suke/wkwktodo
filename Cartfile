@@ -6,8 +6,9 @@ github "RxSwiftCommunity/RxRealm"
 github "realm/realm-cocoa"
 
 # UI
+github "kishikawakatsumi/IBPCollectionViewCompositionalLayout"
 github "sgr-ksmt/Alertift" 
 github "pkluz/PKHUD" 
 
-# Resouce
+# Resource
 github "mac-cain13/R.swift.Library"

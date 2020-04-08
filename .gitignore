@@ -50,7 +50,12 @@ Dependencies/
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
+fastlane/metadata/
 fastlane/test_output
+
+# dotenv
+
+.env.default
 
 # Rswift
 

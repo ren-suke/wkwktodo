@@ -10,10 +10,12 @@ import UIKit
 import RxSwift
 import RxCocoa
 import PKHUD
+import Alertift
 
 class HomeViewController: UIViewController {
     private var collectionBarButtonItem: UIBarButtonItem = UIBarButtonItem(
-        barButtonSystemItem: .search,
+        image: R.image.menu(),
+        style: .plain,
         target: self,
         action: nil
     )
@@ -22,21 +24,41 @@ class HomeViewController: UIViewController {
         target: self,
         action: nil
     )
-    @IBOutlet private weak var tableView: UITableView!
     
-    private let disposeBag: DisposeBag = DisposeBag()
-
+    @IBOutlet private weak var collectionView: UICollectionView!
+    private let dataSource: HomeCollectionViewDataSource = .init()
+    @IBOutlet private weak var addFolderButton: UIBarButtonItem!
+    
+    let disposeBag: DisposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configure()
+        configureCollectionView()
     }
     
     private func configure() {
         navigationItem.title = "Home"
         largeTitle()
+        collectionBarButtonItem.tintColor = R.color.dark()
+        collectionBarButtonItem.rx.tap
+            .subscribe { _ in
+                self.present(R.storyboard.materials.materials()!.make(), animated: true, completion: nil)
+            }
+            .disposed(by: disposeBag)
         navigationItem.leftBarButtonItem = collectionBarButtonItem
+        editBarButtonItem.tintColor = R.color.dark()
         navigationItem.rightBarButtonItem = editBarButtonItem
         view.makeGradation()
+    }
+    
+    private func configureCollectionView() {
+        collectionView.dataSource = dataSource
+        collectionView.collectionViewLayout = HomeCollectionViewLayout.create()
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
+        collectionView.register(WrapperCell<WPView>.self, forCellWithReuseIdentifier: "WPViewCell")
+        collectionView.register(WrapperCell<StandardFolderView>.self, forCellWithReuseIdentifier: "StandardFolderViewCell")
+        collectionView.register(WrapperCell<OriginalFolderView>.self, forCellWithReuseIdentifier: "OriginalFolderViewCell")
     }
 }

@@ -13,6 +13,16 @@ class PrimaryColorView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        configure()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        
+        configure()
+    }
+    
+    private func configure() {
         layer.cornerRadius = frame.height / 2
         clipsToBounds = true
     }
