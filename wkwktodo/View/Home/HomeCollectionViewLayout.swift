@@ -10,10 +10,10 @@ import UIKit
 import IBPCollectionViewCompositionalLayout
 
 struct HomeCollectionViewLayout {
-    static func createLayout() -> UICollectionViewLayout {
+    static func create() -> UICollectionViewLayout {
         let layout = UICollectionViewCompositionalLayout {(
-            sectionIndex: Int,
-            layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
+            sectionIndex,
+            layoutEnvironment) -> NSCollectionLayoutSection? in
             switch sectionIndex {
             case 0:
                 return self.createWPViewLayout()
@@ -21,6 +21,8 @@ struct HomeCollectionViewLayout {
                 return self.createStanadardListLayout()
             case 2:
                 return self.createOriginalListLayout()
+            default:
+                return nil
             }
         }
         return layout
@@ -28,8 +30,8 @@ struct HomeCollectionViewLayout {
     
     static private func createWPViewLayout() -> NSCollectionLayoutSection {
         let size = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(0.28))
-        let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: itemSize, subitems: [item])
+        let item = NSCollectionLayoutItem(layoutSize: size)
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: size, subitems: [item])
         let section = NSCollectionLayoutSection(group: group)
         section.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 20, bottom: 5, trailing: 20)
         return section

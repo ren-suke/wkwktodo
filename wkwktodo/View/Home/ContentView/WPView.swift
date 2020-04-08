@@ -8,14 +8,20 @@
 
 import UIKit
 
-class WPView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+class WPView: UIView, ReusableViewType, BackingViewMaker {
+    typealias View = WPView
+    @IBOutlet private weak var wpLabel: UILabel!
+    
+    func prepareForReuse() {
+        print("prepareForReuse")
     }
-    */
-
+    
+    func configure(wp: Int) {
+        wpLabel.text = String(wp)
+    }
+    
+    static func makeBackedView() -> WPView {
+        guard let wpView = R.nib.wpView(owner: self) as? WPView else { return WPView() }
+        return wpView
+    }
 }

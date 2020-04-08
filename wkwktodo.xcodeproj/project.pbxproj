@@ -111,26 +111,26 @@
 		C1B9770824210AB600CDAC22 /* MaterialCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C12A72A12420FD0F00762C35 /* MaterialCollectionViewCell.xib */; };
 		C1B9770924210ABB00CDAC22 /* MaterialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12A72A02420FD0F00762C35 /* MaterialCollectionViewCell.swift */; };
 		C1CEFDB7243DD5E8007CE3C6 /* WrapperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDB6243DD5E8007CE3C6 /* WrapperCell.swift */; };
-		C1CEFDB9243DD64A007CE3C6 /* StandardListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDB8243DD64A007CE3C6 /* StandardListView.xib */; };
-		C1CEFDBB243DD656007CE3C6 /* OriginalListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDBA243DD656007CE3C6 /* OriginalListView.xib */; };
+		C1CEFDB9243DD64A007CE3C6 /* StandardFolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDB8243DD64A007CE3C6 /* StandardFolderView.xib */; };
+		C1CEFDBB243DD656007CE3C6 /* OriginalFolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDBA243DD656007CE3C6 /* OriginalFolderView.xib */; };
 		C1CEFDC0243DD6C3007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDBE243DD6C3007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.swift */; };
-		C1CEFDC1243DD6C3007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDBF243DD6C3007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.xib */; };
+		C1CEFDC1243DD6C3007CE3C6 /* OriginalFolderSectionHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDBF243DD6C3007CE3C6 /* OriginalFolderSectionHeaderCollectionReusableView.xib */; };
 		C1CEFDC3243DD6E1007CE3C6 /* WPView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDC2243DD6E1007CE3C6 /* WPView.xib */; };
 		C1CEFDC5243DD727007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDBE243DD6C3007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.swift */; };
-		C1CEFDC7243DD753007CE3C6 /* OriginalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDC6243DD753007CE3C6 /* OriginalListView.swift */; };
-		C1CEFDC9243DD760007CE3C6 /* StandardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDC8243DD760007CE3C6 /* StandardListView.swift */; };
+		C1CEFDC7243DD753007CE3C6 /* OriginalFolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDC6243DD753007CE3C6 /* OriginalFolderView.swift */; };
+		C1CEFDC9243DD760007CE3C6 /* StandardFolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDC8243DD760007CE3C6 /* StandardFolderView.swift */; };
 		C1CEFDCB243DD76C007CE3C6 /* WPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDCA243DD76C007CE3C6 /* WPView.swift */; };
 		C1CEFDCE243DD8B5007CE3C6 /* HomeCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDCD243DD8B5007CE3C6 /* HomeCollectionViewLayout.swift */; };
 		C1CEFDD0243DD902007CE3C6 /* IBPCollectionViewCompositionalLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CEFDCF243DD902007CE3C6 /* IBPCollectionViewCompositionalLayout.framework */; };
 		C1CEFDD1243DD902007CE3C6 /* IBPCollectionViewCompositionalLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1CEFDCF243DD902007CE3C6 /* IBPCollectionViewCompositionalLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1CEFDD2243DD917007CE3C6 /* IBPCollectionViewCompositionalLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CEFDCF243DD902007CE3C6 /* IBPCollectionViewCompositionalLayout.framework */; };
 		C1CEFDD3243DD917007CE3C6 /* IBPCollectionViewCompositionalLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1CEFDCF243DD902007CE3C6 /* IBPCollectionViewCompositionalLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C1CEFDD4243DD94F007CE3C6 /* StandardListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDB8243DD64A007CE3C6 /* StandardListView.xib */; };
-		C1CEFDD5243DD94F007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDBF243DD6C3007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.xib */; };
-		C1CEFDD6243DD94F007CE3C6 /* OriginalListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDBA243DD656007CE3C6 /* OriginalListView.xib */; };
+		C1CEFDD4243DD94F007CE3C6 /* StandardFolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDB8243DD64A007CE3C6 /* StandardFolderView.xib */; };
+		C1CEFDD5243DD94F007CE3C6 /* OriginalFolderSectionHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDBF243DD6C3007CE3C6 /* OriginalFolderSectionHeaderCollectionReusableView.xib */; };
+		C1CEFDD6243DD94F007CE3C6 /* OriginalFolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDBA243DD656007CE3C6 /* OriginalFolderView.xib */; };
 		C1CEFDD7243DD94F007CE3C6 /* WPView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDC2243DD6E1007CE3C6 /* WPView.xib */; };
-		C1CEFDD8243DD964007CE3C6 /* OriginalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDC6243DD753007CE3C6 /* OriginalListView.swift */; };
-		C1CEFDD9243DD964007CE3C6 /* StandardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDC8243DD760007CE3C6 /* StandardListView.swift */; };
+		C1CEFDD8243DD964007CE3C6 /* OriginalFolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDC6243DD753007CE3C6 /* OriginalFolderView.swift */; };
+		C1CEFDD9243DD964007CE3C6 /* StandardFolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDC8243DD760007CE3C6 /* StandardFolderView.swift */; };
 		C1CEFDDA243DD964007CE3C6 /* WPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDCA243DD76C007CE3C6 /* WPView.swift */; };
 		C1CEFDDB243DD964007CE3C6 /* HomeCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDCD243DD8B5007CE3C6 /* HomeCollectionViewLayout.swift */; };
 		C1CEFDDC243DD964007CE3C6 /* WrapperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDB6243DD5E8007CE3C6 /* WrapperCell.swift */; };
@@ -279,13 +279,13 @@
 		C1A0EB592424605A0099F0E7 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		C1A0EB5A2424605A0099F0E7 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		C1CEFDB6243DD5E8007CE3C6 /* WrapperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapperCell.swift; sourceTree = "<group>"; };
-		C1CEFDB8243DD64A007CE3C6 /* StandardListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandardListView.xib; sourceTree = "<group>"; };
-		C1CEFDBA243DD656007CE3C6 /* OriginalListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OriginalListView.xib; sourceTree = "<group>"; };
+		C1CEFDB8243DD64A007CE3C6 /* StandardFolderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandardFolderView.xib; sourceTree = "<group>"; };
+		C1CEFDBA243DD656007CE3C6 /* OriginalFolderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OriginalFolderView.xib; sourceTree = "<group>"; };
 		C1CEFDBE243DD6C3007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalListSectionHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
-		C1CEFDBF243DD6C3007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OriginalListSectionHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		C1CEFDBF243DD6C3007CE3C6 /* OriginalFolderSectionHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OriginalFolderSectionHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		C1CEFDC2243DD6E1007CE3C6 /* WPView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WPView.xib; sourceTree = "<group>"; };
-		C1CEFDC6243DD753007CE3C6 /* OriginalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalListView.swift; sourceTree = "<group>"; };
-		C1CEFDC8243DD760007CE3C6 /* StandardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardListView.swift; sourceTree = "<group>"; };
+		C1CEFDC6243DD753007CE3C6 /* OriginalFolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalFolderView.swift; sourceTree = "<group>"; };
+		C1CEFDC8243DD760007CE3C6 /* StandardFolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardFolderView.swift; sourceTree = "<group>"; };
 		C1CEFDCA243DD76C007CE3C6 /* WPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPView.swift; sourceTree = "<group>"; };
 		C1CEFDCD243DD8B5007CE3C6 /* HomeCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewLayout.swift; sourceTree = "<group>"; };
 		C1CEFDCF243DD902007CE3C6 /* IBPCollectionViewCompositionalLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBPCollectionViewCompositionalLayout.framework; path = Carthage/Build/iOS/IBPCollectionViewCompositionalLayout.framework; sourceTree = "<group>"; };
@@ -506,8 +506,8 @@
 		C1CEFDCC243DD77E007CE3C6 /* ContentView */ = {
 			isa = PBXGroup;
 			children = (
-				C1CEFDC6243DD753007CE3C6 /* OriginalListView.swift */,
-				C1CEFDC8243DD760007CE3C6 /* StandardListView.swift */,
+				C1CEFDC8243DD760007CE3C6 /* StandardFolderView.swift */,
+				C1CEFDC6243DD753007CE3C6 /* OriginalFolderView.swift */,
 				C1CEFDCA243DD76C007CE3C6 /* WPView.swift */,
 			);
 			path = ContentView;
@@ -613,9 +613,9 @@
 			isa = PBXGroup;
 			children = (
 				C1D531BD2419FFEE00641D97 /* Home.storyboard */,
-				C1CEFDB8243DD64A007CE3C6 /* StandardListView.xib */,
-				C1CEFDBF243DD6C3007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.xib */,
-				C1CEFDBA243DD656007CE3C6 /* OriginalListView.xib */,
+				C1CEFDB8243DD64A007CE3C6 /* StandardFolderView.xib */,
+				C1CEFDBF243DD6C3007CE3C6 /* OriginalFolderSectionHeaderCollectionReusableView.xib */,
+				C1CEFDBA243DD656007CE3C6 /* OriginalFolderView.xib */,
 				C1CEFDC2243DD6E1007CE3C6 /* WPView.xib */,
 			);
 			path = Nib;
@@ -759,7 +759,7 @@
 			files = (
 				C1D73FAB2425DEF3003075E9 /* NewFoldert.storyboard in Resources */,
 				C1CEFDC3243DD6E1007CE3C6 /* WPView.xib in Resources */,
-				C1CEFDBB243DD656007CE3C6 /* OriginalListView.xib in Resources */,
+				C1CEFDBB243DD656007CE3C6 /* OriginalFolderView.xib in Resources */,
 				C14720592429BA93003DEEA1 /* PrimaryColorCollectionViewCell.xib in Resources */,
 				C13DD556241CAFAB00248D29 /* TaskList.storyboard in Resources */,
 				C13DD562241CB72800248D29 /* Color.xcassets in Resources */,
@@ -774,9 +774,9 @@
 				C1DDA589241E6BBF00F07171 /* FolderTableViewCell.xib in Resources */,
 				C12A72A32420FD0F00762C35 /* MaterialCollectionViewCell.xib in Resources */,
 				C13DD54E241B32E700248D29 /* Settings.bundle in Resources */,
-				C1CEFDC1243DD6C3007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.xib in Resources */,
+				C1CEFDC1243DD6C3007CE3C6 /* OriginalFolderSectionHeaderCollectionReusableView.xib in Resources */,
 				C1D531BF2419FFEE00641D97 /* Home.storyboard in Resources */,
-				C1CEFDB9243DD64A007CE3C6 /* StandardListView.xib in Resources */,
+				C1CEFDB9243DD64A007CE3C6 /* StandardFolderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,9 +784,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1CEFDD4243DD94F007CE3C6 /* StandardListView.xib in Resources */,
-				C1CEFDD5243DD94F007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.xib in Resources */,
-				C1CEFDD6243DD94F007CE3C6 /* OriginalListView.xib in Resources */,
+				C1CEFDD4243DD94F007CE3C6 /* StandardFolderView.xib in Resources */,
+				C1CEFDD5243DD94F007CE3C6 /* OriginalFolderSectionHeaderCollectionReusableView.xib in Resources */,
+				C1CEFDD6243DD94F007CE3C6 /* OriginalFolderView.xib in Resources */,
 				C1CEFDD7243DD94F007CE3C6 /* WPView.xib in Resources */,
 				C1A0EB5D2424697D0099F0E7 /* TaskTableViewCell.xib in Resources */,
 				C1B9770824210AB600CDAC22 /* MaterialCollectionViewCell.xib in Resources */,
@@ -957,7 +957,7 @@
 				C1D73FA42425AC3D003075E9 /* HomeViewModel.swift in Sources */,
 				C134F070241D124A00511B2A /* Material.swift in Sources */,
 				C13DD564241CB95000248D29 /* R.generated.swift in Sources */,
-				C1CEFDC7243DD753007CE3C6 /* OriginalListView.swift in Sources */,
+				C1CEFDC7243DD753007CE3C6 /* OriginalFolderView.swift in Sources */,
 				C13DD56F241CC59E00248D29 /* UIView+Gradient.swift in Sources */,
 				C1DDA581241E66DD00F07171 /* UIViewController+LargeTitle.swift in Sources */,
 				C134F079241D172600511B2A /* Task.swift in Sources */,
@@ -996,7 +996,7 @@
 				C1CEFDB7243DD5E8007CE3C6 /* WrapperCell.swift in Sources */,
 				C13DD558241CAFC400248D29 /* TaskListViewController.swift in Sources */,
 				C1DDA579241E647100F07171 /* PrimaryColorView.swift in Sources */,
-				C1CEFDC9243DD760007CE3C6 /* StandardListView.swift in Sources */,
+				C1CEFDC9243DD760007CE3C6 /* StandardFolderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1005,8 +1005,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1CEFDE2243DDAB9007CE3C6 /* HomeCollectionViewDataSource.swift in Sources */,
-				C1CEFDD8243DD964007CE3C6 /* OriginalListView.swift in Sources */,
-				C1CEFDD9243DD964007CE3C6 /* StandardListView.swift in Sources */,
+				C1CEFDD8243DD964007CE3C6 /* OriginalFolderView.swift in Sources */,
+				C1CEFDD9243DD964007CE3C6 /* StandardFolderView.swift in Sources */,
 				C1CEFDDA243DD964007CE3C6 /* WPView.swift in Sources */,
 				C1CEFDDB243DD964007CE3C6 /* HomeCollectionViewLayout.swift in Sources */,
 				C1CEFDDC243DD964007CE3C6 /* WrapperCell.swift in Sources */,
