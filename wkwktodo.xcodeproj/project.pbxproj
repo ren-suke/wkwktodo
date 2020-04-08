@@ -29,8 +29,6 @@
 		C12A72A32420FD0F00762C35 /* MaterialCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C12A72A12420FD0F00762C35 /* MaterialCollectionViewCell.xib */; };
 		C12A72A72420FF3B00762C35 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12A72A62420FF3B00762C35 /* Image.xcassets */; };
 		C12A72A82421008200762C35 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12A72A62420FF3B00762C35 /* Image.xcassets */; };
-		C12E0B1D241F7FD70099B081 /* HomeTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E0B1C241F7FD70099B081 /* HomeTableHeaderView.swift */; };
-		C12E0B1E241F7FDF0099B081 /* HomeTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E0B1C241F7FD70099B081 /* HomeTableHeaderView.swift */; };
 		C134F070241D124A00511B2A /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F06F241D124A00511B2A /* Material.swift */; };
 		C134F072241D137B00511B2A /* Terms.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F071241D137B00511B2A /* Terms.swift */; };
 		C134F074241D15D700511B2A /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F073241D15D700511B2A /* Folder.swift */; };
@@ -163,20 +161,12 @@
 		C1DDA57D241E64FF00F07171 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F07B241D19EB00511B2A /* User.swift */; };
 		C1DDA581241E66DD00F07171 /* UIViewController+LargeTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDA580241E66DD00F07171 /* UIViewController+LargeTitle.swift */; };
 		C1DDA582241E672400F07171 /* UIViewController+LargeTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDA580241E66DD00F07171 /* UIViewController+LargeTitle.swift */; };
-		C1DDA585241E6A2500F07171 /* TableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1DDA584241E6A2500F07171 /* TableHeaderView.xib */; };
-		C1DDA588241E6BBF00F07171 /* FolderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDA586241E6BBF00F07171 /* FolderTableViewCell.swift */; };
-		C1DDA589241E6BBF00F07171 /* FolderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1DDA587241E6BBF00F07171 /* FolderTableViewCell.xib */; };
-		C1DDA58A241E6BC800F07171 /* TableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1DDA584241E6A2500F07171 /* TableHeaderView.xib */; };
-		C1DDA58B241E6BC800F07171 /* FolderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1DDA587241E6BBF00F07171 /* FolderTableViewCell.xib */; };
-		C1DDA58C241E6BCE00F07171 /* FolderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDA586241E6BBF00F07171 /* FolderTableViewCell.swift */; };
 		C1E4E288241F8DDA008CB87C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E4E287241F8DDA008CB87C /* CardView.swift */; };
 		C1E4E289241F8F43008CB87C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E4E287241F8DDA008CB87C /* CardView.swift */; };
-		C1FACBC8242AE22100349609 /* HomeTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FACBC7242AE22100349609 /* HomeTableViewDataSource.swift */; };
 		C1FACBC9242AE28A00349609 /* NewFolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D73FAC2425DF0F003075E9 /* NewFolderViewController.swift */; };
 		C1FACBCA242AE28A00349609 /* PrimaryColorCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14720542429BA61003DEEA1 /* PrimaryColorCollectionView.swift */; };
 		C1FACBCB242AE28A00349609 /* PrimaryColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14720562429BA93003DEEA1 /* PrimaryColorCollectionViewCell.swift */; };
 		C1FACBCC242AE28A00349609 /* NewFolderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14720522429B4E4003DEEA1 /* NewFolderViewModel.swift */; };
-		C1FACBCD242AE28A00349609 /* HomeTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FACBC7242AE22100349609 /* HomeTableViewDataSource.swift */; };
 		C1FACBCF242AF55000349609 /* FolderCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FACBCE242AF55000349609 /* FolderCellType.swift */; };
 		C1FACBD0242B013000349609 /* FolderCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FACBCE242AF55000349609 /* FolderCellType.swift */; };
 		C1FACBD3242B3A9A00349609 /* FeedBackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FACBD2242B3A9A00349609 /* FeedBackGenerator.swift */; };
@@ -243,7 +233,6 @@
 		C12A72A02420FD0F00762C35 /* MaterialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCollectionViewCell.swift; sourceTree = "<group>"; };
 		C12A72A12420FD0F00762C35 /* MaterialCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaterialCollectionViewCell.xib; sourceTree = "<group>"; };
 		C12A72A62420FF3B00762C35 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
-		C12E0B1C241F7FD70099B081 /* HomeTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableHeaderView.swift; sourceTree = "<group>"; };
 		C134F06F241D124A00511B2A /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
 		C134F071241D137B00511B2A /* Terms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terms.swift; sourceTree = "<group>"; };
 		C134F073241D15D700511B2A /* Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
@@ -308,11 +297,7 @@
 		C1DDA573241E5F7F00F07171 /* Titillium_Web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Titillium_Web; sourceTree = "<group>"; };
 		C1DDA578241E647100F07171 /* PrimaryColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryColorView.swift; sourceTree = "<group>"; };
 		C1DDA580241E66DD00F07171 /* UIViewController+LargeTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+LargeTitle.swift"; sourceTree = "<group>"; };
-		C1DDA584241E6A2500F07171 /* TableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderView.xib; sourceTree = "<group>"; };
-		C1DDA586241E6BBF00F07171 /* FolderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderTableViewCell.swift; sourceTree = "<group>"; };
-		C1DDA587241E6BBF00F07171 /* FolderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FolderTableViewCell.xib; sourceTree = "<group>"; };
 		C1E4E287241F8DDA008CB87C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		C1FACBC7242AE22100349609 /* HomeTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewDataSource.swift; sourceTree = "<group>"; };
 		C1FACBCE242AF55000349609 /* FolderCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderCellType.swift; sourceTree = "<group>"; };
 		C1FACBD2242B3A9A00349609 /* FeedBackGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackGenerator.swift; sourceTree = "<group>"; };
 		C1FACBD6242B497300349609 /* FolderDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderDataStore.swift; sourceTree = "<group>"; };
@@ -404,7 +389,6 @@
 		C13DD550241CAF6100248D29 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				C1CEFDC4243DD6F2007CE3C6 /* Olds */,
 				C1D73FA22425AC1C003075E9 /* Nib */,
 				C1CEFDCC243DD77E007CE3C6 /* ContentView */,
 				C1D531BB2419FFEE00641D97 /* HomeViewController.swift */,
@@ -413,6 +397,7 @@
 				C1D73FA32425AC3D003075E9 /* HomeViewModel.swift */,
 				C1D73FA62425AC47003075E9 /* HomeModel.swift */,
 				C1CEFDBE243DD6C3007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.swift */,
+				C1FACBCE242AF55000349609 /* FolderCellType.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -490,18 +475,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C1CEFDC4243DD6F2007CE3C6 /* Olds */ = {
-			isa = PBXGroup;
-			children = (
-				C1DDA584241E6A2500F07171 /* TableHeaderView.xib */,
-				C1DDA587241E6BBF00F07171 /* FolderTableViewCell.xib */,
-				C12E0B1C241F7FD70099B081 /* HomeTableHeaderView.swift */,
-				C1DDA586241E6BBF00F07171 /* FolderTableViewCell.swift */,
-				C1FACBC7242AE22100349609 /* HomeTableViewDataSource.swift */,
-			);
-			path = Olds;
-			sourceTree = "<group>";
-		};
 		C1CEFDCC243DD77E007CE3C6 /* ContentView */ = {
 			isa = PBXGroup;
 			children = (
@@ -575,7 +548,6 @@
 				C13DD551241CAF6700248D29 /* TaskList */,
 				C1D73FA92425DEB5003075E9 /* NewFolder */,
 				C13DD550241CAF6100248D29 /* Home */,
-				C1FACBCE242AF55000349609 /* FolderCellType.swift */,
 				C13DD560241CB0AE00248D29 /* Components */,
 			);
 			path = View;
@@ -764,14 +736,12 @@
 				C13DD556241CAFAB00248D29 /* TaskList.storyboard in Resources */,
 				C13DD562241CB72800248D29 /* Color.xcassets in Resources */,
 				C1D531C42419FFEF00641D97 /* LaunchScreen.storyboard in Resources */,
-				C1DDA585241E6A2500F07171 /* TableHeaderView.xib in Resources */,
 				C13DD55F241CB0A100248D29 /* WalkThrough.storyboard in Resources */,
 				C1D531C12419FFEF00641D97 /* Assets.xcassets in Resources */,
 				C1A0EB5C2424605A0099F0E7 /* TaskTableViewCell.xib in Resources */,
 				C12A72A72420FF3B00762C35 /* Image.xcassets in Resources */,
 				C13DD554241CAF9900248D29 /* Materials.storyboard in Resources */,
 				C1DDA574241E5F7F00F07171 /* Titillium_Web in Resources */,
-				C1DDA589241E6BBF00F07171 /* FolderTableViewCell.xib in Resources */,
 				C12A72A32420FD0F00762C35 /* MaterialCollectionViewCell.xib in Resources */,
 				C13DD54E241B32E700248D29 /* Settings.bundle in Resources */,
 				C1CEFDC1243DD6C3007CE3C6 /* OriginalFolderSectionHeaderCollectionReusableView.xib in Resources */,
@@ -791,8 +761,6 @@
 				C1A0EB5D2424697D0099F0E7 /* TaskTableViewCell.xib in Resources */,
 				C1B9770824210AB600CDAC22 /* MaterialCollectionViewCell.xib in Resources */,
 				C12A72A82421008200762C35 /* Image.xcassets in Resources */,
-				C1DDA58A241E6BC800F07171 /* TableHeaderView.xib in Resources */,
-				C1DDA58B241E6BC800F07171 /* FolderTableViewCell.xib in Resources */,
 				C1DDA577241E5FF600F07171 /* Titillium_Web in Resources */,
 				C13DD56D241CC01100248D29 /* Settings.bundle in Resources */,
 				C13DD56A241CC00800248D29 /* WalkThrough.storyboard in Resources */,
@@ -971,7 +939,6 @@
 				C12A72972420D8B300762C35 /* MovieMaterialViewController.swift in Sources */,
 				C1CEFDCB243DD76C007CE3C6 /* WPView.swift in Sources */,
 				C1272324242C57F00052A967 /* TaskTableViewDataSource.swift in Sources */,
-				C1DDA588241E6BBF00F07171 /* FolderTableViewCell.swift in Sources */,
 				C134F072241D137B00511B2A /* Terms.swift in Sources */,
 				C1FACBDB242B598B00349609 /* Date+isToday.swift in Sources */,
 				C1E4E288241F8DDA008CB87C /* CardView.swift in Sources */,
@@ -979,7 +946,6 @@
 				C134F074241D15D700511B2A /* Folder.swift in Sources */,
 				C14720532429B4E4003DEEA1 /* NewFolderViewModel.swift in Sources */,
 				C1272321242C55250052A967 /* CheckBox.swift in Sources */,
-				C12E0B1D241F7FD70099B081 /* HomeTableHeaderView.swift in Sources */,
 				C13DD55A241CAFD200248D29 /* MaterialsViewController.swift in Sources */,
 				C1FACBD3242B3A9A00349609 /* FeedBackGenerator.swift in Sources */,
 				C1D73FAD2425DF0F003075E9 /* NewFolderViewController.swift in Sources */,
@@ -991,7 +957,6 @@
 				C1CEFDDE243DD981007CE3C6 /* IBPCollectionViewCompositionalLayoutInteroperability.swift in Sources */,
 				C1D73FA72425AC47003075E9 /* HomeModel.swift in Sources */,
 				C14720552429BA61003DEEA1 /* PrimaryColorCollectionView.swift in Sources */,
-				C1FACBC8242AE22100349609 /* HomeTableViewDataSource.swift in Sources */,
 				C13DD55D241CB09A00248D29 /* WalkThroughViewController.swift in Sources */,
 				C1CEFDB7243DD5E8007CE3C6 /* WrapperCell.swift in Sources */,
 				C13DD558241CAFC400248D29 /* TaskListViewController.swift in Sources */,
@@ -1025,7 +990,6 @@
 				C1FACBCA242AE28A00349609 /* PrimaryColorCollectionView.swift in Sources */,
 				C1FACBCB242AE28A00349609 /* PrimaryColorCollectionViewCell.swift in Sources */,
 				C1FACBCC242AE28A00349609 /* NewFolderViewModel.swift in Sources */,
-				C1FACBCD242AE28A00349609 /* HomeTableViewDataSource.swift in Sources */,
 				C147205D2429C009003DEEA1 /* FolderPrimaryColorType.swift in Sources */,
 				C1D73FA82425AD02003075E9 /* HomeModel.swift in Sources */,
 				C1A0EB5E242469810099F0E7 /* TaskTableViewCell.swift in Sources */,
@@ -1036,8 +1000,6 @@
 				C12A729C2420DA9200762C35 /* MovieMaterialViewController.swift in Sources */,
 				C12A729D2420DA9200762C35 /* UIViewController+Make.swift in Sources */,
 				C1E4E289241F8F43008CB87C /* CardView.swift in Sources */,
-				C12E0B1E241F7FDF0099B081 /* HomeTableHeaderView.swift in Sources */,
-				C1DDA58C241E6BCE00F07171 /* FolderTableViewCell.swift in Sources */,
 				C1DDA582241E672400F07171 /* UIViewController+LargeTitle.swift in Sources */,
 				C1DDA57C241E64FF00F07171 /* PrimaryColorView.swift in Sources */,
 				C1DDA57D241E64FF00F07171 /* User.swift in Sources */,
