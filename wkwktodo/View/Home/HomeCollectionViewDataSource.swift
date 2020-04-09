@@ -8,8 +8,13 @@
 
 import Foundation
 import UIKit
+import RxSwift
+import RxCocoa
 
-class HomeCollectionViewDataSource: NSObject, UICollectionViewDataSource {
+class HomeCollectionViewDataSource: NSObject, UICollectionViewDataSource, RxCollectionViewDataSourceType {
+    typealias Element = [Folder]
+    var items: Element = []
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 3
     }
@@ -38,22 +43,29 @@ class HomeCollectionViewDataSource: NSObject, UICollectionViewDataSource {
         case 1:
             guard let standardFolderViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "StandardFolderViewCell", for: indexPath) as? WrapperCell<StandardFolderView> else { return UICollectionViewCell() }
             standardFolderViewCell.update { standardFolderView in
+                standardFolderView.layoutIfNeeded()
                 standardFolderView.configure(taskCount: Int.random(in: 1...100), title: ["today", "all"][indexPath.row])
-                standardFolderViewCell.layoutIfNeeded()
             }
             return standardFolderViewCell
         case 2:
             guard let originalFolderViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "OriginalFolderViewCell", for: indexPath) as? WrapperCell<OriginalFolderView> else { return UICollectionViewCell() }
-            var cellType: CellType = .body
+            var cellType: OriginalFolderCellType = .body
             if indexPath.row == 0 { cellType = .first }
             if indexPath.row == 11 { cellType = .last}
             originalFolderViewCell.update { originalFolderView in
-                originalFolderView.configure(cellType, folderCellType: FolderCellType(id: 1, primaryColor: .blue, title: "AAA \(indexPath.row)", progress: "\(indexPath.row)/100"))
                 originalFolderView.layoutIfNeeded()
+                originalFolderView.configure(with: FolderCellType(id: 1, primaryColor: .blue, title: "AAA \(indexPath.row)", progress: "\(indexPath.row)/100"), cellType: cellType)
             }
             return originalFolderViewCell
         default:
             return UICollectionViewCell()
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, observedEvent: Event<Element>) {
+        Binder<Element>(self) { dataSource, element in
+            dataSource.items = element
+            collectionView.reloadData()
+        }.on(observedEvent)
     }
 }

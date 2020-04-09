@@ -18,18 +18,20 @@ class OriginalFolderView: UIView, ReusableViewType, BackingViewMaker {
         super.awakeFromNib()
         clipsToBounds = true
         logoView.clipsToBounds = true
+        logoView.layer.cornerRadius = 15
     }
     
     override func layoutIfNeeded() {
         super.layoutIfNeeded()
-        logoView.layer.cornerRadius = logoView.bounds.height * 2
+        print("=---")
+        logoView.layer.cornerRadius = logoView.bounds.height * 0.5
     }
     
     func prepareForReuse() {
         print("prepareForReuse")
     }
 
-    func configure(_ cellType: CellType, folderCellType: FolderCellType) {
+    func configure(with folderCellType: FolderCellType, cellType: OriginalFolderCellType) {
         switch cellType {
         case .first:
             layer.cornerRadius = 12
@@ -50,4 +52,8 @@ class OriginalFolderView: UIView, ReusableViewType, BackingViewMaker {
         guard let originalFolderView = R.nib.originalFolderView(owner: self) else { return OriginalFolderView() }
         return originalFolderView
     }
+}
+
+enum OriginalFolderCellType {
+    case first, body, last
 }

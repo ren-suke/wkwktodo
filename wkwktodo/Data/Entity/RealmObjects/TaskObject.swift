@@ -9,14 +9,14 @@
 import Foundation
 import RealmSwift
 
-class Task: Object {
+class TaskObject: Object {
     @objc dynamic var id: Int = 0
     @objc dynamic var title: String = ""
     @objc dynamic var deadline: Date?
     @objc dynamic var isCompleted: Bool = false
     @objc dynamic var completedDate: Date?
     @objc dynamic var wp: Int = 0
-    @objc dynamic var folder: Folder?
+    @objc dynamic var folder: FolderObject?
 
     override static func primaryKey() -> String? {
         return "id"

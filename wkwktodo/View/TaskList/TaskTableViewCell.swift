@@ -29,7 +29,7 @@ class TaskTableViewCell: UITableViewCell {
         disposeBag = .init()
     }
     
-    func configure(with task: Task) {
+    func configure(with task: TaskObject) {
         titleLabel.text = task.title
         checkBox.isChecked = task.isCompleted
     }
