@@ -9,8 +9,8 @@
 import Foundation
 import RealmSwift
 
-class Folder: Object {
-    @objc dynamic var id: Int = 0
+class FolderObject: Object {
+    @objc dynamic var id: String = UUID.init().uuidString
     @objc dynamic var title: String = ""
     @objc private dynamic var primaryColorRawValue: String = ""
     var primaryColor: FolderPrimaryColorType {

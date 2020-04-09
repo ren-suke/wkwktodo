@@ -23,6 +23,7 @@ class StandardFolderView: UIView, ReusableViewType, BackingViewMaker {
     
     override func layoutIfNeeded() {
         super.layoutIfNeeded()
+        print("=-ddd-sfs-")
         logoView.layer.cornerRadius = logoView.bounds.height * 0.5
     }
     

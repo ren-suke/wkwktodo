@@ -40,12 +40,12 @@ class TaskListViewController: UIViewController {
                            forCellReuseIdentifier: R.reuseIdentifier.taskTableViewCell.identifier)
         tableView.rowHeight = 50
         
-        viewModel = .init(input: TaskListViewModelInput(
-            addTaskButtonTapped: addTaskButton.rx.tap.asObservable(),
-            taskCellCheckBoxClicked: dataSource.checkBoxTapped.asObservable(),
-            taskRealmQueryType: self.taskRealmQueryType,
-            folderId: self.folderId
-        ))
+//        viewModel = .init(input: TaskListViewModelInput(
+//            addTaskButtonTapped: addTaskButton.rx.tap.asObservable(),
+//            taskCellCheckBoxClicked: dataSource.checkBoxTapped.asObservable(),
+//            taskRealmQueryType: self.taskRealmQueryType,
+//            folderId: self.folderId
+//        ))
     }
 }
 
@@ -68,7 +68,7 @@ extension TaskListViewController {
                 })
                 .action(.default("OK")) { _, _, textFields in
                     let title = textFields!.first!.text!
-                    self.viewModel?.addTaskSubject.onNext(title)
+//                    self.viewModel?.addTaskSubject.onNext(title)
                 }
                 .show(on: me, completion: nil)
         }

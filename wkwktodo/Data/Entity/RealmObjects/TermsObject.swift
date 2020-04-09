@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class Terms: Object {
+class TermsObject: Object {
     @objc dynamic var minimumRequiredWP: Int = 0
     @objc dynamic var continuousLoginDays: Int = 0
     @objc dynamic var totalLoginDays: Int = 0

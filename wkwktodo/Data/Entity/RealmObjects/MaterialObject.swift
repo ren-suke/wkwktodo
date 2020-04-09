@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class Material: Object {
+class MaterialObject: Object {
     @objc dynamic var id: Int = 0
     @objc dynamic var title: String = ""
     @objc dynamic var letterBody: String = ""
@@ -18,9 +18,9 @@ class Material: Object {
         get { return MaterialType(rawValue: typeRawValue) ?? .undefined }
         set { typeRawValue = newValue.rawValue }
     }
-    @objc dynamic var previewImageData: Data = Data()
+    @objc dynamic var previewImageData: Data = .init()
     @objc dynamic var data: Data?
-    @objc dynamic var terms: Terms? = Terms()
+    @objc dynamic var terms: TermsObject? = .init()
     @objc dynamic var isValid: Bool = true
     
     override static func primaryKey() -> String? {

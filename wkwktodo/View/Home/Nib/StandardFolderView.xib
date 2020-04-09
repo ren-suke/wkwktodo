@@ -54,9 +54,9 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="logoView" destination="Yps-wj-5qb" id="CeW-ZW-URI"/>
-                <outlet property="taskCountLabel" destination="49j-mY-tA0" id="TZH-MW-r5u"/>
-                <outlet property="titleLabel" destination="8xE-jk-S5N" id="fPr-sn-ZFF"/>
+                <outlet property="logoView" destination="Yps-wj-5qb" id="p5Q-Sd-4YG"/>
+                <outlet property="taskCountLabel" destination="49j-mY-tA0" id="E7h-Vh-t8u"/>
+                <outlet property="titleLabel" destination="8xE-jk-S5N" id="cht-1j-FJ9"/>
             </connections>
             <point key="canvasLocation" x="-14.4" y="-99.400299850074973"/>
         </view>

@@ -12,32 +12,32 @@ import RxRealm
 import RxSwift
 
 protocol FolderDataStoreProtocol {
-    static func getFolders() -> Observable<[Folder]>
-    static func addFolder(with newFolder: Folder) -> Observable<Void>
+    static func getFolderObjects() -> Observable<[FolderObject]>
+    static func addFolder(with newFolder: FolderObject) -> Observable<Void>
 }
 
-class FolderDataStore: FolderDataStoreProtocol {
-    static func getFolders() -> Observable<[Folder]> {
+struct FolderDataStore: FolderDataStoreProtocol {
+    static func getFolderObjects() -> Observable<[FolderObject]> {
         do {
             let realm = try Realm()
-            let folders = realm.objects(Folder.self)
+            let folders = realm.objects(FolderObject.self)
             return Observable.array(from: folders)
         } catch {
-            return Observable<[Folder]>.error(error)
+            return Observable<[FolderObject]>.error(error)
         }
     }
     
-    static func getFolder(with id: Int) -> Folder {
+    static func getFolder(with id: Int) -> FolderObject {
         do {
             let realm = try Realm()
-            let folder = realm.object(ofType: Folder.self, forPrimaryKey: id)
+            let folder = realm.object(ofType: FolderObject.self, forPrimaryKey: id)
             return folder!
         } catch {
             fatalError()
         }
     }
     
-    static func addFolder(with newFolder: Folder) -> Observable<Void> {
+    static func addFolder(with newFolder: FolderObject) -> Observable<Void> {
         do {
             let realm = try Realm()
             try realm.write {

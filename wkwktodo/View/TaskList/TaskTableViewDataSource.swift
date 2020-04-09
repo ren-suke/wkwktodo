@@ -14,7 +14,7 @@ import RxCocoa
 final class TaskTableViewDataSource: NSObject, UITableViewDataSource, RxTableViewDataSourceType {
     let checkBoxTapped: PublishSubject<IndexPath> = .init()
     
-    typealias Element = [Task]
+    typealias Element = [TaskObject]
     private var items: Element = []
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

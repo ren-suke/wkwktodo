@@ -21,4 +21,9 @@ struct HomeViewModelInput {
 }
 
 final class HomeViewModel {
+    private(set) var folders: Driver<[Folder]> = .empty()
+    
+    init() {
+        
+    }
 }
