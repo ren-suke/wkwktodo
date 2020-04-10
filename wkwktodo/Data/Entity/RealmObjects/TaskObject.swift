@@ -16,6 +16,8 @@ class TaskObject: Object {
     @objc dynamic var isCompleted: Bool = false
     @objc dynamic var completedDate: Date?
     @objc dynamic var wp: Int = 0
+    @objc dynamic var order: Int = 0
+    @objc dynamic var indentationLevel: Int = 0
     @objc dynamic var folder: FolderObject?
 
     override static func primaryKey() -> String? {

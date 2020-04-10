@@ -62,6 +62,14 @@
 		C14720592429BA93003DEEA1 /* PrimaryColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C14720572429BA93003DEEA1 /* PrimaryColorCollectionViewCell.xib */; };
 		C147205C2429BF84003DEEA1 /* FolderPrimaryColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C147205B2429BF84003DEEA1 /* FolderPrimaryColorType.swift */; };
 		C147205D2429C009003DEEA1 /* FolderPrimaryColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C147205B2429BF84003DEEA1 /* FolderPrimaryColorType.swift */; };
+		C14EC46424402A58000784E4 /* TaskListViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC46324402A58000784E4 /* TaskListViewControllerBuilder.swift */; };
+		C14EC46524402A66000784E4 /* TaskListViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC46324402A58000784E4 /* TaskListViewControllerBuilder.swift */; };
+		C14EC46824402D34000784E4 /* StandardFolderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC46724402D34000784E4 /* StandardFolderObject.swift */; };
+		C14EC46A24402D42000784E4 /* OriginalFolderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC46924402D42000784E4 /* OriginalFolderObject.swift */; };
+		C14EC46E24402E26000784E4 /* StandardFolderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC46724402D34000784E4 /* StandardFolderObject.swift */; };
+		C14EC46F24402E26000784E4 /* OriginalFolderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC46924402D42000784E4 /* OriginalFolderObject.swift */; };
+		C14EC49524408EAF000784E4 /* AllTaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC49424408EAF000784E4 /* AllTaskListViewController.swift */; };
+		C14EC49724408ED4000784E4 /* AllTaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC49624408ED4000784E4 /* AllTaskListViewModel.swift */; };
 		C1584BE8241A3C1B0038EA38 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1584BDF241A3C1B0038EA38 /* RxRelay.framework */; };
 		C1584BE9241A3C1B0038EA38 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1584BDF241A3C1B0038EA38 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1584BEA241A3C1B0038EA38 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1584BE0241A3C1B0038EA38 /* Realm.framework */; };
@@ -254,6 +262,11 @@
 		C14720562429BA93003DEEA1 /* PrimaryColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		C14720572429BA93003DEEA1 /* PrimaryColorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrimaryColorCollectionViewCell.xib; sourceTree = "<group>"; };
 		C147205B2429BF84003DEEA1 /* FolderPrimaryColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderPrimaryColorType.swift; sourceTree = "<group>"; };
+		C14EC46324402A58000784E4 /* TaskListViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerBuilder.swift; sourceTree = "<group>"; };
+		C14EC46724402D34000784E4 /* StandardFolderObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StandardFolderObject.swift; path = StandardFolderObject.swift/StandardFolderObject.swift; sourceTree = "<group>"; };
+		C14EC46924402D42000784E4 /* OriginalFolderObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalFolderObject.swift; sourceTree = "<group>"; };
+		C14EC49424408EAF000784E4 /* AllTaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTaskListViewController.swift; sourceTree = "<group>"; };
+		C14EC49624408ED4000784E4 /* AllTaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTaskListViewModel.swift; sourceTree = "<group>"; };
 		C1584BDF241A3C1B0038EA38 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		C1584BE0241A3C1B0038EA38 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		C1584BE1241A3C1B0038EA38 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
@@ -382,6 +395,7 @@
 		C12E0B1B241F7FA70099B081 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C1CEFDDD243DD981007CE3C6 /* IBPCollectionViewCompositionalLayoutInteroperability.swift */,
 				C1DDA580241E66DD00F07171 /* UIViewController+LargeTitle.swift */,
 				C13DD56E241CC59E00248D29 /* UIView+Gradient.swift */,
 				C12A72982420DA0800762C35 /* UIViewController+Make.swift */,
@@ -408,12 +422,12 @@
 		C13DD551241CAF6700248D29 /* TaskList */ = {
 			isa = PBXGroup;
 			children = (
-				C13DD555241CAFAB00248D29 /* TaskList.storyboard */,
+				C14EC46224402A37000784E4 /* Nib */,
 				C13DD557241CAFC400248D29 /* TaskListViewController.swift */,
 				C1272326242C5C450052A967 /* TaskListViewModel.swift */,
-				C1A0EB5A2424605A0099F0E7 /* TaskTableViewCell.xib */,
 				C1A0EB592424605A0099F0E7 /* TaskTableViewCell.swift */,
 				C1272323242C57F00052A967 /* TaskTableViewDataSource.swift */,
+				C14EC46324402A58000784E4 /* TaskListViewControllerBuilder.swift */,
 			);
 			path = TaskList;
 			sourceTree = "<group>";
@@ -456,6 +470,39 @@
 				C147205B2429BF84003DEEA1 /* FolderPrimaryColorType.swift */,
 			);
 			path = Type;
+			sourceTree = "<group>";
+		};
+		C14EC46224402A37000784E4 /* Nib */ = {
+			isa = PBXGroup;
+			children = (
+				C13DD555241CAFAB00248D29 /* TaskList.storyboard */,
+				C1A0EB5A2424605A0099F0E7 /* TaskTableViewCell.xib */,
+			);
+			path = Nib;
+			sourceTree = "<group>";
+		};
+		C14EC46B24402D8C000784E4 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C1FACBDA242B598B00349609 /* Date+isToday.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		C14EC49024408D2D000784E4 /* TodayTaskList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TodayTaskList;
+			sourceTree = "<group>";
+		};
+		C14EC49124408D3D000784E4 /* AllTaskList */ = {
+			isa = PBXGroup;
+			children = (
+				C14EC49424408EAF000784E4 /* AllTaskListViewController.swift */,
+				C14EC49624408ED4000784E4 /* AllTaskListViewModel.swift */,
+			);
+			path = AllTaskList;
 			sourceTree = "<group>";
 		};
 		C1584BDE241A3C1B0038EA38 /* Frameworks */ = {
@@ -573,6 +620,8 @@
 			children = (
 				C13DD55B241CB08000248D29 /* WalkThrough */,
 				C13DD552241CAF6D00248D29 /* Materials */,
+				C14EC49124408D3D000784E4 /* AllTaskList */,
+				C14EC49024408D2D000784E4 /* TodayTaskList */,
 				C13DD551241CAF6700248D29 /* TaskList */,
 				C1D73FA92425DEB5003075E9 /* NewFolder */,
 				C13DD550241CAF6100248D29 /* Home */,
@@ -601,10 +650,9 @@
 		C1D531D0241A0B4400641D97 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C1CEFDDD243DD981007CE3C6 /* IBPCollectionViewCompositionalLayoutInteroperability.swift */,
+				C14EC46B24402D8C000784E4 /* Utility */,
 				C1FACBD1242B3A8A00349609 /* Rx */,
 				C12E0B1B241F7FA70099B081 /* UIKit */,
-				C1FACBDA242B598B00349609 /* Date+isToday.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -637,6 +685,8 @@
 		C1E91482243DA36F004D3D50 /* RealmObjects */ = {
 			isa = PBXGroup;
 			children = (
+				C14EC46724402D34000784E4 /* StandardFolderObject.swift */,
+				C14EC46924402D42000784E4 /* OriginalFolderObject.swift */,
 				C134F07B241D19EB00511B2A /* UserObject.swift */,
 				C134F078241D172600511B2A /* TaskObject.swift */,
 				C134F073241D15D700511B2A /* FolderObject.swift */,
@@ -951,10 +1001,12 @@
 				C14720582429BA93003DEEA1 /* PrimaryColorCollectionViewCell.swift in Sources */,
 				C17BE992242C8AD200DA4474 /* TaskDataStore.swift in Sources */,
 				C1D73FA42425AC3D003075E9 /* HomeViewModel.swift in Sources */,
+				C14EC46424402A58000784E4 /* TaskListViewControllerBuilder.swift in Sources */,
 				C134F070241D124A00511B2A /* MaterialObject.swift in Sources */,
 				C13DD564241CB95000248D29 /* R.generated.swift in Sources */,
 				C1CEFDC7243DD753007CE3C6 /* OriginalFolderView.swift in Sources */,
 				C13DD56F241CC59E00248D29 /* UIView+Gradient.swift in Sources */,
+				C14EC49724408ED4000784E4 /* AllTaskListViewModel.swift in Sources */,
 				C1DDA581241E66DD00F07171 /* UIViewController+LargeTitle.swift in Sources */,
 				C134F079241D172600511B2A /* TaskObject.swift in Sources */,
 				C1059408242CC8DC0019538E /* NatureAPIClient.swift in Sources */,
@@ -963,6 +1015,7 @@
 				C12A72992420DA0800762C35 /* UIViewController+Make.swift in Sources */,
 				C12A72932420D89500762C35 /* WallpaperMaterialViewController.swift in Sources */,
 				C1FACBD7242B497300349609 /* FolderDataStore.swift in Sources */,
+				C14EC46824402D34000784E4 /* StandardFolderObject.swift in Sources */,
 				C1CEFDE1243DD9C4007CE3C6 /* HomeCollectionViewDataSource.swift in Sources */,
 				C12A72972420D8B300762C35 /* MovieMaterialViewController.swift in Sources */,
 				C1CEFDCB243DD76C007CE3C6 /* WPView.swift in Sources */,
@@ -974,6 +1027,7 @@
 				C134F074241D15D700511B2A /* FolderObject.swift in Sources */,
 				C14720532429B4E4003DEEA1 /* NewFolderViewModel.swift in Sources */,
 				C1272321242C55250052A967 /* CheckBox.swift in Sources */,
+				C14EC49524408EAF000784E4 /* AllTaskListViewController.swift in Sources */,
 				C13DD55A241CAFD200248D29 /* MaterialsViewController.swift in Sources */,
 				C1CE9E32243F46E3003A6BAD /* FolderRepository.swift in Sources */,
 				C1FACBD3242B3A9A00349609 /* FeedBackGenerator.swift in Sources */,
@@ -986,6 +1040,7 @@
 				C1CEFDCE243DD8B5007CE3C6 /* HomeCollectionViewLayout.swift in Sources */,
 				C1CEFDDE243DD981007CE3C6 /* IBPCollectionViewCompositionalLayoutInteroperability.swift in Sources */,
 				C14720552429BA61003DEEA1 /* PrimaryColorCollectionView.swift in Sources */,
+				C14EC46A24402D42000784E4 /* OriginalFolderObject.swift in Sources */,
 				C13DD55D241CB09A00248D29 /* WalkThroughViewController.swift in Sources */,
 				C1CEFDB7243DD5E8007CE3C6 /* WrapperCell.swift in Sources */,
 				C13DD558241CAFC400248D29 /* TaskListViewController.swift in Sources */,
@@ -998,6 +1053,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C14EC46E24402E26000784E4 /* StandardFolderObject.swift in Sources */,
+				C14EC46F24402E26000784E4 /* OriginalFolderObject.swift in Sources */,
+				C14EC46524402A66000784E4 /* TaskListViewControllerBuilder.swift in Sources */,
 				C1CE9E33243F486B003A6BAD /* FolderUseCase.swift in Sources */,
 				C1CE9E34243F486B003A6BAD /* FolderRepository.swift in Sources */,
 				C1CE9E2B243F3EC8003A6BAD /* Folder.swift in Sources */,
@@ -1239,6 +1297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K3WSFBFNGQ;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1263,6 +1322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K3WSFBFNGQ;
 				FRAMEWORK_SEARCH_PATHS = (

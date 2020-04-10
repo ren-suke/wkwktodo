@@ -15,5 +15,4 @@ struct Folder {
     let allTaskCount: Int
     let completedTaskCount: Int
     let type: FolderType
-    let detailType: FolderDetailType?
 }
