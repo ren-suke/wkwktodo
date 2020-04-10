@@ -10,7 +10,7 @@ public protocol BackingViewMaker {
   static func makeBackedView() -> View
 }
 
-public final class WrapperCell<Maker: BackingViewMaker>: UICollectionViewCell {
+public final class WrapperCollectionViewCell<Maker: BackingViewMaker>: UICollectionViewCell {
   public let backed: Maker.View
   
   public override init(frame: CGRect) {

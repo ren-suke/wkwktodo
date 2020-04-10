@@ -57,8 +57,8 @@ class HomeViewController: UIViewController {
         collectionView.dataSource = dataSource
         collectionView.collectionViewLayout = HomeCollectionViewLayout.create()
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
-        collectionView.register(WrapperCell<WPView>.self, forCellWithReuseIdentifier: "WPViewCell")
-        collectionView.register(WrapperCell<StandardFolderView>.self, forCellWithReuseIdentifier: "StandardFolderViewCell")
-        collectionView.register(WrapperCell<OriginalFolderView>.self, forCellWithReuseIdentifier: "OriginalFolderViewCell")
+        collectionView.register(WrapperCollectionViewCell<WPView>.self, forCellWithReuseIdentifier: "WPViewCell")
+        collectionView.register(WrapperCollectionViewCell<StandardFolderView>.self, forCellWithReuseIdentifier: "StandardFolderViewCell")
+        collectionView.register(WrapperCollectionViewCell<OriginalFolderView>.self, forCellWithReuseIdentifier: "OriginalFolderViewCell")
     }
 }
