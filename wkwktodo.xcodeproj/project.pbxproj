@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		C1059408242CC8DC0019538E /* NatureAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1059407242CC8DC0019538E /* NatureAPIClient.swift */; };
 		C1059409242CC91B0019538E /* NatureAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1059407242CC8DC0019538E /* NatureAPIClient.swift */; };
+		C126D1082441BB9F00C3325C /* HomeCollectionViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126D1072441BB9F00C3325C /* HomeCollectionViewType.swift */; };
+		C126D1092441BBE000C3325C /* AllTaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC49424408EAF000784E4 /* AllTaskListViewController.swift */; };
+		C126D10A2441BBE000C3325C /* AllTaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC49624408ED4000784E4 /* AllTaskListViewModel.swift */; };
+		C126D10B2441BBE000C3325C /* HomeCollectionViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126D1072441BB9F00C3325C /* HomeCollectionViewType.swift */; };
+		C126D10E2441BC7400C3325C /* StandardFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126D10D2441BC7400C3325C /* StandardFolder.swift */; };
 		C1272321242C55250052A967 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1272320242C55250052A967 /* CheckBox.swift */; };
 		C1272322242C55560052A967 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1272320242C55250052A967 /* CheckBox.swift */; };
 		C1272324242C57F00052A967 /* TaskTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1272323242C57F00052A967 /* TaskTableViewDataSource.swift */; };
@@ -36,6 +41,15 @@
 		C134F079241D172600511B2A /* TaskObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F078241D172600511B2A /* TaskObject.swift */; };
 		C134F07A241D17EF00511B2A /* TaskObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F078241D172600511B2A /* TaskObject.swift */; };
 		C134F07C241D19EB00511B2A /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F07B241D19EB00511B2A /* UserObject.swift */; };
+		C135161A2441BD8300900D66 /* StandardFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126D10D2441BC7400C3325C /* StandardFolder.swift */; };
+		C135161C2441C69800900D66 /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C135161B2441C69800900D66 /* HomeUseCase.swift */; };
+		C135161D2441C73D00900D66 /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C135161B2441C69800900D66 /* HomeUseCase.swift */; };
+		C135161F2441C78200900D66 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C135161E2441C78200900D66 /* UserRepository.swift */; };
+		C13516212441C78C00900D66 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13516202441C78C00900D66 /* TaskRepository.swift */; };
+		C13516222441C79700900D66 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C135161E2441C78200900D66 /* UserRepository.swift */; };
+		C13516232441C79700900D66 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13516202441C78C00900D66 /* TaskRepository.swift */; };
+		C13516252441C80800900D66 /* UserDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13516242441C80800900D66 /* UserDataStore.swift */; };
+		C13516262441C81400900D66 /* UserDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13516242441C80800900D66 /* UserDataStore.swift */; };
 		C13DD54E241B32E700248D29 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C13DD54D241B32E700248D29 /* Settings.bundle */; };
 		C13DD554241CAF9900248D29 /* Materials.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD553241CAF9900248D29 /* Materials.storyboard */; };
 		C13DD556241CAFAB00248D29 /* TaskList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD555241CAFAB00248D29 /* TaskList.storyboard */; };
@@ -65,9 +79,7 @@
 		C14EC46424402A58000784E4 /* TaskListViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC46324402A58000784E4 /* TaskListViewControllerBuilder.swift */; };
 		C14EC46524402A66000784E4 /* TaskListViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC46324402A58000784E4 /* TaskListViewControllerBuilder.swift */; };
 		C14EC46824402D34000784E4 /* StandardFolderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC46724402D34000784E4 /* StandardFolderObject.swift */; };
-		C14EC46A24402D42000784E4 /* OriginalFolderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC46924402D42000784E4 /* OriginalFolderObject.swift */; };
 		C14EC46E24402E26000784E4 /* StandardFolderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC46724402D34000784E4 /* StandardFolderObject.swift */; };
-		C14EC46F24402E26000784E4 /* OriginalFolderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC46924402D42000784E4 /* OriginalFolderObject.swift */; };
 		C14EC49524408EAF000784E4 /* AllTaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC49424408EAF000784E4 /* AllTaskListViewController.swift */; };
 		C14EC49724408ED4000784E4 /* AllTaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC49624408ED4000784E4 /* AllTaskListViewModel.swift */; };
 		C1584BE8241A3C1B0038EA38 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1584BDF241A3C1B0038EA38 /* RxRelay.framework */; };
@@ -120,9 +132,9 @@
 		C1CE9E32243F46E3003A6BAD /* FolderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CE9E31243F46E3003A6BAD /* FolderRepository.swift */; };
 		C1CE9E33243F486B003A6BAD /* FolderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CE9E2E243F4428003A6BAD /* FolderUseCase.swift */; };
 		C1CE9E34243F486B003A6BAD /* FolderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CE9E31243F46E3003A6BAD /* FolderRepository.swift */; };
-		C1CEFDB7243DD5E8007CE3C6 /* WrapperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDB6243DD5E8007CE3C6 /* WrapperCell.swift */; };
+		C1CEFDB7243DD5E8007CE3C6 /* WrapperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDB6243DD5E8007CE3C6 /* WrapperCollectionViewCell.swift */; };
 		C1CEFDB9243DD64A007CE3C6 /* StandardFolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDB8243DD64A007CE3C6 /* StandardFolderView.xib */; };
-		C1CEFDBB243DD656007CE3C6 /* OriginalFolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDBA243DD656007CE3C6 /* OriginalFolderView.xib */; };
+		C1CEFDBB243DD656007CE3C6 /* FolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDBA243DD656007CE3C6 /* FolderView.xib */; };
 		C1CEFDC0243DD6C3007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDBE243DD6C3007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.swift */; };
 		C1CEFDC1243DD6C3007CE3C6 /* OriginalFolderSectionHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDBF243DD6C3007CE3C6 /* OriginalFolderSectionHeaderCollectionReusableView.xib */; };
 		C1CEFDC3243DD6E1007CE3C6 /* WPView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDC2243DD6E1007CE3C6 /* WPView.xib */; };
@@ -137,13 +149,13 @@
 		C1CEFDD3243DD917007CE3C6 /* IBPCollectionViewCompositionalLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1CEFDCF243DD902007CE3C6 /* IBPCollectionViewCompositionalLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1CEFDD4243DD94F007CE3C6 /* StandardFolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDB8243DD64A007CE3C6 /* StandardFolderView.xib */; };
 		C1CEFDD5243DD94F007CE3C6 /* OriginalFolderSectionHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDBF243DD6C3007CE3C6 /* OriginalFolderSectionHeaderCollectionReusableView.xib */; };
-		C1CEFDD6243DD94F007CE3C6 /* OriginalFolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDBA243DD656007CE3C6 /* OriginalFolderView.xib */; };
+		C1CEFDD6243DD94F007CE3C6 /* FolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDBA243DD656007CE3C6 /* FolderView.xib */; };
 		C1CEFDD7243DD94F007CE3C6 /* WPView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CEFDC2243DD6E1007CE3C6 /* WPView.xib */; };
 		C1CEFDD8243DD964007CE3C6 /* OriginalFolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDC6243DD753007CE3C6 /* OriginalFolderView.swift */; };
 		C1CEFDD9243DD964007CE3C6 /* StandardFolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDC8243DD760007CE3C6 /* StandardFolderView.swift */; };
 		C1CEFDDA243DD964007CE3C6 /* WPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDCA243DD76C007CE3C6 /* WPView.swift */; };
 		C1CEFDDB243DD964007CE3C6 /* HomeCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDCD243DD8B5007CE3C6 /* HomeCollectionViewLayout.swift */; };
-		C1CEFDDC243DD964007CE3C6 /* WrapperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDB6243DD5E8007CE3C6 /* WrapperCell.swift */; };
+		C1CEFDDC243DD964007CE3C6 /* WrapperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDB6243DD5E8007CE3C6 /* WrapperCollectionViewCell.swift */; };
 		C1CEFDDE243DD981007CE3C6 /* IBPCollectionViewCompositionalLayoutInteroperability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDDD243DD981007CE3C6 /* IBPCollectionViewCompositionalLayoutInteroperability.swift */; };
 		C1CEFDDF243DD98D007CE3C6 /* IBPCollectionViewCompositionalLayoutInteroperability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDDD243DD981007CE3C6 /* IBPCollectionViewCompositionalLayoutInteroperability.swift */; };
 		C1CEFDE1243DD9C4007CE3C6 /* HomeCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CEFDE0243DD9C4007CE3C6 /* HomeCollectionViewDataSource.swift */; };
@@ -177,8 +189,6 @@
 		C1FACBCA242AE28A00349609 /* PrimaryColorCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14720542429BA61003DEEA1 /* PrimaryColorCollectionView.swift */; };
 		C1FACBCB242AE28A00349609 /* PrimaryColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14720562429BA93003DEEA1 /* PrimaryColorCollectionViewCell.swift */; };
 		C1FACBCC242AE28A00349609 /* NewFolderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14720522429B4E4003DEEA1 /* NewFolderViewModel.swift */; };
-		C1FACBCF242AF55000349609 /* FolderCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FACBCE242AF55000349609 /* FolderCellType.swift */; };
-		C1FACBD0242B013000349609 /* FolderCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FACBCE242AF55000349609 /* FolderCellType.swift */; };
 		C1FACBD3242B3A9A00349609 /* FeedBackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FACBD2242B3A9A00349609 /* FeedBackGenerator.swift */; };
 		C1FACBD4242B3B3200349609 /* FeedBackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FACBD2242B3A9A00349609 /* FeedBackGenerator.swift */; };
 		C1FACBD7242B497300349609 /* FolderDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FACBD6242B497300349609 /* FolderDataStore.swift */; };
@@ -232,6 +242,8 @@
 
 /* Begin PBXFileReference section */
 		C1059407242CC8DC0019538E /* NatureAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureAPIClient.swift; sourceTree = "<group>"; };
+		C126D1072441BB9F00C3325C /* HomeCollectionViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewType.swift; sourceTree = "<group>"; };
+		C126D10D2441BC7400C3325C /* StandardFolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardFolder.swift; sourceTree = "<group>"; };
 		C1272320242C55250052A967 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		C1272323242C57F00052A967 /* TaskTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewDataSource.swift; sourceTree = "<group>"; };
 		C1272326242C5C450052A967 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
@@ -247,6 +259,10 @@
 		C134F073241D15D700511B2A /* FolderObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderObject.swift; sourceTree = "<group>"; };
 		C134F078241D172600511B2A /* TaskObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskObject.swift; sourceTree = "<group>"; };
 		C134F07B241D19EB00511B2A /* UserObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
+		C135161B2441C69800900D66 /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCase.swift; sourceTree = "<group>"; };
+		C135161E2441C78200900D66 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		C13516202441C78C00900D66 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		C13516242441C80800900D66 /* UserDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataStore.swift; sourceTree = "<group>"; };
 		C13DD54D241B32E700248D29 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		C13DD553241CAF9900248D29 /* Materials.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Materials.storyboard; sourceTree = "<group>"; };
 		C13DD555241CAFAB00248D29 /* TaskList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskList.storyboard; sourceTree = "<group>"; };
@@ -264,7 +280,6 @@
 		C147205B2429BF84003DEEA1 /* FolderPrimaryColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderPrimaryColorType.swift; sourceTree = "<group>"; };
 		C14EC46324402A58000784E4 /* TaskListViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerBuilder.swift; sourceTree = "<group>"; };
 		C14EC46724402D34000784E4 /* StandardFolderObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StandardFolderObject.swift; path = StandardFolderObject.swift/StandardFolderObject.swift; sourceTree = "<group>"; };
-		C14EC46924402D42000784E4 /* OriginalFolderObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalFolderObject.swift; sourceTree = "<group>"; };
 		C14EC49424408EAF000784E4 /* AllTaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTaskListViewController.swift; sourceTree = "<group>"; };
 		C14EC49624408ED4000784E4 /* AllTaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTaskListViewModel.swift; sourceTree = "<group>"; };
 		C1584BDF241A3C1B0038EA38 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
@@ -284,9 +299,9 @@
 		C1CE9E29243F3D39003A6BAD /* Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
 		C1CE9E2E243F4428003A6BAD /* FolderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderUseCase.swift; sourceTree = "<group>"; };
 		C1CE9E31243F46E3003A6BAD /* FolderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderRepository.swift; sourceTree = "<group>"; };
-		C1CEFDB6243DD5E8007CE3C6 /* WrapperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapperCell.swift; sourceTree = "<group>"; };
+		C1CEFDB6243DD5E8007CE3C6 /* WrapperCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapperCollectionViewCell.swift; sourceTree = "<group>"; };
 		C1CEFDB8243DD64A007CE3C6 /* StandardFolderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandardFolderView.xib; sourceTree = "<group>"; };
-		C1CEFDBA243DD656007CE3C6 /* OriginalFolderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OriginalFolderView.xib; sourceTree = "<group>"; };
+		C1CEFDBA243DD656007CE3C6 /* FolderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FolderView.xib; sourceTree = "<group>"; };
 		C1CEFDBE243DD6C3007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalListSectionHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		C1CEFDBF243DD6C3007CE3C6 /* OriginalFolderSectionHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OriginalFolderSectionHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		C1CEFDC2243DD6E1007CE3C6 /* WPView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WPView.xib; sourceTree = "<group>"; };
@@ -314,7 +329,6 @@
 		C1DDA578241E647100F07171 /* PrimaryColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryColorView.swift; sourceTree = "<group>"; };
 		C1DDA580241E66DD00F07171 /* UIViewController+LargeTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+LargeTitle.swift"; sourceTree = "<group>"; };
 		C1E4E287241F8DDA008CB87C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		C1FACBCE242AF55000349609 /* FolderCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderCellType.swift; sourceTree = "<group>"; };
 		C1FACBD2242B3A9A00349609 /* FeedBackGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackGenerator.swift; sourceTree = "<group>"; };
 		C1FACBD6242B497300349609 /* FolderDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderDataStore.swift; sourceTree = "<group>"; };
 		C1FACBDA242B598B00349609 /* Date+isToday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+isToday.swift"; sourceTree = "<group>"; };
@@ -358,6 +372,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C126D10C2441BC2300C3325C /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				C1CEFDCD243DD8B5007CE3C6 /* HomeCollectionViewLayout.swift */,
+				C1CEFDE0243DD9C4007CE3C6 /* HomeCollectionViewDataSource.swift */,
+				C126D1072441BB9F00C3325C /* HomeCollectionViewType.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		C12A728E2420D7A500762C35 /* ShowMaterial */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,13 +432,12 @@
 			children = (
 				C1D73FA22425AC1C003075E9 /* Nib */,
 				C1CEFDCC243DD77E007CE3C6 /* CellBackingView */,
+				C126D10C2441BC2300C3325C /* CollectionView */,
 				C1D531BB2419FFEE00641D97 /* HomeViewController.swift */,
-				C1CEFDCD243DD8B5007CE3C6 /* HomeCollectionViewLayout.swift */,
-				C1CEFDE0243DD9C4007CE3C6 /* HomeCollectionViewDataSource.swift */,
 				C1CE9E29243F3D39003A6BAD /* Folder.swift */,
 				C1D73FA32425AC3D003075E9 /* HomeViewModel.swift */,
 				C1CEFDBE243DD6C3007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.swift */,
-				C1FACBCE242AF55000349609 /* FolderCellType.swift */,
+				C126D10D2441BC7400C3325C /* StandardFolder.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -459,7 +482,7 @@
 				C1DDA578241E647100F07171 /* PrimaryColorView.swift */,
 				C1E4E287241F8DDA008CB87C /* CardView.swift */,
 				C1272320242C55250052A967 /* CheckBox.swift */,
-				C1CEFDB6243DD5E8007CE3C6 /* WrapperCell.swift */,
+				C1CEFDB6243DD5E8007CE3C6 /* WrapperCollectionViewCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -537,6 +560,7 @@
 			isa = PBXGroup;
 			children = (
 				C1CE9E2E243F4428003A6BAD /* FolderUseCase.swift */,
+				C135161B2441C69800900D66 /* HomeUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -545,6 +569,8 @@
 			isa = PBXGroup;
 			children = (
 				C1CE9E31243F46E3003A6BAD /* FolderRepository.swift */,
+				C135161E2441C78200900D66 /* UserRepository.swift */,
+				C13516202441C78C00900D66 /* TaskRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -663,7 +689,7 @@
 				C1D531BD2419FFEE00641D97 /* Home.storyboard */,
 				C1CEFDB8243DD64A007CE3C6 /* StandardFolderView.xib */,
 				C1CEFDBF243DD6C3007CE3C6 /* OriginalFolderSectionHeaderCollectionReusableView.xib */,
-				C1CEFDBA243DD656007CE3C6 /* OriginalFolderView.xib */,
+				C1CEFDBA243DD656007CE3C6 /* FolderView.xib */,
 				C1CEFDC2243DD6E1007CE3C6 /* WPView.xib */,
 			);
 			path = Nib;
@@ -686,7 +712,6 @@
 			isa = PBXGroup;
 			children = (
 				C14EC46724402D34000784E4 /* StandardFolderObject.swift */,
-				C14EC46924402D42000784E4 /* OriginalFolderObject.swift */,
 				C134F07B241D19EB00511B2A /* UserObject.swift */,
 				C134F078241D172600511B2A /* TaskObject.swift */,
 				C134F073241D15D700511B2A /* FolderObject.swift */,
@@ -719,6 +744,7 @@
 			children = (
 				C1FACBD6242B497300349609 /* FolderDataStore.swift */,
 				C17BE991242C8AD200DA4474 /* TaskDataStore.swift */,
+				C13516242441C80800900D66 /* UserDataStore.swift */,
 			);
 			path = DataStore;
 			sourceTree = "<group>";
@@ -809,7 +835,7 @@
 			files = (
 				C1D73FAB2425DEF3003075E9 /* NewFoldert.storyboard in Resources */,
 				C1CEFDC3243DD6E1007CE3C6 /* WPView.xib in Resources */,
-				C1CEFDBB243DD656007CE3C6 /* OriginalFolderView.xib in Resources */,
+				C1CEFDBB243DD656007CE3C6 /* FolderView.xib in Resources */,
 				C14720592429BA93003DEEA1 /* PrimaryColorCollectionViewCell.xib in Resources */,
 				C13DD556241CAFAB00248D29 /* TaskList.storyboard in Resources */,
 				C13DD562241CB72800248D29 /* Color.xcassets in Resources */,
@@ -834,7 +860,7 @@
 			files = (
 				C1CEFDD4243DD94F007CE3C6 /* StandardFolderView.xib in Resources */,
 				C1CEFDD5243DD94F007CE3C6 /* OriginalFolderSectionHeaderCollectionReusableView.xib in Resources */,
-				C1CEFDD6243DD94F007CE3C6 /* OriginalFolderView.xib in Resources */,
+				C1CEFDD6243DD94F007CE3C6 /* FolderView.xib in Resources */,
 				C1CEFDD7243DD94F007CE3C6 /* WPView.xib in Resources */,
 				C1A0EB5D2424697D0099F0E7 /* TaskTableViewCell.xib in Resources */,
 				C1B9770824210AB600CDAC22 /* MaterialCollectionViewCell.xib in Resources */,
@@ -993,17 +1019,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C126D10E2441BC7400C3325C /* StandardFolder.swift in Sources */,
 				C12A72A22420FD0F00762C35 /* MaterialCollectionViewCell.swift in Sources */,
 				C1CEFDC0243DD6C3007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.swift in Sources */,
-				C1FACBCF242AF55000349609 /* FolderCellType.swift in Sources */,
 				C134F07C241D19EB00511B2A /* UserObject.swift in Sources */,
 				C1D531BC2419FFEE00641D97 /* HomeViewController.swift in Sources */,
 				C14720582429BA93003DEEA1 /* PrimaryColorCollectionViewCell.swift in Sources */,
 				C17BE992242C8AD200DA4474 /* TaskDataStore.swift in Sources */,
 				C1D73FA42425AC3D003075E9 /* HomeViewModel.swift in Sources */,
 				C14EC46424402A58000784E4 /* TaskListViewControllerBuilder.swift in Sources */,
+				C135161C2441C69800900D66 /* HomeUseCase.swift in Sources */,
 				C134F070241D124A00511B2A /* MaterialObject.swift in Sources */,
 				C13DD564241CB95000248D29 /* R.generated.swift in Sources */,
+				C126D1082441BB9F00C3325C /* HomeCollectionViewType.swift in Sources */,
 				C1CEFDC7243DD753007CE3C6 /* OriginalFolderView.swift in Sources */,
 				C13DD56F241CC59E00248D29 /* UIView+Gradient.swift in Sources */,
 				C14EC49724408ED4000784E4 /* AllTaskListViewModel.swift in Sources */,
@@ -1024,11 +1052,13 @@
 				C1FACBDB242B598B00349609 /* Date+isToday.swift in Sources */,
 				C1E4E288241F8DDA008CB87C /* CardView.swift in Sources */,
 				C12A72952420D8A500762C35 /* VoiceMaterialViewController.swift in Sources */,
+				C13516212441C78C00900D66 /* TaskRepository.swift in Sources */,
 				C134F074241D15D700511B2A /* FolderObject.swift in Sources */,
 				C14720532429B4E4003DEEA1 /* NewFolderViewModel.swift in Sources */,
 				C1272321242C55250052A967 /* CheckBox.swift in Sources */,
 				C14EC49524408EAF000784E4 /* AllTaskListViewController.swift in Sources */,
 				C13DD55A241CAFD200248D29 /* MaterialsViewController.swift in Sources */,
+				C135161F2441C78200900D66 /* UserRepository.swift in Sources */,
 				C1CE9E32243F46E3003A6BAD /* FolderRepository.swift in Sources */,
 				C1FACBD3242B3A9A00349609 /* FeedBackGenerator.swift in Sources */,
 				C1D73FAD2425DF0F003075E9 /* NewFolderViewController.swift in Sources */,
@@ -1037,12 +1067,12 @@
 				C147205C2429BF84003DEEA1 /* FolderPrimaryColorType.swift in Sources */,
 				C1D531BA2419FFEE00641D97 /* SceneDelegate.swift in Sources */,
 				C1272327242C5C450052A967 /* TaskListViewModel.swift in Sources */,
+				C13516252441C80800900D66 /* UserDataStore.swift in Sources */,
 				C1CEFDCE243DD8B5007CE3C6 /* HomeCollectionViewLayout.swift in Sources */,
 				C1CEFDDE243DD981007CE3C6 /* IBPCollectionViewCompositionalLayoutInteroperability.swift in Sources */,
 				C14720552429BA61003DEEA1 /* PrimaryColorCollectionView.swift in Sources */,
-				C14EC46A24402D42000784E4 /* OriginalFolderObject.swift in Sources */,
 				C13DD55D241CB09A00248D29 /* WalkThroughViewController.swift in Sources */,
-				C1CEFDB7243DD5E8007CE3C6 /* WrapperCell.swift in Sources */,
+				C1CEFDB7243DD5E8007CE3C6 /* WrapperCollectionViewCell.swift in Sources */,
 				C13DD558241CAFC400248D29 /* TaskListViewController.swift in Sources */,
 				C1DDA579241E647100F07171 /* PrimaryColorView.swift in Sources */,
 				C1CEFDC9243DD760007CE3C6 /* StandardFolderView.swift in Sources */,
@@ -1053,8 +1083,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13516262441C81400900D66 /* UserDataStore.swift in Sources */,
+				C13516222441C79700900D66 /* UserRepository.swift in Sources */,
+				C13516232441C79700900D66 /* TaskRepository.swift in Sources */,
+				C135161D2441C73D00900D66 /* HomeUseCase.swift in Sources */,
+				C135161A2441BD8300900D66 /* StandardFolder.swift in Sources */,
+				C126D1092441BBE000C3325C /* AllTaskListViewController.swift in Sources */,
+				C126D10A2441BBE000C3325C /* AllTaskListViewModel.swift in Sources */,
+				C126D10B2441BBE000C3325C /* HomeCollectionViewType.swift in Sources */,
 				C14EC46E24402E26000784E4 /* StandardFolderObject.swift in Sources */,
-				C14EC46F24402E26000784E4 /* OriginalFolderObject.swift in Sources */,
 				C14EC46524402A66000784E4 /* TaskListViewControllerBuilder.swift in Sources */,
 				C1CE9E33243F486B003A6BAD /* FolderUseCase.swift in Sources */,
 				C1CE9E34243F486B003A6BAD /* FolderRepository.swift in Sources */,
@@ -1064,7 +1101,7 @@
 				C1CEFDD9243DD964007CE3C6 /* StandardFolderView.swift in Sources */,
 				C1CEFDDA243DD964007CE3C6 /* WPView.swift in Sources */,
 				C1CEFDDB243DD964007CE3C6 /* HomeCollectionViewLayout.swift in Sources */,
-				C1CEFDDC243DD964007CE3C6 /* WrapperCell.swift in Sources */,
+				C1CEFDDC243DD964007CE3C6 /* WrapperCollectionViewCell.swift in Sources */,
 				C1059409242CC91B0019538E /* NatureAPIClient.swift in Sources */,
 				C17BE993242C8D5100DA4474 /* TaskDataStore.swift in Sources */,
 				C1272328242C5CCC0052A967 /* TaskListViewModel.swift in Sources */,
@@ -1074,7 +1111,6 @@
 				C1CEFDC5243DD727007CE3C6 /* OriginalListSectionHeaderCollectionReusableView.swift in Sources */,
 				C1FACBD8242B4AD900349609 /* FolderDataStore.swift in Sources */,
 				C1FACBD4242B3B3200349609 /* FeedBackGenerator.swift in Sources */,
-				C1FACBD0242B013000349609 /* FolderCellType.swift in Sources */,
 				C1FACBC9242AE28A00349609 /* NewFolderViewController.swift in Sources */,
 				C1FACBCA242AE28A00349609 /* PrimaryColorCollectionView.swift in Sources */,
 				C1FACBCB242AE28A00349609 /* PrimaryColorCollectionViewCell.swift in Sources */,

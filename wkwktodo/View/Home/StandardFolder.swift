@@ -1,18 +1,20 @@
 //
-//  Folder.swift
+//  StandardFolder.swift
 //  wkwktodo
 //
-//  Created by Ren Matsushita on 2020/04/09.
+//  Created by Ren Matsushita on 2020/04/11.
 //  Copyright © 2020 Ren Matsushita. All rights reserved.
 //
 
 import Foundation
 
-struct Folder {
-    let id: String
+struct StandardFolder {
+    let type: StandardFolderType
     let title: String
     let primaryColor: FolderPrimaryColorType
     let allTaskCount: Int
-    let completedTaskCount: Int
-    let order: Int
+}
+
+enum StandardFolderType {
+    case today, all
 }

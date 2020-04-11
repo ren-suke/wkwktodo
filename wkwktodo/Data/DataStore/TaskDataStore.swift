@@ -11,11 +11,11 @@ import RealmSwift
 import RxRealm
 import RxSwift
 
-class TaskObjectDataStore {
-    static func getTasks(query: NSPredicate) -> Observable<[TaskObject]> {
+class TaskDataStore {
+    static func getTasks() -> Observable<[TaskObject]> {
         do {
             let realm = try Realm()
-            let tasks = realm.objects(TaskObject.self).filter(query)
+            let tasks = realm.objects(TaskObject.self)
             return Observable.array(from: tasks)
         } catch {
             return .error(error)

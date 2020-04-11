@@ -8,8 +8,8 @@
 
 import UIKit
 
-class OriginalFolderView: UIView, ReusableViewType, BackingViewMaker {
-    typealias View = OriginalFolderView
+class FolderView: UIView, ReusableViewType, BackingViewMaker {
+    typealias View = FolderView
     @IBOutlet private weak var logoView: UIView!
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var progressLabel: UILabel!
@@ -31,7 +31,7 @@ class OriginalFolderView: UIView, ReusableViewType, BackingViewMaker {
         print("prepareForReuse")
     }
 
-    func configure(with folderCellType: FolderCellType, cellType: OriginalFolderCellType) {
+    func configure(with folder: Folder, cellType: OriginalFolderCellType) {
         switch cellType {
         case .first:
             layer.cornerRadius = 12
@@ -43,14 +43,14 @@ class OriginalFolderView: UIView, ReusableViewType, BackingViewMaker {
             layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         }
         
-        logoView.backgroundColor = folderCellType.primaryColor.color
-        titleLabel.text = folderCellType.title
-        progressLabel.text = folderCellType.progress
+        logoView.backgroundColor = folder.primaryColor.color
+        titleLabel.text = folder.title
+        progressLabel.text = "\(folder.completedTaskCount)/\(folder.allTaskCount)"
     }
     
-    static func makeBackedView() -> OriginalFolderView {
-        guard let originalFolderView = R.nib.originalFolderView(owner: self) else { return OriginalFolderView() }
-        return originalFolderView
+    static func makeBackedView() -> FolderView {
+        guard let folderView = R.nib.folderView(owner: self) else { return FolderView() }
+        return folderView
     }
 }
 

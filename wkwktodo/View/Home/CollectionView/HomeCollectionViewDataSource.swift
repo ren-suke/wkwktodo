@@ -12,9 +12,18 @@ import RxSwift
 import RxCocoa
 
 class HomeCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, RxCollectionViewDataSourceType {
-    typealias Element = [Folder]
-    var items: Element = []
-    
+    typealias Element = HomeCollectionViewType
+    var items: Element = .init(wp: 0, standardFolders: [], folders: [])
+    private var wp: Int {
+        return items.wp
+    }
+    private var standardFolders: [StandardFolder] {
+        return items.standardFolders
+    }
+    private var folders: [Folder] {
+        return items.folders
+    }
+
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 3
     }
@@ -24,9 +33,9 @@ class HomeCollectionViewDataSource: NSObject, UICollectionViewDataSource, UIColl
         case 0:
             return 1
         case 1:
-            return items.filter {$0.type != .original}.count
+            return standardFolders.count
         case 2:
-            return items.filter {$0.type == .original}.count
+            return folders.count
         default:
             return 0
         }
@@ -37,24 +46,24 @@ class HomeCollectionViewDataSource: NSObject, UICollectionViewDataSource, UIColl
         case 0:
             guard let wpViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "WPViewCell", for: indexPath) as? WrapperCollectionViewCell<WPView> else { return UICollectionViewCell() }
             wpViewCell.update { wpView in
-                wpView.configure(wp: 10000)
+                wpView.configure(wp: self.wp)
             }
             return wpViewCell
         case 1:
             guard let standardFolderViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "StandardFolderViewCell", for: indexPath) as? WrapperCollectionViewCell<StandardFolderView> else { return UICollectionViewCell() }
             standardFolderViewCell.update { standardFolderView in
                 standardFolderView.layoutIfNeeded()
-                standardFolderView.configure(taskCount: Int.random(in: 1...100), title: ["today", "all"][indexPath.row])
+                standardFolderView.configure(with: standardFolders[indexPath.row])
             }
             return standardFolderViewCell
         case 2:
-            guard let originalFolderViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "OriginalFolderViewCell", for: indexPath) as? WrapperCollectionViewCell<OriginalFolderView> else { return UICollectionViewCell() }
+            guard let originalFolderViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "OriginalFolderViewCell", for: indexPath) as? WrapperCollectionViewCell<FolderView> else { return UICollectionViewCell() }
             var cellType: OriginalFolderCellType = .body
             if indexPath.row == 0 { cellType = .first }
             if indexPath.row == 11 { cellType = .last}
             originalFolderViewCell.update { originalFolderView in
                 originalFolderView.layoutIfNeeded()
-                originalFolderView.configure(with: FolderCellType(id: 1, primaryColor: .blue, title: "AAA \(indexPath.row)", progress: "\(indexPath.row)/100"), cellType: cellType)
+                originalFolderView.configure(with: folders[indexPath.row], cellType: cellType)
             }
             return originalFolderViewCell
         default:
