@@ -17,8 +17,6 @@ class StandardFolderObject: Object {
         get { return FolderPrimaryColorType(rawValue: primaryColorRawValue) ?? .red }
         set { primaryColorRawValue = newValue.rawValue }
     }
-    var tasks: [TaskObject]?
-    
     override class func primaryKey() -> String? {
         return "id"
     }

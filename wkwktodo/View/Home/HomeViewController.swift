@@ -29,13 +29,18 @@ class HomeViewController: UIViewController {
     private let dataSource: HomeCollectionViewDataSource = .init()
     @IBOutlet private weak var addFolderButton: UIBarButtonItem!
     
-    let disposeBag: DisposeBag = DisposeBag()
+    private let viewModel: HomeViewModel = .init()
+    private let disposeBag: DisposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configure()
         configureCollectionView()
+        
+        viewModel.homeCollectionViewType
+            .drive(collectionView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
     }
     
     private func configure() {

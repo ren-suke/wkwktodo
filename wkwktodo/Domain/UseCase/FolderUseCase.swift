@@ -13,14 +13,6 @@ protocol FolderUseCaseProtocol {
 //    func getFolders() -> Observable<[Folder]>
 }
 
-class FolderUseCaseMock: FolderUseCaseProtocol {
-    func getFolders() -> Observable<[Folder]> {
-        return Observable<[Folder]>.create { observer in
-            observer.onNext([Folder(id: "01019319", title: "AAA", primaryColor: .red, allTaskCount: 10, completedTaskCount: 1, type: .original), Folder(id: "21o41-", title: "today", primaryColor: .gold, allTaskCount: 1023, completedTaskCount: 1, type: .today)])
-            return Disposables.create()
-        }
-    }
-}
 
 class FolderUseCase: FolderUseCaseProtocol {
 //    func getFolders() -> Observable<[Folder]> {

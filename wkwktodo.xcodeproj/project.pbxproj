@@ -42,6 +42,14 @@
 		C134F07A241D17EF00511B2A /* TaskObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F078241D172600511B2A /* TaskObject.swift */; };
 		C134F07C241D19EB00511B2A /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134F07B241D19EB00511B2A /* UserObject.swift */; };
 		C135161A2441BD8300900D66 /* StandardFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126D10D2441BC7400C3325C /* StandardFolder.swift */; };
+		C135161C2441C69800900D66 /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C135161B2441C69800900D66 /* HomeUseCase.swift */; };
+		C135161D2441C73D00900D66 /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C135161B2441C69800900D66 /* HomeUseCase.swift */; };
+		C135161F2441C78200900D66 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C135161E2441C78200900D66 /* UserRepository.swift */; };
+		C13516212441C78C00900D66 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13516202441C78C00900D66 /* TaskRepository.swift */; };
+		C13516222441C79700900D66 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C135161E2441C78200900D66 /* UserRepository.swift */; };
+		C13516232441C79700900D66 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13516202441C78C00900D66 /* TaskRepository.swift */; };
+		C13516252441C80800900D66 /* UserDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13516242441C80800900D66 /* UserDataStore.swift */; };
+		C13516262441C81400900D66 /* UserDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13516242441C80800900D66 /* UserDataStore.swift */; };
 		C13DD54E241B32E700248D29 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C13DD54D241B32E700248D29 /* Settings.bundle */; };
 		C13DD554241CAF9900248D29 /* Materials.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD553241CAF9900248D29 /* Materials.storyboard */; };
 		C13DD556241CAFAB00248D29 /* TaskList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13DD555241CAFAB00248D29 /* TaskList.storyboard */; };
@@ -71,9 +79,7 @@
 		C14EC46424402A58000784E4 /* TaskListViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC46324402A58000784E4 /* TaskListViewControllerBuilder.swift */; };
 		C14EC46524402A66000784E4 /* TaskListViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC46324402A58000784E4 /* TaskListViewControllerBuilder.swift */; };
 		C14EC46824402D34000784E4 /* StandardFolderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC46724402D34000784E4 /* StandardFolderObject.swift */; };
-		C14EC46A24402D42000784E4 /* OriginalFolderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC46924402D42000784E4 /* OriginalFolderObject.swift */; };
 		C14EC46E24402E26000784E4 /* StandardFolderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC46724402D34000784E4 /* StandardFolderObject.swift */; };
-		C14EC46F24402E26000784E4 /* OriginalFolderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC46924402D42000784E4 /* OriginalFolderObject.swift */; };
 		C14EC49524408EAF000784E4 /* AllTaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC49424408EAF000784E4 /* AllTaskListViewController.swift */; };
 		C14EC49724408ED4000784E4 /* AllTaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EC49624408ED4000784E4 /* AllTaskListViewModel.swift */; };
 		C1584BE8241A3C1B0038EA38 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1584BDF241A3C1B0038EA38 /* RxRelay.framework */; };
@@ -253,6 +259,10 @@
 		C134F073241D15D700511B2A /* FolderObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderObject.swift; sourceTree = "<group>"; };
 		C134F078241D172600511B2A /* TaskObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskObject.swift; sourceTree = "<group>"; };
 		C134F07B241D19EB00511B2A /* UserObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
+		C135161B2441C69800900D66 /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCase.swift; sourceTree = "<group>"; };
+		C135161E2441C78200900D66 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		C13516202441C78C00900D66 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		C13516242441C80800900D66 /* UserDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataStore.swift; sourceTree = "<group>"; };
 		C13DD54D241B32E700248D29 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		C13DD553241CAF9900248D29 /* Materials.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Materials.storyboard; sourceTree = "<group>"; };
 		C13DD555241CAFAB00248D29 /* TaskList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskList.storyboard; sourceTree = "<group>"; };
@@ -270,7 +280,6 @@
 		C147205B2429BF84003DEEA1 /* FolderPrimaryColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderPrimaryColorType.swift; sourceTree = "<group>"; };
 		C14EC46324402A58000784E4 /* TaskListViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerBuilder.swift; sourceTree = "<group>"; };
 		C14EC46724402D34000784E4 /* StandardFolderObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StandardFolderObject.swift; path = StandardFolderObject.swift/StandardFolderObject.swift; sourceTree = "<group>"; };
-		C14EC46924402D42000784E4 /* OriginalFolderObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalFolderObject.swift; sourceTree = "<group>"; };
 		C14EC49424408EAF000784E4 /* AllTaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTaskListViewController.swift; sourceTree = "<group>"; };
 		C14EC49624408ED4000784E4 /* AllTaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTaskListViewModel.swift; sourceTree = "<group>"; };
 		C1584BDF241A3C1B0038EA38 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
@@ -551,6 +560,7 @@
 			isa = PBXGroup;
 			children = (
 				C1CE9E2E243F4428003A6BAD /* FolderUseCase.swift */,
+				C135161B2441C69800900D66 /* HomeUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -559,6 +569,8 @@
 			isa = PBXGroup;
 			children = (
 				C1CE9E31243F46E3003A6BAD /* FolderRepository.swift */,
+				C135161E2441C78200900D66 /* UserRepository.swift */,
+				C13516202441C78C00900D66 /* TaskRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -700,7 +712,6 @@
 			isa = PBXGroup;
 			children = (
 				C14EC46724402D34000784E4 /* StandardFolderObject.swift */,
-				C14EC46924402D42000784E4 /* OriginalFolderObject.swift */,
 				C134F07B241D19EB00511B2A /* UserObject.swift */,
 				C134F078241D172600511B2A /* TaskObject.swift */,
 				C134F073241D15D700511B2A /* FolderObject.swift */,
@@ -733,6 +744,7 @@
 			children = (
 				C1FACBD6242B497300349609 /* FolderDataStore.swift */,
 				C17BE991242C8AD200DA4474 /* TaskDataStore.swift */,
+				C13516242441C80800900D66 /* UserDataStore.swift */,
 			);
 			path = DataStore;
 			sourceTree = "<group>";
@@ -1016,6 +1028,7 @@
 				C17BE992242C8AD200DA4474 /* TaskDataStore.swift in Sources */,
 				C1D73FA42425AC3D003075E9 /* HomeViewModel.swift in Sources */,
 				C14EC46424402A58000784E4 /* TaskListViewControllerBuilder.swift in Sources */,
+				C135161C2441C69800900D66 /* HomeUseCase.swift in Sources */,
 				C134F070241D124A00511B2A /* MaterialObject.swift in Sources */,
 				C13DD564241CB95000248D29 /* R.generated.swift in Sources */,
 				C126D1082441BB9F00C3325C /* HomeCollectionViewType.swift in Sources */,
@@ -1039,11 +1052,13 @@
 				C1FACBDB242B598B00349609 /* Date+isToday.swift in Sources */,
 				C1E4E288241F8DDA008CB87C /* CardView.swift in Sources */,
 				C12A72952420D8A500762C35 /* VoiceMaterialViewController.swift in Sources */,
+				C13516212441C78C00900D66 /* TaskRepository.swift in Sources */,
 				C134F074241D15D700511B2A /* FolderObject.swift in Sources */,
 				C14720532429B4E4003DEEA1 /* NewFolderViewModel.swift in Sources */,
 				C1272321242C55250052A967 /* CheckBox.swift in Sources */,
 				C14EC49524408EAF000784E4 /* AllTaskListViewController.swift in Sources */,
 				C13DD55A241CAFD200248D29 /* MaterialsViewController.swift in Sources */,
+				C135161F2441C78200900D66 /* UserRepository.swift in Sources */,
 				C1CE9E32243F46E3003A6BAD /* FolderRepository.swift in Sources */,
 				C1FACBD3242B3A9A00349609 /* FeedBackGenerator.swift in Sources */,
 				C1D73FAD2425DF0F003075E9 /* NewFolderViewController.swift in Sources */,
@@ -1052,10 +1067,10 @@
 				C147205C2429BF84003DEEA1 /* FolderPrimaryColorType.swift in Sources */,
 				C1D531BA2419FFEE00641D97 /* SceneDelegate.swift in Sources */,
 				C1272327242C5C450052A967 /* TaskListViewModel.swift in Sources */,
+				C13516252441C80800900D66 /* UserDataStore.swift in Sources */,
 				C1CEFDCE243DD8B5007CE3C6 /* HomeCollectionViewLayout.swift in Sources */,
 				C1CEFDDE243DD981007CE3C6 /* IBPCollectionViewCompositionalLayoutInteroperability.swift in Sources */,
 				C14720552429BA61003DEEA1 /* PrimaryColorCollectionView.swift in Sources */,
-				C14EC46A24402D42000784E4 /* OriginalFolderObject.swift in Sources */,
 				C13DD55D241CB09A00248D29 /* WalkThroughViewController.swift in Sources */,
 				C1CEFDB7243DD5E8007CE3C6 /* WrapperCollectionViewCell.swift in Sources */,
 				C13DD558241CAFC400248D29 /* TaskListViewController.swift in Sources */,
@@ -1068,12 +1083,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13516262441C81400900D66 /* UserDataStore.swift in Sources */,
+				C13516222441C79700900D66 /* UserRepository.swift in Sources */,
+				C13516232441C79700900D66 /* TaskRepository.swift in Sources */,
+				C135161D2441C73D00900D66 /* HomeUseCase.swift in Sources */,
 				C135161A2441BD8300900D66 /* StandardFolder.swift in Sources */,
 				C126D1092441BBE000C3325C /* AllTaskListViewController.swift in Sources */,
 				C126D10A2441BBE000C3325C /* AllTaskListViewModel.swift in Sources */,
 				C126D10B2441BBE000C3325C /* HomeCollectionViewType.swift in Sources */,
 				C14EC46E24402E26000784E4 /* StandardFolderObject.swift in Sources */,
-				C14EC46F24402E26000784E4 /* OriginalFolderObject.swift in Sources */,
 				C14EC46524402A66000784E4 /* TaskListViewControllerBuilder.swift in Sources */,
 				C1CE9E33243F486B003A6BAD /* FolderUseCase.swift in Sources */,
 				C1CE9E34243F486B003A6BAD /* FolderRepository.swift in Sources */,

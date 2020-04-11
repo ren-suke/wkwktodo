@@ -14,5 +14,5 @@ struct Folder {
     let primaryColor: FolderPrimaryColorType
     let allTaskCount: Int
     let completedTaskCount: Int
-    let type: FolderType
+    let order: Int
 }
