@@ -21,7 +21,16 @@ struct HomeViewModelInput {
 }
 
 final class HomeViewModel {
-    private(set) var folders: Driver<[Folder]> = .empty()
+    private var wp: PublishRelay<Int> = .init()
+    private var standardFolders: PublishRelay<[StandardFolder]> = .init()
+    private var folders: PublishRelay<[Folder]> = .init()
+    var homeCollectionViewType: Observable<HomeCollectionViewType> {
+        return Observable
+            .combineLatest(wp, standardFolders, folders)
+            .flatMap { _wp, _standardFolders, _folders -> Observable<HomeCollectionViewType> in
+                return .just(HomeCollectionViewType(wp: _wp, standardFolders: _standardFolders, folders: _folders))
+            }
+    }
     
     init(input: HomeViewModelInput, folderUseCase: FolderUseCase) {
         

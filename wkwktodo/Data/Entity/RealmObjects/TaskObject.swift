@@ -19,9 +19,9 @@ class TaskObject: Object {
     @objc dynamic var order: Int = 0
     @objc dynamic var indentationLevel: Int = 0
     @objc dynamic var folder: FolderObject?
+    @objc dynamic var createdAt: Date = Date()
 
     override static func primaryKey() -> String? {
         return "id"
-        
     }
 }

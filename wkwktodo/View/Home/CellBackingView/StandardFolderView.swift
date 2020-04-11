@@ -23,13 +23,13 @@ class StandardFolderView: UIView, ReusableViewType, BackingViewMaker {
     
     override func layoutIfNeeded() {
         super.layoutIfNeeded()
-        print("=-ddd-sfs-")
         logoView.layer.cornerRadius = logoView.bounds.height * 0.5
     }
     
-    func configure(taskCount: Int, title: String) {
-        taskCountLabel.text = String(taskCount)
-        titleLabel.text = title
+    func configure(with standardFolder: StandardFolder) {
+        logoView.backgroundColor = standardFolder.primaryColor.color
+        taskCountLabel.text = String(standardFolder.allTaskCount)
+        titleLabel.text = standardFolder.title
     }
     
     func prepareForReuse() {
